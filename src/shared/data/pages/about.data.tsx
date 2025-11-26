@@ -38,13 +38,13 @@ import {
 
 // Hero2 data on About page *******************
 export const hero2About: HeroProps = {
-  title: 'Great companies are made by great people',
+  title: 'About Handel',
   subtitle:
-    'Vivamus venenatis, lectus a pellentesque placerat, felis tellus ultrices eros, et aliquam sapien nibh sed sem. Fusce ut ante eget purus viverra malesuada. Morbi eget mi maximus, ultricies urna eget, tristique lorem. Fusce cursus venenatis quam, a blandit lectus vulputate id. Praesent id interdum orci, vitae condimentum dui.',
-  tagline: 'About Us Demo Page',
+    'Two divisions. One purpose — drive growth and protect your business.',
+  tagline: 'Handel',
   callToAction: {
-    text: 'View jobs',
-    href: 'https://www.linkedin.com/',
+    text: 'Our Story',
+    href: '/about',
     targetBlank: true,
   },
   callToAction2: {
@@ -53,7 +53,7 @@ export const hero2About: HeroProps = {
   },
   image: {
     src: hero2Img,
-    alt: 'Hero TailNext',
+    alt: 'Handel Team',
   },
 };
 
@@ -145,7 +145,7 @@ export const stepsAbout: StepsProps = {
   hasBackground: true,
   isImageDisplayed: false,
   header: {
-    title: 'History of TailNext',
+    title: 'History of Handel',
     subtitle:
       'Duis sit amet magna et sapien cursus fermentum. Curabitur ac mauris non magna condimentum scelerisque. Aliquam nunc ipsum, semper ac scelerisque sit amet, pulvinar vitae libero.',
     tagline: 'Company History',
@@ -605,7 +605,7 @@ export const contactAbout: ContactProps = {
     },
     {
       title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: tailnext@gmail.com'],
+      description: ['Mobile: +1 (123) 456-7890', 'Mail: handel@gmail.com'],
       icon: IconPhoneCall,
     },
     {

@@ -1,6 +1,6 @@
-# Tailnext
+# Handel
 
-**Tailnext** is a free and open-source template to make your website using **[NextJS](https://nextjs.org/) + [Tailwind CSS](https://tailwindcss.com/)**. Ready to start a new project and designed taking into account best practices.
+**Handel** is a free and open-source template to make your website using **[NextJS](https://nextjs.org/) + [Tailwind CSS](https://tailwindcss.com/)**. Ready to start a new project and designed taking into account best practices.
 
 ## Features
 
@@ -12,13 +12,13 @@
 
 <br>
 
-<img src="./screenshot.jpg" alt="Tailnext Theme Screenshot">
+<img src="./screenshot.jpg" alt="Handel Theme Screenshot">
 
 [![onWidget](https://custom-icon-badges.demolab.com/badge/made%20by%20-onWidget-556bf2?style=flat-square&logo=onwidget&logoColor=white&labelColor=101827)](https://onwidget.com)
-[![License](https://img.shields.io/github/license/onwidget/tailnext?style=flat-square&color=dddddd&labelColor=000000)](https://github.com/onwidget/tailnext/blob/main/LICENSE.md)
+[![License](https://img.shields.io/github/license/onwidget/Handel?style=flat-square&color=dddddd&labelColor=000000)](https://github.com/onwidget/Handel/blob/main/LICENSE.md)
 [![Maintained](https://img.shields.io/badge/maintained%3F-yes-brightgreen.svg?style=flat-square)](https://github.com/onwidget)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/onwidget/tailnext#contributing)
-[![Known Vulnerabilities](https://snyk.io/test/github/onwidget/tailnext/badge.svg?style=flat-square)](https://snyk.io/test/github/onwidget/tailnext)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/onwidget/Handel#contributing)
+[![Known Vulnerabilities](https://snyk.io/test/github/onwidget/Handel/badge.svg?style=flat-square)](https://snyk.io/test/github/onwidget/Handel)
 
 <br>
 
@@ -42,21 +42,21 @@
 
 ## Demo
 
-📌 [https://tailnext.vercel.app/](https://tailnext.vercel.app/)
+📌 [https://Handel.vercel.app/](https://Handel.vercel.app/)
 
 <br>
 
 ## Getting started
 
-- Clone: `git clone https://github.com/onwidget/tailnext.git`
-- Enter in the directory: `cd tailnext`
+- Clone: `git clone https://github.com/onwidget/Handel.git`
+- Enter in the directory: `cd Handel`
 - Install dependencies: `npm install`
 - Start the development server: `npm run dev`
 - View project in local environment: `localhost:3000`
 
 ### Project structure
 
-Inside **Tailnext** template, you'll see the following folders and files:
+Inside **Handel** template, you'll see the following folders and files:
 
 ```
 /
@@ -94,7 +94,7 @@ Inside **Tailnext** template, you'll see the following folders and files:
 └── ...
 ```
 
-[![Edit Tailnext on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://githubbox.com/onwidget/tailnext/tree/main)
+[![Edit Handel on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://githubbox.com/onwidget/Handel/tree/main)
 
 > **Seasoned next.js expert?** Delete this file. Update `config.mjs` and contents. Have fun!
 
@@ -140,13 +140,13 @@ prefer.
 
 Clone this repository on own GitHub account and deploy to Netlify:
 
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/onwidget/tailnext.git)
+[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/onwidget/Handel.git)
 
 #### Deploy to Vercel
 
 Clone this repository on own GitHub account and deploy to Vercel:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonwidget%2Ftailnext)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonwidget%2FHandel)
 
 <br>
 
@@ -163,8 +163,8 @@ That would be very useful for all of us and we would be happy to listen and take
 
 ## Acknowledgements
 
-Initially created by [onWidget](https://onwidget.com) and maintained by a community of [contributors](https://github.com/onwidget/tailnext/graphs/contributors).
+Initially created by [onWidget](https://onwidget.com) and maintained by a community of [contributors](https://github.com/onwidget/Handel/graphs/contributors).
 
 ## License
 
-**Tailnext** is licensed under the MIT license — see the [LICENSE](https://github.com/onwidget/tailnext/blob/main/LICENSE.md) file for details.
+**Handel** is licensed under the MIT license — see the [LICENSE](https://github.com/onwidget/Handel/blob/main/LICENSE.md) file for details.

@@ -1,10 +1,10 @@
+// ...existing code...
 module.exports.SITE = {
-  name: 'TailNext',
-
-  origin: 'https://tailnext.vercel.app',
+  name: 'Handel',
+  origin: 'https://handel.example.com',
   basePathname: '/',
   trailingSlash: false,
-
-  title: 'TailNext — Your website with Next.js + Tailwind CSS',
-  description: 'TailNext is a free and ready to start template to make your website using Next.js and Tailwind CSS.',
+  title: 'Handel — Handel Global Consulting / Handel Advocates',
+  description: 'Handel — Global consulting and legal advisory services.',
 };
+// ...existing code...
