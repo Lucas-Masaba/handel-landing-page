@@ -2,21 +2,95 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Core colors (user values) */
+  --brand-primary-600: #0b4251;   /* background */
+  --brand-primary-400: #87bbd7;   /* pattern */
+  --brand-accent-500: #f2c864;    /* text / accent */
+
+  /* fill the other shade variables (useable by Tailwind) */
+  --brand-primary-50:  #eaf6f8;
+  --brand-primary-100: #dff1f4;
+  --brand-primary-200: #cfeaf0;
+  --brand-primary-300: #bfe2ec;
+  --brand-primary-500: #5fa8bb;
+  --brand-primary-700: #08343f;
+  --brand-primary-800: #06272e;
+  --brand-primary-900: #031214;
+
+  /* RGB versions for rgba(...) utility usage */
+  --brand-primary-50-rgb: 234,246,248; /* #eaf6f8 */
+  --brand-primary-600-rgb: 11,66,81;   /* #0b4251 */
+  --brand-accent-500-rgb: 242,200,100; /* #f2c864 */
+
+  --brand-accent-50:  #fff8eb;
+  --brand-accent-100: #fff3dc;
+  --brand-accent-200: #ffebb8;
+  --brand-accent-300: #f7d38a;
+  --brand-accent-400: #f6c75f;
+  --brand-accent-600: #e0a43f;
+  --brand-accent-700: #b3782e;
+  --brand-accent-800: #7f4f21;
+  --brand-accent-900: #40280f;
+}
+
+/* Dark mode overrides (when <html class="dark">) */
+.dark {
+  --brand-primary-600: #061f25;   /* darker background for dark theme */
+  --brand-primary-400: #569fb0;   /* pattern toned for dark */
+  --brand-accent-500: #f2c864;    /* keep accent same in dark */
+
+  --brand-primary-50:  #021012;
+  --brand-primary-100: #04181b;
+  --brand-primary-200: #052022;
+  --brand-primary-300: #063136;
+  --brand-primary-500: #0b4251;
+  --brand-primary-700: #031214;
+  --brand-primary-800: #020b0d;
+  --brand-primary-900: #010506;
+}
+
+/* Small helper utilities you can use in JSX */
+.bg-brand { background-color: var(--brand-primary-600) !important; }
+.bg-pattern { background-color: var(--brand-primary-400) !important; }
+.text-accent { color: var(--brand-accent-500) !important; }
+.border-accent { border-color: var(--brand-accent-500) !important; }
+
+/* Brand rgba helper classes (responsive safe because they're regular CSS classes) */
+.bg-brand-90 { background-color: rgba(var(--brand-primary-50-rgb), 0.9) !important; }
+.bg-brand-70 { background-color: rgba(var(--brand-primary-50-rgb), 0.7) !important; }
+.bg-brand-40 { background-color: rgba(var(--brand-primary-600-rgb), 0.4) !important; }
+.bg-brand-divider { background-color: rgba(var(--brand-primary-600-rgb), 0.08) !important; }
+
+/* Responsive (md) helper classes — escaped colons so you can use `md:bg-brand-90` in JSX */
+@media (min-width: 768px) {
+  .md\:bg-brand-90 { background-color: rgba(var(--brand-primary-50-rgb), 0.9) !important; }
+  .md\:bg-brand-70 { background-color: rgba(var(--brand-primary-50-rgb), 0.7) !important; }
+  .md\:bg-brand-40 { background-color: rgba(var(--brand-primary-600-rgb), 0.4) !important; }
+  .md\:bg-brand-divider { background-color: rgba(var(--brand-primary-600-rgb), 0.08) !important; }
+
+  /* Dark-mode variants for the same md helpers */
+  .dark .md\:bg-brand-90 { background-color: rgba(var(--brand-primary-600-rgb), 0.9) !important; }
+  .dark .md\:bg-brand-70 { background-color: rgba(var(--brand-primary-600-rgb), 0.7) !important; }
+  .dark .md\:bg-brand-40 { background-color: rgba(var(--brand-primary-600-rgb), 0.4) !important; }
+  .dark .md\:bg-brand-divider { background-color: rgba(var(--brand-primary-50-rgb), 0.08) !important; }
+}
+
 @layer components {
   .btn {
-    @apply inline-flex items-center justify-center rounded-md border border-gray-400 hover:border-gray-600 dark:border-slate-500 dark:hover:border-slate-700 bg-white dark:bg-transparent hover:bg-gray-100 dark:hover:bg-slate-700 text-center text-base text-gray-700 dark:text-slate-300 dark:hover:text-white font-medium leading-snug shadow-md hover:shadow-none transition duration-200 ease-in focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-blue-200 py-3 px-6 md:px-8;
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium leading-snug text-center text-gray-700 transition duration-200 ease-in bg-white border border-gray-400 rounded-md shadow-md hover:border-gray-600 dark:border dark:hover:border-[var(--brand-primary-800)] dark:bg-transparent hover:bg-gray-100 dark:hover:bg-[var(--brand-primary-700)] dark:text-[var(--brand-accent-500)] dark:hover:text-white hover:shadow-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-blue-200 md:px-8;
   }
 
   .btn-ghost {
-    @apply border-none bg-transparent text-gray-700 dark:text-gray-400 dark:hover:text-white hover:text-gray-900 shadow-none;
+    @apply text-gray-700 bg-transparent border-none shadow-none dark:text-gray-400 dark:hover:text-white hover:text-gray-900;
   }
 
   .btn-primary {
-    @apply border-primary-600 dark:border-primary-700 hover:border-primary-800 dark:hover:border-primary-900 bg-primary-600 dark:bg-primary-700 hover:bg-primary-800 dark:hover:bg-primary-900 font-semibold text-white dark:text-white hover:text-white;
+    @apply font-semibold text-white border-primary-600 dark:border-primary-700 hover:border-primary-800 dark:hover:border-primary-900 bg-primary-600 dark:bg-primary-700 hover:bg-primary-800 dark:hover:bg-primary-900 dark:text-white hover:text-white;
   }
 
   .card {
-    @apply rounded-lg backdrop-blur border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow px-6 py-8 w-full;
+    @apply w-full px-6 py-8 bg-white border border-gray-200 rounded-lg shadow backdrop-blur dark:border-[var(--brand-primary-800)] dark:bg-[var(--brand-primary-900)];
   }
 
   .ribbon {

@@ -25,7 +25,7 @@ const Features4 = ({
       <div aria-hidden="true" className="aspect-w-16 aspect-h-7">
         {image && (
           <Image
-            className="w-full h-80 object-cover rounded-xl mx-auto bg-gray-500 shadow-lg"
+            className="w-full h-80 object-cover rounded-xl mx-auto bg-[var(--brand-primary-400)] shadow-lg"
             src={image.src}
             alt={image.alt}
             width={728}

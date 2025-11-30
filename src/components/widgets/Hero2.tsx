@@ -4,7 +4,7 @@ import CTA from '../common/CTA';
 
 const Hero2 = ({ title, subtitle, tagline, callToAction, callToAction2, image }: HeroProps) => {
   return (
-    <section className="mt-[-72px] bg-primary-50 dark:bg-slate-800" id="heroTwo">
+    <section className="mt-[-72px] bg-primary-50 dark:bg-[var(--brand-primary-700)]" id="heroTwo">
       <div className="mx-auto max-w-7xl px-4 pt-[72px] sm:px-6 md:flex md:h-screen 2xl:h-auto">
         <div className="block py-12 text-center md:flex md:py-12 md:text-left lg:py-16">
           <div className="mx-auto flex max-w-5xl basis-[56%] items-center">
@@ -32,7 +32,7 @@ const Hero2 = ({ title, subtitle, tagline, callToAction, callToAction2, image }:
             <div className="relative m-auto h-full max-w-4xl object-cover">
               {image && (
                 <Image
-                  className="mx-auto h-full w-auto rounded-md bg-gray-400 object-cover drop-shadow-2xl dark:bg-slate-700"
+                  className="mx-auto h-full w-auto rounded-md bg-[var(--brand-primary-400)] object-cover drop-shadow-2xl dark:bg-[var(--brand-primary-700)]"
                   src={image.src}
                   alt={image.alt}
                   width={540}

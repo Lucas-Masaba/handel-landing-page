@@ -21,7 +21,7 @@ const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: 
             <div className="max-w-3xl mx-auto">
               {subtitle && <p className="mb-6 text-xl font-normal text-gray-600 dark:text-slate-400">{subtitle}</p>}
               <div className="flex flex-col gap-4 px-4 max-w-none flex-nowrap sm:flex-row sm:justify-center">
-                {callToAction && <CTA callToAction={`callToAction`} linkClass="btn btn-primary" />}
+                {callToAction && <CTA callToAction={callToAction} linkClass="btn btn-primary" />}
                 {callToAction2 && <CTA callToAction={callToAction2} linkClass="btn" />}
               </div>
             </div>
@@ -29,7 +29,7 @@ const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: 
           {image && (
             <div className="relative max-w-5xl m-auto">
               <Image
-                className="w-full h-auto mx-auto bg-gray-400 rounded-md dark:bg-slate-700"
+                className="w-full h-auto mx-auto bg-[var(--brand-primary-400)] rounded-md dark:bg-[var(--brand-primary-700)]"
                 src={image.src}
                 alt={image.alt}
                 width={1024}

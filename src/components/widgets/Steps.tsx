@@ -44,7 +44,7 @@ const Steps = ({
               height={768}
               alt={image.alt}
               placeholder="blur"
-              className="inset-0 object-cover object-top w-full rounded-md shadow-lg md:absolute md:h-full bg-gray-400 dark:bg-slate-700"
+              className="inset-0 object-cover object-top w-full rounded-md shadow-lg md:absolute md:h-full bg-[var(--brand-primary-400)] dark:bg-[var(--brand-primary-700)]"
               quality={50}
             />
           )}

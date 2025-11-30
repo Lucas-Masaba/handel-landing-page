@@ -31,7 +31,7 @@ export default function RootLayout({ children }: LayoutProps) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className="antialiased tracking-tight text-gray-900 dark:text-slate-300 dark:bg-slate-900">
+      <body className="antialiased tracking-tight bg-[var(--brand-primary-50)] text-gray-900 dark:bg-[var(--brand-primary-600)] dark:text-[var(--brand-accent-500)]">
         <Providers>
           {/* <Announcement /> */}
           <Header />

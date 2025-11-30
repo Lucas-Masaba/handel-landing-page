@@ -26,7 +26,7 @@ const Footer2 = () => {
             {socials.map(({ label, icon: Icon, href }, index) => (
               <li key={`item-social-${index}`}>
                 <a
-                  className="text-muted inline-flex items-center rounded-lg p-2.5 text-sm hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                  className="text-muted inline-flex items-center rounded-lg p-2.5 text-sm hover:bg-[var(--brand-primary-50)] focus:outline-none focus:ring-4 focus:ring-[var(--brand-primary-50)] dark:text-gray-400 dark:hover:bg-[var(--brand-primary-700)] dark:focus:ring-[var(--brand-primary-800)]"
                   aria-label={label}
                   href={href}
                 >
@@ -37,13 +37,13 @@ const Footer2 = () => {
           </ul>
         </div>
       </div>
-      <div className="text-muted py-6 text-sm text-gray-700 dark:text-slate-400 md:flex md:items-center md:justify-between md:py-8">
+      <div className="text-muted py-6 text-sm text-[var(--brand-primary-600)] dark:text-slate-400 md:flex md:items-center md:justify-between md:py-8">
         <ul className="mb-4 flex pl-2 rtl:pl-0 rtl:pr-2 md:order-1 md:mb-0">
           {links &&
             links.map(({ label, href }, index) => (
               <li key={`item-link-${index}`}>
                 <a
-                  className="duration-150 ease-in-out placeholder:transition hover:text-gray-700 hover:underline dark:text-gray-400"
+                  className="duration-150 ease-in-out placeholder:transition hover:text-[var(--brand-accent-500)] hover:underline dark:text-gray-400"
                   aria-label={label}
                   href={href}
                 >

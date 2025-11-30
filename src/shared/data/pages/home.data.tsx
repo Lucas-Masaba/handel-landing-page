@@ -41,16 +41,19 @@ import gasImg from '~/assets/images/gas.jpg';
 export const heroHome: HeroProps = {
   title: (
     <>
-      Specialised Global Consulting
+      Strategic Business Advice
+& Trusted Legal Counsel
     </>
   ),
   subtitle: (
     <>
       <span className="hidden md:inline">
         <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
-          Handel
+          Handel Global Consulting
         </span>{' '}
-        has two divisions. Handel Advocates and Handel Global Consulting
+        helps organizations scale with operations & strategy. <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
+          Handel Advocates
+        </span>{' '} provides commercial and corporate legal services.
       </span>{' '}
       We started up with a purpose to drive bluh bluh bluh
     </>
@@ -287,7 +290,7 @@ export const testimonialsHome: TestimonialsProps = {
   header: {
     title: 'What our clients say about us',
     subtitle:
-      'Etiam sed odio et dolor auctor gravida. Curabitur tincidunt elit non risus pharetra sodales. Etiam sit amet mattis massa.',
+      'Hear from clients who have achieved measurable results through our consulting and advocacy services',
   },
   testimonials: [
     {
@@ -486,9 +489,9 @@ export const teamHome: TeamProps = {
   id: 'team-on-home',
   hasBackground: false,
   header: {
-    title: 'Team Members',
+    title: 'Meet The Team',
     subtitle:
-      'Suspendisse in dui nibh. Donec enim leo, sodales et egestas id, malesuada non diam. Sed dapibus velit et mauris condimentum, vel imperdiet erat egestas.',
+      'A distinguished team of consultants and advocates with decades of combined experience in finance, law, and strategic advisory.',
     // tagline: 'Team',
   },
   teams: [

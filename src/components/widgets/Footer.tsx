@@ -4,7 +4,7 @@ const Footer = () => {
   const { title, links, columns, socials, footNote } = footerData;
 
   return (
-    <footer className="relative border-t border-gray-200 dark:border-slate-800">
+    <footer className="relative border-t border-[var(--brand-primary-50)] dark:border-[var(--brand-primary-800)]">
       <div className="dark:bg-dark pointer-events-none absolute inset-0"></div>
       <div className="relative mx-auto max-w-7xl px-4 dark:text-slate-300 sm:px-6">
         <div className="grid grid-cols-12 gap-4 gap-y-8 py-8 sm:gap-8 md:py-12">
@@ -20,7 +20,7 @@ const Footer = () => {
                   links.map(({ label, href }, index) => (
                     <li key={`item-link-${index}`}>
                       <a
-                        className="duration-150 ease-in-out placeholder:transition hover:text-gray-700 hover:underline dark:text-gray-400"
+                        className="duration-150 ease-in-out placeholder:transition hover:text-[var(--brand-accent-500)] hover:underline dark:text-gray-400"
                         aria-label={label}
                         href={href}
                       >
@@ -40,7 +40,7 @@ const Footer = () => {
                   links.map(({ label, href }, index2) => (
                     <li key={`item-column-link-${index2}`} className="mb-2">
                       <a
-                        className="text-muted transition duration-150 ease-in-out hover:text-gray-700 hover:underline dark:text-gray-400"
+                        className="text-muted transition duration-150 ease-in-out hover:text-[var(--brand-accent-500)] hover:underline dark:text-gray-400"
                         aria-label={label}
                         href={href}
                       >

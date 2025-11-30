@@ -52,7 +52,7 @@ const Dropdown = ({ options, activeTab, onActiveTabSelected, iconUp, iconDown }:
             <div
               key={`option-${index}`}
               onClick={() => onOptionSelected(option, index)}
-              className={`flex cursor-pointer items-center bg-white p-3 text-lg dark:bg-slate-900 ${
+                className={`flex cursor-pointer items-center bg-white p-3 text-lg dark:bg-[var(--brand-primary-600)] ${
                 activeTab !== index ? 'pl-10' : 'text-primary-600 dark:text-primary-200'
               }`}
             >
