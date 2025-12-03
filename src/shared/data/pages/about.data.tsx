@@ -63,20 +63,20 @@ export const statsAbout: StatsProps = {
   hasBackground: true,
   items: [
     {
-      title: 13269,
-      description: 'Downloads',
+      title: 50,
+      description: 'Clients',
     },
     {
-      title: 24.8,
-      description: 'Stars',
+      title: 5,
+      description: 'Countries',
     },
     {
-      title: 1767.77,
-      description: 'Forks',
+      title: 10,
+      description: 'Years of Experience',
     },
     {
-      title: 484000,
-      description: 'Users',
+      title: 98,
+      description: 'Client Satisfaction',
     },
   ],
 };

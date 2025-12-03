@@ -6,6 +6,12 @@ import {
   IconComponents,
   IconListCheck,
   IconRocket,
+  IconBriefcase,
+  IconFileText,
+  IconScale,
+  IconShield,
+  IconTrendingUp,
+  IconUsers,
 } from '@tabler/icons-react';
 
 import {
@@ -23,14 +29,14 @@ import cameraBackImg from '~/assets/images/camera-back.jpg';
 
 // Hero data on Services page *******************
 export const heroServices: HeroProps = {
-  title: 'Elevate your projects with our stunning templates',
+  title: 'Professional Business Services',
   subtitle:
-    'Donec aliquam pharetra nibh quis vestibulum. Praesent hendrerit sem at lacus ullamcorper egestas. Morbi lacinia ipsum in nulla gravida, ac sagittis turpis pretium. ',
-  callToAction: {
-    text: 'Start Exploring',
-    href: 'https://github.com/onwidget/Handel',
-    targetBlank: true,
-  },
+    'Comprehensive solutions across consulting and legal domains. Our expertise drives your success with tailored strategies and compliance assurance.',
+  // callToAction: {
+  //   text: 'Start Exploring',
+  //   href: 'https://github.com/onwidget/Handel',
+  //   targetBlank: true,
+  // },
   image: {
     src: heroImg,
     alt: 'Hero Handel',
@@ -83,26 +89,31 @@ export const contentServicesOne: ContentProps = {
   id: 'contentOne-on-services-one',
   hasBackground: false,
   content:
-    'Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod tacimates.',
+    'Handel Advocates',
   items: [
     {
-      title: 'Per ei quaeque sensibus',
-      description:
-        'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
+      title: 'Corporate Law',
+      description: 'Comprehensive legal services for businesses, including formation, governance, and compliance.',
+      icon: IconScale,
     },
     {
-      title: 'Cu imperdiet posidonium sed',
-      description:
-        'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
+      title: 'Contract Negotiation',
+      description: 'Drafting, reviewing, and negotiating contracts to protect clients interests and ensure favorable terms.',
+      icon: IconFileText,
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
-      description:
-        'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
+      title: 'Litigation Support',
+      description: 'Providing assistance and expertise in legal disputes and court proceedings to protect clients interests.',
+      icon: IconShield,
+    },
+    {
+      title: 'Regulatory Advice',
+      description: 'Guidance on navigating complex regulatory environments to ensure compliance and mitigate risks.',
+      icon: IconBriefcase,
     },
   ],
   image: {
-    src: cameraFrontImg,
+    src: cameraBackImg,
     alt: 'Colorful Image',
   },
   isReversed: true,
@@ -114,29 +125,35 @@ export const contentServicesTwo: ContentProps = {
   id: 'contentOne-on-services-two',
   hasBackground: false,
   content:
-    'Per odio fabellas consulatu cu. Utroque detracto mel ea, quo te latine theophrastus. Ea his tale nib dissentias, mei exerci tamquam euripidis cu.',
+    'Handel Global Consulting',
   items: [
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'Strategy & Operations',
+      description:
+        'Strategy development and operational excellence to drive business growth and efficiency.',
+        icon: IconTrendingUp,
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'M&A Advisory',
+      description:
+        'Guidance on mergers, acquisitions, and partnerships to maximize value and ensure successful transactions.',
+        icon: IconBriefcase,
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'Organizational Development',
+      description:
+        'Building effective organizational structures and cultures to enhance performance and employee engagement.',
+        icon: IconUsers,
     },
     {
-      title: 'Per ei quaeque sensibus',
-    },
-    {
-      title: 'Cu imperdiet posidonium sed',
-    },
-    {
-      title: 'Nulla omittam sadipscing mel ne',
-    },
+      title: 'Compliance Consulting',
+      description:
+        'Ensuring adherence to legal and regulatory requirements to mitigate risks and maintain ethical standards.',
+        icon: IconShield,
+    }
   ],
   image: {
-    src: cameraBackImg,
+    src: cameraFrontImg,
     alt: 'Colorful Image',
   },
   isReversed: false,
@@ -196,7 +213,7 @@ export const features4Services: FeaturesProps = {
 // Testimonials data on Services page *******************
 export const testimonialsServices: TestimonialsProps = {
   id: 'testimonials-on-home',
-  hasBackground: false,
+  hasBackground: true,
   isTestimonialUp: true,
   header: {
     title: 'Satisfied Client Experiences',

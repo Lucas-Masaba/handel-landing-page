@@ -114,6 +114,7 @@ type Item = {
   href?: string;
   form?: SmallForm;
   icon?: Icon;
+  iconClass?: string;
   callToAction?: CallToActionType;
 };
 

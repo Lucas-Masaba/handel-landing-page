@@ -24,7 +24,7 @@ const Testimonials = ({
                 key={`item-testimonial-${index}`}
                 className={`card max-w-sm h-full ${
                   !callToAction && href
-                    ? 'hover:border-primary-600 hover:shadow-lg hover:transition hover:duration-100'
+                    ? 'hover:border-[var(--brand-accent-500)] hover:shadow-lg hover:transition hover:duration-100'
                     : ''
                 }`}
               >

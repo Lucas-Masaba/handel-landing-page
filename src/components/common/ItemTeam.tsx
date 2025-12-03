@@ -22,25 +22,24 @@ const ItemTeam = ({
         <p className={twMerge('', occupationClass)}>{occupation}</p>
         <ul className={twMerge('', itemsClass)}>
           {items &&
-            items.map(
-              ({ title, href, icon: Icon }, index2) =>
-                Icon &&
-                href && (
-                  <li
-                    key={`team-${index2}`}
-                    className="m-1 flex items-center justify-center rounded text-primary-700 hover:text-gray-500"
+            items.map(({ title, href, icon: Icon, iconClass }, index2) =>
+              Icon &&
+              href && (
+                <li
+                  key={`team-${index2}`}
+                  className="m-1 flex items-center justify-center rounded text-primary-700 hover:text-gray-500"
+                >
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={title as string}
+                    className={twMerge("flex items-center justify-center rounded-sm bg-transparent p-0.5 text-primary-900 dark:text-white dark:hover:bg-[var(--brand-primary-600)] dark:hover:text-[var(--brand-accent-500)] hover:bg-[var(--brand-primary-600)] hover:text-[var(--brand-accent-500)]", iconClass)}
                   >
-                    <a
-                      href={href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={title as string}
-                      className="flex items-center justify-center rounded-sm bg-transparent p-0.5 text-primary-900 hover:bg-primary-900 hover:text-slate-200 hover:dark:bg-slate-800 hover:dark:text-slate-200"
-                    >
-                      <Icon className="h-6 w-6 p-0.5" />
-                    </a>
-                  </li>
-                ),
+                    <Icon className='h-6 w-6 p-0.5' />
+                  </a>
+                </li>
+              ),
             )}
         </ul>
       </div>

@@ -11,10 +11,10 @@ import Testimonials from '~/components/widgets/Testimonials';
 // import FAQs2 from '~/components/widgets/FAQs2';
 // import Pricing from '~/components/widgets/Pricing';
 import Team from '~/components/widgets/Team';
-// import CallToAction2 from '~/components/widgets/CallToAction2';
+import CallToAction2 from '~/components/widgets/CallToAction2';
 import Contact from '~/components/widgets/Contact';
 import {
-  // callToAction2Home,
+  callToAction2Home,
   contactHome,
   contentHomeOne,
   contentHomeTwo,
@@ -27,6 +27,8 @@ import {
   teamHome,
   testimonialsHome,
 } from '~/shared/data/pages/home.data';
+
+import { contact2Contact } from '~/shared/data/pages/contact.data';
 
 export const metadata: Metadata = {
   title: SITE.title,
@@ -45,7 +47,7 @@ export default function Page() {
       {/* <FAQs2 {...faqs2Home} /> */}
       {/* <Pricing {...pricingHome} /> */}
       <Team {...teamHome} />
-      <Contact {...contactHome} />
+      <Contact {...contact2Contact} />
       {/* <CallToAction2 {...callToAction2Home} /> */}
     </>
   );

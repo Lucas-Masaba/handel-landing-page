@@ -14,7 +14,7 @@ const Contact = ({ header, content, items, form, id, hasBackground = false }: Co
             {items &&
               items.map(({ title, description, icon: Icon }, index) => (
                 <li key={`item-contact-${index}`} className="flex">
-                  <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                  <div className="flex h-10 w-10 items-center justify-center rounded bg-[var(--brand-accent-500)] text-[var(--brand-primary-600)] mt-1">
                     {Icon && <Icon className="h-6 w-6" />}
                   </div>
                   <div className="ml-4 rtl:ml-0 rtl:mr-4 mb-4">

@@ -86,11 +86,11 @@
   }
 
   .btn-primary {
-    @apply font-semibold text-white border-primary-600 dark:border-primary-700 hover:border-primary-800 dark:hover:border-primary-900 bg-primary-600 dark:bg-primary-700 hover:bg-primary-800 dark:hover:bg-primary-900 dark:text-white hover:text-white;
+    @apply font-semibold text-[var(--brand-primary-600)] border-[var(--brand-accent-500)] dark:border-primary-500 hover:border-[var(--brand-accent-700)] dark:hover:border-white bg-[var(--brand-accent-500)] dark:bg-primary-500 hover:bg-[var(--brand-accent-700)] dark:hover:bg-primary-600 dark:text-white hover:text-white;
   }
 
   .card {
-    @apply w-full px-6 py-8 bg-white border border-gray-200 rounded-lg shadow backdrop-blur dark:border-[var(--brand-primary-800)] dark:bg-[var(--brand-primary-900)];
+    @apply w-full px-6 py-8 bg-white border border-gray-200 rounded-lg shadow backdrop-blur dark:border-gray-700 dark:bg-[var(--brand-primary-600)];
   }
 
   .ribbon {

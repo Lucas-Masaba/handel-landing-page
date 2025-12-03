@@ -14,6 +14,12 @@ import {
   IconMapPin,
   IconPhoneCall,
   IconRocket,
+  IconScale,
+  IconBriefcase,
+  IconTrendingUp,
+  IconFileText,
+  IconUsers,
+  IconShield,
 } from '@tabler/icons-react';
 import {
   CallToActionProps,
@@ -180,28 +186,37 @@ export const contentHomeOne: ContentProps = {
   id: 'contentOne-on-home-one',
   hasBackground: true,
   header: {
-    title: 'Aliquip definiebas ad est',
-    subtitle: 'Quando cetero his ne, eum admodum sapientem ut',
-    tagline: 'Content',
+    title: 'Our Services',
+    subtitle: 'Comprehensive solutions across consulting and legal domains',
+    tagline: 'Services',
   },
   content:
-    'Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te euismod tacimates.',
+    'Handel Global Consulting',
   items: [
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'Strategy & Operations',
       description:
-        'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
+        'Strategy development and operational excellence to drive business growth and efficiency.',
+        icon: IconTrendingUp,
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'M&A Advisory',
       description:
-        'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
+        'Guidance on mergers, acquisitions, and partnerships to maximize value and ensure successful transactions.',
+        icon: IconBriefcase,
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'Organizational Development',
       description:
-        'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
+        'Building effective organizational structures and cultures to enhance performance and employee engagement.',
+        icon: IconUsers,
     },
+    {
+      title: 'Compliance Consulting',
+      description:
+        'Ensuring adherence to legal and regulatory requirements to mitigate risks and maintain ethical standards.',
+        icon: IconShield,
+    }
   ],
   image: {
     src: cameraFrontImg,
@@ -216,25 +231,27 @@ export const contentHomeTwo: ContentProps = {
   id: 'contentOne-on-home-two',
   hasBackground: true,
   content:
-    'Per odio fabellas consulatu cu. Utroque detracto mel ea, quo te latine theophrastus. Ea his tale nib dissentias, mei exerci tamquam euripidis cu.',
+    'Handel Advocates',
   items: [
     {
-      title: 'Per ei quaeque sensibus',
+      title: 'Corporate Law',
+      description: 'Comprehensive legal services for businesses, including formation, governance, and compliance.',
+      icon: IconScale,
     },
     {
-      title: 'Cu imperdiet posidonium sed',
+      title: 'Contract Negotiation',
+      description: 'Drafting, reviewing, and negotiating contracts to protect clients interests and ensure favorable terms.',
+      icon: IconFileText,
     },
     {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'Litigation Support',
+      description: 'Providing assistance and expertise in legal disputes and court proceedings to protect clients interests.',
+      icon: IconShield,
     },
     {
-      title: 'Per ei quaeque sensibus',
-    },
-    {
-      title: 'Cu imperdiet posidonium sed',
-    },
-    {
-      title: 'Nulla omittam sadipscing mel ne',
+      title: 'Regulatory Advice',
+      description: 'Guidance on navigating complex regulatory environments to ensure compliance and mitigate risks.',
+      icon: IconBriefcase,
     },
   ],
   image: {
@@ -256,29 +273,31 @@ export const stepsHome: StepsProps = {
     alt: 'Steps image',
   },
   header: {
-    title: 'Sed ac magna sit amet risus tristique interdum.',
+    title: 'Our Process',
+    subtitle: 'A proven, structured approach that combines strategic thinking with tactical execution to deliver exceptional outcomes.',
   },
   items: [
     {
-      title: 'Step 1',
+      title: 'Initial Consultation',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
+        'We begin with a comprehensive discussion to understand your challenges, objectives, and unique circumstances.',
       icon: IconArrowDown,
     },
     {
-      title: 'Step 2',
+      title: 'Deep Discovery & Analysis',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
+        'Our team conducts thorough research and due diligence, gathering all necessary information and documentation.',
       icon: IconArrowDown,
     },
     {
-      title: 'Step 3',
+      title: 'Strategy Development',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
+        'We craft a tailored strategy that addresses your specific needs, leveraging our dual expertise in consulting and advocacy.',
       icon: IconArrowDown,
     },
     {
-      title: 'Ready!',
+      title: 'Completion & Support',
+      description: 'After successful completion, we provide ongoing support and remain available for future needs.'
     },
   ],
 };
@@ -295,8 +314,8 @@ export const testimonialsHome: TestimonialsProps = {
   testimonials: [
     {
       name: 'Tayla Kirsten',
-      job: 'Marketing Manager',
-      testimonial: `I'm impressed by the speed and performance of these templates. My website now loads in the blink of an eye, significantly enhancing my visitors' experience. Thanks to Handel, my online business is thriving.`,
+      job: 'CFO',
+      testimonial: `Handel's advocacy services saved our company over $2M in the first year. Their expertise in navigating complex trade regulations is unmatched.`,
       image: {
         src: 'https://images.unsplash.com/photo-1619734086067-24bf8889ea7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: 'Tayla Kirsten',
@@ -305,8 +324,8 @@ export const testimonialsHome: TestimonialsProps = {
     },
     {
       name: 'Silver Jordan',
-      job: 'Senior Marketer',
-      testimonial: `I had never found it so easy to customize a website. Handel's templates are incredibly flexible, and with Tailwind CSS, I've managed to give my website the look and feel I always wanted. Highly recommended!`,
+      job: 'VP Of Operations',
+      testimonial: `The consulting team at Handel transformed our international expansion strategy. We're now operating in 12 new markets with full compliance.`,
       image: {
         src: 'https://images.unsplash.com/photo-1565049786474-1dea82a8b995?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: 'Silver Jordan',
@@ -315,8 +334,8 @@ export const testimonialsHome: TestimonialsProps = {
     },
     {
       name: 'Kelsey Arden',
-      job: 'Co-Founder & CEO',
-      testimonial: `As a beginner in web development, I really needed clear guidance. Handel made it possible. I was able to install and customize my website seamlessly, and I'm thrilled with the results!`,
+      job: 'Director Of Government Affairs',
+      testimonial: `Their advocacy work was instrumental in shaping favorable policy changes. Handel understands both the political landscape and business needs.`,
       image: {
         src: 'https://images.unsplash.com/photo-1659057106920-da022cfbc0cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: 'Kelsey Arden',
@@ -325,8 +344,8 @@ export const testimonialsHome: TestimonialsProps = {
     },
     {
       name: 'Sarah Johnson',
-      job: 'Business Owner',
-      testimonial: `They've not only saved me a ton of time but have also made my websites look incredibly professional. The level of detail and thought that went into designing these templates is truly impressive.`,
+      job: 'CEO',
+      testimonial: `Working with Handel's consultants gave us the strategic clarity we needed. Their insights on regulatory compliance were game-changing.`,
       image: {
         src: 'https://images.unsplash.com/photo-1572417884940-c24659be6068?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: 'Sarah Johnson',
@@ -335,8 +354,8 @@ export const testimonialsHome: TestimonialsProps = {
     },
     {
       name: 'Keith Young',
-      job: 'Freelance Developer',
-      testimonial: `The clean code and integration with Next.js make my projects a breeze. Plus, the responsive design ensures that my clients' websites look amazing on any device. These templates have become my secret weapon for success!`,
+      job: 'YN',
+      testimonial: `Handel's dual expertise in consulting and legal advocacy provided us with a comprehensive solution that addressed all our challenges effectively.`,
       image: {
         src: 'https://images.unsplash.com/photo-1694287877106-ee22f764aef1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: 'Keith Young',
@@ -345,8 +364,8 @@ export const testimonialsHome: TestimonialsProps = {
     },
     {
       name: 'Lisa Gordon',
-      job: 'Project Manager',
-      testimonial: `Their templates are not only stunning but also user-friendly. The support I received from their community has been exceptional. I'm proud to say that I've built my dream website with Handel.`,
+      job: 'Marketing Manager',
+      testimonial: `Lisa's innovative marketing strategies significantly boosted our brand visibility and customer engagement.`,
       image: {
         src: 'https://images.unsplash.com/photo-1665984867752-6370ab5ae35e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: 'Lisa Gordon',
@@ -497,7 +516,7 @@ export const teamHome: TeamProps = {
   teams: [
     {
       name: 'Mable Kisaka',
-      occupation: 'Senior Consultant',
+      occupation: 'Lead Advocate',
       image: {
         src: 'https://images.unsplash.com/photo-1637858868799-7f26a0640eb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80',
         alt: 'Cindy Belcher',
@@ -522,7 +541,7 @@ export const teamHome: TeamProps = {
     },
     {
       name: 'Toby Foster',
-      occupation: 'Marketing Tech',
+      occupation: 'Senior Consultant',
       image: {
         src: 'https://images.unsplash.com/photo-1614583224978-f05ce51ef5fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2172&q=80',
         alt: 'Toby Foster',
@@ -547,7 +566,7 @@ export const teamHome: TeamProps = {
     },
     {
       name: 'Clark Bourne',
-      occupation: 'Content Manager',
+      occupation: 'Financial Advisory Director',
       image: {
         src: 'https://images.unsplash.com/photo-1639628735078-ed2f038a193e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
         alt: 'Clark Bourne',
@@ -572,7 +591,7 @@ export const teamHome: TeamProps = {
     },
     {
       name: 'Bella Chase',
-      occupation: 'UX Designer',
+      occupation: 'Senior Consultant',
       image: {
         src: 'https://images.unsplash.com/photo-1628260412297-a3377e45006f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80',
         alt: 'Bella Chase',
@@ -603,11 +622,11 @@ export const contactHome: ContactProps = {
   hasBackground: true,
   header: {
     title: 'Get in Touch',
-    subtitle: 'In hac habitasse platea dictumst',
+    subtitle: 'We typically respond to all inquiries within 24 hours during business days.',
     tagline: 'Contact',
   },
   content:
-    'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque sagittis ante, ac tincidunt sem venenatis ut.',
+    'Ready to transform your business or address your legal needs? Our team is here to help.',
   items: [
     {
       title: 'Our Address',

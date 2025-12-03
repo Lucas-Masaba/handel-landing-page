@@ -57,7 +57,7 @@ const Header = () => {
 
   return (
     <header
-      className={`top-0 z-40 mx-auto w-full flex-none bg-white transition-all duration-100 ease-in dark:bg-[var(--brand-primary-600)] md:bg-[rgba(var(--brand-primary-50-rgb),0.9)] md:backdrop-blur-sm dark:md:bg-[rgba(var(--brand-primary-600-rgb),0.9)] ${
+      className={`top-0 z-40 mx-auto w-full flex-none bg-white transition-all duration-100 ease-in dark:bg-[var(--brand-primary-600)] md:bg-[rgba(var(--brand-primary-50-rgb),0.9)] md:backdrop-blur-sm dark:md:bg-[rgba(var(--brand-primary-600),0.9)] ${
         isSticky ? 'sticky' : 'relative'
       } ${isToggleMenuOpen ? 'h-screen md:h-auto' : 'h-auto'}`}
       id="header"
@@ -99,7 +99,7 @@ const Header = () => {
                   {links && links.length ? (
                     <>
                       <button
-                        className="flex items-center px-4 py-3 font-medium transition duration-150 ease-in-out hover:text-[var(--brand-accent-500)] dark:hover:text-white"
+                        className="flex items-center px-4 py-3 font-medium transition duration-150 ease-in-out hover:text-[var(--brand-accent-700)] dark:hover:text-white"
                         onClick={() => handleDropdownOnClick(index)}
                       >
                         {label}{' '}
@@ -133,7 +133,7 @@ const Header = () => {
                     </>
                   ) : (
                     <Link
-                      className="flex items-center px-4 py-3 font-medium transition duration-150 ease-in-out hover:text-[var(--brand-accent-500)] dark:hover:text-white"
+                      className="flex items-center px-4 py-3 font-medium transition duration-150 ease-in-out hover:text-[var(--brand-accent-700)] dark:hover:text-white"
                       href={href as string}
                       onClick={() => (isToggleMenuOpen ? handleToggleMenuOnClick() : handleDropdownOnClick(index))}
                     >

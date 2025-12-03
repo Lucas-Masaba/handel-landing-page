@@ -24,6 +24,8 @@ import {
   teamAbout,
 } from '~/shared/data/pages/about.data';
 
+import { contact2Contact } from '~/shared/data/pages/contact.data';
+
 export const metadata: Metadata = {
   title: `About us`,
 };
@@ -41,7 +43,7 @@ const Page = () => {
       <Team2 {...teamAbout} />
       <Testimonials2 {...testimonials2About} />
       <FAQs {...faqsAbout} />
-      <Contact {...contactAbout} />
+      <Contact {...contact2Contact} />
     </>
   );
 };

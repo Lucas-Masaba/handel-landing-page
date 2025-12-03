@@ -73,13 +73,13 @@ export const contact2Contact: ContactProps = {
       label: 'What is the reason for your contact?',
       radios: [
         {
-          label: 'General inquiries',
+          label: 'Advocates',
         },
         {
-          label: 'Technical help',
+          label: 'Consulting',
         },
         {
-          label: 'Claims',
+          label: 'Both Services',
         },
         {
           label: 'Others',
@@ -96,10 +96,6 @@ export const contact2Contact: ContactProps = {
     checkboxes: [
       {
         label: 'Have you read our privacy policy?',
-        value: '',
-      },
-      {
-        label: 'Do you want to receive monthly updates by email?',
         value: '',
       },
     ],

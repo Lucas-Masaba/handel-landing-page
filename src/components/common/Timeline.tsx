@@ -20,7 +20,7 @@ const Timeline = ({
               <div className="flex flex-col items-center mr-4 rtl:mr-0 rtl:ml-4">
                 <div
                   className={`flex items-center justify-center ${
-                    index !== items.length - 1 ? '' : 'text-slate-200 rounded-full bg-primary-900'
+                    index !== items.length - 1 ? '' : 'text-[var(--brand-primary-600)] dark:text-[var(--brand-primary-600)] rounded-full bg-[var(--brand-accent-500)] font-bold'
                   }`}
                 >
                   {Icon ? (
