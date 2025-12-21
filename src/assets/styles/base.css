@@ -3,51 +3,51 @@
 @tailwind utilities;
 
 :root {
-  /* Core colors (user values) */
-  --brand-primary-600: #0b4251;   /* background */
-  --brand-primary-400: #87bbd7;   /* pattern */
-  --brand-accent-500: #f2c864;    /* text / accent */
+  /* Core colors (from handel-logo.svg) */
+  --brand-primary-600: #093F5C;   /* primary dark teal/blue from logo */
+  --brand-primary-400: #09486F;   /* secondary blue tone from logo */
+  --brand-accent-500: #DE7329;    /* orange accent from logo */
 
   /* fill the other shade variables (useable by Tailwind) */
-  --brand-primary-50:  #eaf6f8;
-  --brand-primary-100: #dff1f4;
-  --brand-primary-200: #cfeaf0;
-  --brand-primary-300: #bfe2ec;
-  --brand-primary-500: #5fa8bb;
-  --brand-primary-700: #08343f;
-  --brand-primary-800: #06272e;
-  --brand-primary-900: #031214;
+  --brand-primary-50:  #e9f5f9;
+  --brand-primary-100: #dfeff4;
+  --brand-primary-200: #cfe6ee;
+  --brand-primary-300: #bfe0e8;
+  --brand-primary-500: #3f7f95;
+  --brand-primary-700: #062a36;
+  --brand-primary-800: #041f26;
+  --brand-primary-900: #020a0c;
 
   /* RGB versions for rgba(...) utility usage */
-  --brand-primary-50-rgb: 234,246,248; /* #eaf6f8 */
-  --brand-primary-600-rgb: 11,66,81;   /* #0b4251 */
-  --brand-accent-500-rgb: 242,200,100; /* #f2c864 */
+  --brand-primary-50-rgb: 233,245,249; /* #e9f5f9 */
+  --brand-primary-600-rgb: 9,63,92;    /* #093F5C */
+  --brand-accent-500-rgb: 222,115,41;  /* #DE7329 */
 
-  --brand-accent-50:  #fff8eb;
-  --brand-accent-100: #fff3dc;
-  --brand-accent-200: #ffebb8;
-  --brand-accent-300: #f7d38a;
-  --brand-accent-400: #f6c75f;
-  --brand-accent-600: #e0a43f;
-  --brand-accent-700: #b3782e;
-  --brand-accent-800: #7f4f21;
-  --brand-accent-900: #40280f;
+  --brand-accent-50:  #fff3ef;
+  --brand-accent-100: #ffecd9;
+  --brand-accent-200: #ffd7b2;
+  --brand-accent-300: #f0a76f;
+  --brand-accent-400: #e98b53;
+  --brand-accent-600: #c55b22;
+  --brand-accent-700: #8f3f18;
+  --brand-accent-800: #6a2b10;
+  --brand-accent-900: #331507;
 }
 
 /* Dark mode overrides (when <html class="dark">) */
 .dark {
-  --brand-primary-600: #061f25;   /* darker background for dark theme */
-  --brand-primary-400: #569fb0;   /* pattern toned for dark */
-  --brand-accent-500: #f2c864;    /* keep accent same in dark */
+  --brand-primary-600: #041e28;   /* darker background tuned for dark */
+  --brand-primary-400: #2f5367;   /* pattern toned for dark */
+  --brand-accent-500: #DE7329;    /* keep accent same in dark */
 
-  --brand-primary-50:  #021012;
-  --brand-primary-100: #04181b;
-  --brand-primary-200: #052022;
-  --brand-primary-300: #063136;
-  --brand-primary-500: #0b4251;
-  --brand-primary-700: #031214;
-  --brand-primary-800: #020b0d;
-  --brand-primary-900: #010506;
+  --brand-primary-50:  #02070a;
+  --brand-primary-100: #041012;
+  --brand-primary-200: #05181b;
+  --brand-primary-300: #062331;
+  --brand-primary-500: #093F5C;
+  --brand-primary-700: #01090b;
+  --brand-primary-800: #010607;
+  --brand-primary-900: #000204;
 }
 
 /* Small helper utilities you can use in JSX */

@@ -63,6 +63,10 @@ export const headerData: HeaderProps = {
       href: '/publications',
     },
     {
+      label: 'Projects',
+      href: '/projects',
+    },
+    {
       label: 'Contact',
       href: '/contact',
     },
@@ -176,6 +180,10 @@ export const footerData: FooterProps = {
           label: 'Publications',
           href: '/publications',
         },
+          {
+            label: 'Projects',
+            href: '/projects',
+          },
         {
           label: 'Careers',
           href: '/',

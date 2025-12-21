@@ -1,6 +1,5 @@
 import { StaticImageData } from 'next/image';
-import { ReactElement } from 'react';
-import type { TablerIcon } from "@tabler/icons-react"
+import { ReactElement, ComponentType } from 'react';
 
 type Widget = {
   id?: string;
@@ -32,7 +31,7 @@ type HeadlineProps = {
   subtitleClass?: string;
 };
 
-type Icon = TablerIcon;
+type Icon = ComponentType<any>;
 
 type CallToActionType = {
   text?: string;
