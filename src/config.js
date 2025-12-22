@@ -4,7 +4,7 @@ module.exports.SITE = {
   origin: 'https://handel.example.com',
   basePathname: '/',
   trailingSlash: false,
-  title: 'Handel — Handel Global Consulting / Handel Advocates',
+  title: 'Handel',
   description: 'Handel — Global consulting and legal advisory services.',
 };
 // ...existing code...
