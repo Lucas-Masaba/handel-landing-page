@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 
-import Image from 'next/image';
 import Link from 'next/link';
 
 import { findLatestPosts } from '~/utils/posts';
@@ -22,7 +21,8 @@ export default async function Home({}) {
         {posts.map(({ slug, title, image }: { slug: string, title: string, image: string }) => (
           <div key={slug} className="flex flex-col overflow-hidden border border-[var(--brand-primary-50)] dark:border-white dark:text-white dark:bg-[var(--brand-primary-500)] shadow-lg rounded-xl">
             <Link href={`/${slug}`}>
-              <Image width={650} height={340} alt={title} src={`${image}`} />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={image || '/images/hero.jpg'} alt={title} className="object-cover w-full h-48" />
               <h2 className="p-4 font-bold">{title}</h2>
             </Link>
           </div>

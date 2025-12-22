@@ -28,7 +28,10 @@ import {
   testimonialsHome,
 } from '~/shared/data/pages/home.data';
 
+import { teamAbout } from '~/shared/data/pages/about.data';
+
 import { contact2Contact } from '~/shared/data/pages/contact.data';
+import Team2 from '~/components/widgets/Team2';
 
 export const metadata: Metadata = {
   title: SITE.title,
@@ -38,7 +41,7 @@ export default function Page() {
   return (
     <>
       <Hero {...heroHome} />
-      <SocialProof {...socialProofHome} />
+      {/* <SocialProof {...socialProofHome} /> */}
       {/* <Features {...featuresHome} /> */}
       <Content {...contentHomeOne} />
       <Content {...contentHomeTwo} />
@@ -46,7 +49,8 @@ export default function Page() {
       <Testimonials {...testimonialsHome} />
       {/* <FAQs2 {...faqs2Home} /> */}
       {/* <Pricing {...pricingHome} /> */}
-      <Team {...teamHome} />
+      {/* <Team {...teamHome} /> */}
+      <Team2 {...teamAbout} />
       <Contact {...contact2Contact} />
       {/* <CallToAction2 {...callToAction2Home} /> */}
     </>

@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { HeroProps } from '~/shared/types';
 import CTA from '../common/CTA';
+import verticalLogo from '~/assets/images/vertical-logo.svg';
+import verticalLogoDark from '~/assets/images/vertical-logo-dark.svg';
 
 const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: HeroProps) => {
   return (
@@ -8,13 +10,17 @@ const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: 
       <div className="px-4 mx-auto max-w-7xl sm:px-6">
         <div className="py-12 md:py-20">
           <div className="max-w-4xl pb-10 mx-auto text-center md:pb-16">
-            {tagline && (
+            {/* {tagline && (
               <p className="text-base font-semibold tracking-wide uppercase text-[var(--brand-primary-600)] dark:text-primary-200">
                 {tagline}
               </p>
-            )}
+            )} */}
+                    <div className="max-w-xs mx-auto">
+                      <Image src={verticalLogo} alt="Handel vertical logo" width={400} height={400} className="mx-auto dark:hidden" />
+                      <Image src={verticalLogoDark} alt="Handel vertical logo dark" width={400} height={400} className="hidden mx-auto dark:inline-block" />
+                    </div>
             {title && (
-              <h1 className="mb-6 text-4xl font-bold tracking-tighter leading-tighter font-heading md:text-5xl lg:text-6xl text-[var(--brand-primary-600)] dark:text-[var(--brand-accent-500)]">
+              <h1 className="mt-10 mb-6 text-4xl font-bold tracking-tighter leading-tighter font-heading md:text-5xl lg:text-6xl text-[var(--brand-primary-600)] dark:text-[var(--brand-accent-500)]">
                 {title}
               </h1>
             )}
@@ -26,7 +32,7 @@ const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: 
               </div>
             </div>
           </div>
-          {image && (
+          {/* {image && (
             <div className="relative max-w-5xl m-auto">
               <Image
                 className="w-full h-auto mx-auto bg-[var(--brand-primary-400)] rounded-md dark:bg-[var(--brand-primary-700)]"
@@ -40,7 +46,7 @@ const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: 
                 priority
               />
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </section>

@@ -24,39 +24,43 @@ export const announcementData: AnnouncementProps = {
 // Header data
 export const headerData: HeaderProps = {
   links: [
+    // {
+    //   label: 'Pages',
+    //   icon: IconChevronDown,
+    //   links: [
+    //     {
+    //       label: 'Services',
+    //       href: '/services',
+    //     },
+    //     // {
+    //     //   label: 'Pricing',
+    //     //   href: '/pricing',
+    //     // },
+    //     {
+    //       label: 'About us',
+    //       href: '/about',
+    //     },
+    //     {
+    //       label: 'Contact us',
+    //       href: '/contact',
+    //     },
+    //     // {
+    //     //   label: 'FAQs',
+    //     //   href: '/faqs',
+    //     // },
+    //     {
+    //       label: 'Terms & Conditions',
+    //       href: '/terms',
+    //     },
+    //     {
+    //       label: 'Privacy Policy',
+    //       href: '/privacy',
+    //     },
+    //   ],
+    // },
     {
-      label: 'Pages',
-      icon: IconChevronDown,
-      links: [
-        {
-          label: 'Services',
-          href: '/services',
-        },
-        // {
-        //   label: 'Pricing',
-        //   href: '/pricing',
-        // },
-        {
-          label: 'About us',
-          href: '/about',
-        },
-        {
-          label: 'Contact us',
-          href: '/contact',
-        },
-        // {
-        //   label: 'FAQs',
-        //   href: '/faqs',
-        // },
-        {
-          label: 'Terms & Conditions',
-          href: '/terms',
-        },
-        {
-          label: 'Privacy Policy',
-          href: '/privacy',
-        },
-      ],
+      label: 'About Us',
+      href: '/about',
     },
     {
       label: 'Publications',
@@ -66,10 +70,10 @@ export const headerData: HeaderProps = {
       label: 'Projects',
       href: '/projects',
     },
-    {
-      label: 'Contact',
-      href: '/contact',
-    },
+    // {
+    //   label: 'Contact',
+    //   href: '/contact',
+    // },
   ],
   actions: [
     {

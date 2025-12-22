@@ -7,7 +7,7 @@ export interface ProvidersProps {
 }
 
 const Providers = ({ children }: ProvidersProps) => (
-  <ThemeProvider attribute="class" disableTransitionOnChange>
+  <ThemeProvider attribute="class" disableTransitionOnChange defaultTheme="light" enableSystem={false}>
     {children}
   </ThemeProvider>
 );

@@ -61,7 +61,6 @@ export const heroHome: HeroProps = {
           Handel Advocates
         </span>{' '} provides commercial and corporate legal services.
       </span>{' '}
-      We started up with a purpose to drive bluh bluh bluh
     </>
   ),
   callToAction2: {
@@ -196,25 +195,25 @@ export const contentHomeOne: ContentProps = {
     {
       title: 'Strategy & Operations',
       description:
-        'Strategy development and operational excellence to drive business growth and efficiency.',
+        'Handel is an internationally operating law firm based in the heart of Europe with a focus on the resolution of complex cross-border disputes before arbitral tribunals and state courts.',
         icon: IconTrendingUp,
     },
     {
       title: 'M&A Advisory',
       description:
-        'Guidance on mergers, acquisitions, and partnerships to maximize value and ensure successful transactions.',
+        'We also advise clients on the preparation and implementation of large-scale business ventures, including construction and infrastructure projects, from contract formation to the final steps of project execution. Our specialisation and experience in dispute resolution allow us to provide legal and strategic advice with a discerning eye, assisting our clients in realizing their business projects while minimising their exposure to litigation and liability risks.',
         icon: IconBriefcase,
     },
     {
       title: 'Organizational Development',
       description:
-        'Building effective organizational structures and cultures to enhance performance and employee engagement.',
+        'Our team of internationally recognized lawyers combines legal expertise and deep industry knowledge to provide legal and strategic advice on a variety of commercial and corporate law issues, including company law, IP and competition law, real estate law, and insurance law.',
         icon: IconUsers,
     },
     {
       title: 'Compliance Consulting',
       description:
-        'Ensuring adherence to legal and regulatory requirements to mitigate risks and maintain ethical standards.',
+        'The close relationship we enjoy with our long-standing clients has presented us with opportunities to also provide our services in a less conventional approach, serving as our clients’ legal department or an extension thereof. Based on these experiences we now offer tailored solutions to all our clients, allowing them to outsource (parts of) their in-house legal work to us, as needed.  ',
         icon: IconShield,
     }
   ],
@@ -235,24 +234,24 @@ export const contentHomeTwo: ContentProps = {
   items: [
     {
       title: 'Corporate Law',
-      description: 'Comprehensive legal services for businesses, including formation, governance, and compliance.',
+      description: 'We assist our clients in achieving their business objectives in a way that seamlessly blends into the legal background conditions they operate in and, where necessary, shape these in a practical and cost-effective way. Despite our specialisation in arbitration and litigation, we do not consider the litigious process as the be-all and end-all – this sharpest arrow in our quiver is available to our clients, however, in those cases in which all other means have failed.',
       icon: IconScale,
     },
-    {
-      title: 'Contract Negotiation',
-      description: 'Drafting, reviewing, and negotiating contracts to protect clients interests and ensure favorable terms.',
-      icon: IconFileText,
-    },
-    {
-      title: 'Litigation Support',
-      description: 'Providing assistance and expertise in legal disputes and court proceedings to protect clients interests.',
-      icon: IconShield,
-    },
-    {
-      title: 'Regulatory Advice',
-      description: 'Guidance on navigating complex regulatory environments to ensure compliance and mitigate risks.',
-      icon: IconBriefcase,
-    },
+    // {
+    //   title: 'Contract Negotiation',
+    //   description: 'Drafting, reviewing, and negotiating contracts to protect clients interests and ensure favorable terms.',
+    //   icon: IconFileText,
+    // },
+    // {
+    //   title: 'Litigation Support',
+    //   description: 'Providing assistance and expertise in legal disputes and court proceedings to protect clients interests.',
+    //   icon: IconShield,
+    // },
+    // {
+    //   title: 'Regulatory Advice',
+    //   description: 'Guidance on navigating complex regulatory environments to ensure compliance and mitigate risks.',
+    //   icon: IconBriefcase,
+    // },
   ],
   image: {
     src: cameraBackImg,
@@ -508,7 +507,7 @@ export const teamHome: TeamProps = {
   id: 'team-on-home',
   hasBackground: false,
   header: {
-    title: 'Meet The Team',
+    title: 'The Team',
     subtitle:
       'A distinguished team of consultants and advocates with decades of combined experience in finance, law, and strategic advisory.',
     // tagline: 'Team',

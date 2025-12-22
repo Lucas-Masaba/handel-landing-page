@@ -267,18 +267,18 @@ export const teamAbout: TeamProps = {
   id: 'team-on-about',
   hasBackground: false,
   header: {
-    title: 'Meet our executive team',
+    title: 'The Team',
     subtitle:
       'Proin quis neque vehicula, sagittis felis ut, scelerisque mi. Nullam consequat, erat eu luctus sodales, ipsum tellus facilisis magna, eu condimentum lectus.',
     tagline: 'team',
   },
   teams: [
     {
-      name: 'John Peterson',
-      occupation: 'Founder & CEO',
+      name: 'Mable Kisaka',
+      occupation: 'Founder',
       image: {
-        src: 'https://images.unsplash.com/photo-1504257432389-52343af06ae3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
-        alt: 'John Peterson',
+        src: '/images/mable.jpeg',
+        alt: 'Mable Kisaka',
       },
       items: [
         {
@@ -302,7 +302,7 @@ export const teamAbout: TeamProps = {
       name: 'Sarah Mitchell',
       occupation: 'Chief Creative Officer',
       image: {
-        src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
+        src: '/images/handel-woman.JPG',
         alt: 'Sarah Mitchell',
       },
       items: [
@@ -327,7 +327,7 @@ export const teamAbout: TeamProps = {
       name: 'David Foster',
       occupation: 'Chief Technology Officer',
       image: {
-        src: 'https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=250&q=80',
+        src: '/images/handel-man.JPG',
         alt: 'David Foster',
       },
       items: [

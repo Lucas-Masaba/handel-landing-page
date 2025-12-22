@@ -33,17 +33,17 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     <>
-      <Hero2 {...hero2About} />
+      {/* <Hero2 {...hero2About} /> */}
       <Stats {...statsAbout} />
-      <Features4 {...featuresFourAbout} />
+      {/* <Features4 {...featuresFourAbout} /> */}
       <Features4 {...featuresFourAboutTwo} />
       <Steps {...stepsAbout} />
       <Features3 {...features3About} />
       <Features {...featuresAbout} />
       <Team2 {...teamAbout} />
-      <Testimonials2 {...testimonials2About} />
-      <FAQs {...faqsAbout} />
-      <Contact {...contact2Contact} />
+      {/* <Testimonials2 {...testimonials2About} /> */}
+      {/* <FAQs {...faqsAbout} /> */}
+      {/* <Contact {...contact2Contact} /> */}
     </>
   );
 };

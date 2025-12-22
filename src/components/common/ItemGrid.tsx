@@ -35,18 +35,18 @@ const ItemGrid = ({
           {items.map(({ title, description, icon: Icon, callToAction }, index) => (
             <div key={id ? `item-${id}-${index}` : `item-grid-${index}`}>
               <div className={(twMerge('flex flex-row max-w-md'), panelClass)}>
-                <div className="flex justify-center">
+                {/* <div className="flex justify-center">
                   {Icon ? (
                     <Icon className={twMerge('w-6 h-6 mr-2 rtl:mr-0 rtl:ml-2', iconClass)} />
                   ) : DefaultIcon ? (
                     <DefaultIcon className={twMerge('w-6 h-6 mr-2 rtl:mr-0 rtl:ml-2', iconClass)} />
                   ) : null}
-                </div>
+                </div> */}
                 <div className="mt-0.5">
-                  {title && <h3 className={twMerge('text-xl font-bold', titleClass)}>{title}</h3>}
+                  {/* {title && <h3 className={twMerge('text-xl font-bold', titleClass)}>{title}</h3>} */}
                   {description && (
                     <p
-                      className={twMerge(`text-gray-600 dark:text-slate-400 ${title ? 'mt-3' : ''}`, descriptionClass)}
+                      className={twMerge(`text-black dark:text-white ${title ? 'mt-3' : ''}`, descriptionClass)}
                     >
                       {description}
                     </p>

@@ -16,7 +16,7 @@ const Team = ({ header, teams, id, hasBackground = false }: TeamProps) => (
               image={image}
               items={items}
               containerClass="card flex flex-col justify-center w-full px-8 my-12 text-center"
-              imageClass="self-center flex-shrink-0 w-36 h-36 -mt-20 bg-center bg-cover rounded-full dark:bg-[var(--brand-primary-700)] ring-4 ring-[var(--brand-primary-50)] object-cover"
+              imageClass="self-center flex-shrink-0 w-36 h-36 -mt-12 object-cover object-top rounded-full dark:bg-[var(--brand-primary-700)] ring-1 ring-[var(--brand-primary-500)]"
               panelClass="flex-1 mt-6"
               nameClass="text-base font-semibold text-[var(--brand-primary-600)] dark:text-[var(--brand-accent-500)]"
               occupationClass="text-sm text-body-color"

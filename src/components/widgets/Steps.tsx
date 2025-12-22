@@ -14,9 +14,9 @@ const Steps = ({
   isReversed = false,
   hasBackground = false,
 }: StepsProps) => (
-  <WidgetWrapper id={id ? id : ''} hasBackground={hasBackground} containerClass="max-w-6xl ">
+  <WidgetWrapper id={id ? id : ''} containerClass="max-w-6xl ">
     <div
-      className={`flex flex-col gap-8 md:gap-12 ${isReversed ? 'md:flex-row-reverse' : ''} ${
+      className={` ${isReversed ? 'md:flex-row-reverse' : ''} ${
         isImageDisplayed ? 'md:flex-row' : ''
       }`}
     >
@@ -28,16 +28,21 @@ const Steps = ({
         {header && (
           <Headline
             header={header}
-            containerClass={isImageDisplayed ? 'text-left rtl:text-right' : ''}
+            containerClass="text-center"
             titleClass="text-3xl sm:text-4xl"
-            subtitleClass={isImageDisplayed ? 'text-left rtl:text-right' : ''}
+            subtitleClass="text-center"
           />
         )}
-        <Timeline items={items} defaultIcon={IconCheck} iconClass="text-black dark:text-white border-[var(--brand-accent-500)]" />
+        <Timeline
+          items={items}
+          defaultIcon={IconCheck}
+          iconClass="text-black dark:text-white border-[var(--brand-accent-500)]"
+          containerClass="mx-auto lg:max-w-2xl"
+        />
       </div>
       {isImageDisplayed && (
         <div className="relative md:basis-1/2">
-          {image && (
+          {/* {image && (
             <Image
               src={image.src}
               width={400}
@@ -47,7 +52,7 @@ const Steps = ({
               className="inset-0 object-cover object-top w-full rounded-md shadow-lg md:absolute md:h-full bg-[var(--brand-primary-400)] dark:bg-[var(--brand-primary-700)]"
               quality={50}
             />
-          )}
+          )} */}
         </div>
       )}
     </div>
