@@ -277,7 +277,7 @@ export const teamAbout: TeamProps = {
       name: 'Mable Kisaka',
       occupation: 'Founder',
       image: {
-        src: '/images/mable.jpeg',
+        src: '/images/team/mable.png',
         alt: 'Mable Kisaka',
       },
       items: [
@@ -299,11 +299,11 @@ export const teamAbout: TeamProps = {
       ],
     },
     {
-      name: 'Sarah Mitchell',
-      occupation: 'Chief Creative Officer',
+      name: 'Adrian Kalule',
+      occupation: 'Advocate | Associate',
       image: {
-        src: '/images/handel-woman.JPG',
-        alt: 'Sarah Mitchell',
+        src: '/images/team/adrian-kalule.png',
+        alt: 'Adrian Kalule',
       },
       items: [
         {
@@ -324,11 +324,11 @@ export const teamAbout: TeamProps = {
       ],
     },
     {
-      name: 'David Foster',
-      occupation: 'Chief Technology Officer',
+      name: 'Allen Nalwadda',
+      occupation: 'Associate',
       image: {
-        src: '/images/handel-man.JPG',
-        alt: 'David Foster',
+        src: '/images/team/allen-nalwadda.png',
+        alt: 'Allen Nalwadda',
       },
       items: [
         {
@@ -349,36 +349,11 @@ export const teamAbout: TeamProps = {
       ],
     },
     {
-      name: 'Mary Smith',
+      name: 'Chantelle Moyo',
       occupation: 'Chief Marketing Office',
       image: {
-        src: 'https://images.unsplash.com/photo-1607503873903-c5e95f80d7b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
-        alt: 'Mary Smith',
-      },
-      items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
-      ],
-    },
-    {
-      name: 'Michael Turner',
-      occupation: 'Chief Financial Officer',
-      image: {
-        src: 'https://images.unsplash.com/photo-1619380061814-58f03707f082?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
-        alt: 'Michael Turner',
+        src: '/images/team/chantelle-moyo.png',
+        alt: 'Chantelle Moyo',
       },
       items: [
         {
@@ -400,9 +375,9 @@ export const teamAbout: TeamProps = {
     },
     {
       name: 'Laura Adams',
-      occupation: 'Chief Customer Relations Officer',
+      occupation: 'Chief Financial Officer',
       image: {
-        src: 'https://images.unsplash.com/photo-1485893086445-ed75865251e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
+        src: '/images/team/IMG_1387.png',
         alt: 'Laura Adams',
       },
       items: [
@@ -424,11 +399,11 @@ export const teamAbout: TeamProps = {
       ],
     },
     {
-      name: 'Robert Williams',
-      occupation: 'Chief Operations Officer',
+      name: 'Jim Cook',
+      occupation: 'Chief Customer Relations Officer',
       image: {
-        src: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
-        alt: 'Robert Williams',
+        src: '/images/team/IMG_3286.png',
+        alt: 'Jim Cook',
       },
       items: [
         {
@@ -448,31 +423,56 @@ export const teamAbout: TeamProps = {
         },
       ],
     },
-    {
-      name: 'Emily Davis',
-      occupation: 'Chief Strategy Officer',
-      image: {
-        src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
-        alt: 'Emily Davis',
-      },
-      items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
-      ],
-    },
+    // {
+    //   name: 'Robert Williams',
+    //   occupation: 'Chief Operations Officer',
+    //   image: {
+    //     src: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
+    //     alt: 'Robert Williams',
+    //   },
+    //   items: [
+    //     {
+    //       title: 'Know more on Twitter',
+    //       icon: IconBrandTwitter,
+    //       href: '#',
+    //     },
+    //     {
+    //       title: 'Know more on Linkedin',
+    //       icon: IconBrandLinkedin,
+    //       href: '#',
+    //     },
+    //     {
+    //       title: 'Contact by email',
+    //       icon: IconMail,
+    //       href: '#',
+    //     },
+    //   ],
+    // },
+    // {
+    //   name: 'Emily Davis',
+    //   occupation: 'Chief Strategy Officer',
+    //   image: {
+    //     src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
+    //     alt: 'Emily Davis',
+    //   },
+    //   items: [
+    //     {
+    //       title: 'Know more on Twitter',
+    //       icon: IconBrandTwitter,
+    //       href: '#',
+    //     },
+    //     {
+    //       title: 'Know more on Linkedin',
+    //       icon: IconBrandLinkedin,
+    //       href: '#',
+    //     },
+    //     {
+    //       title: 'Contact by email',
+    //       icon: IconMail,
+    //       href: '#',
+    //     },
+    //   ],
+    // },
   ],
 };
 
