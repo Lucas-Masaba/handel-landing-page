@@ -275,7 +275,7 @@ export const teamAbout: TeamProps = {
   teams: [
     {
       name: 'Mable Kisaka',
-      occupation: 'Founder',
+      occupation: 'Managing Partner & Team Leader',
       image: {
         src: '/images/team/mable.png',
         alt: 'Mable Kisaka',
