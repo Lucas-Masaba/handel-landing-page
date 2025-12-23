@@ -2,6 +2,7 @@ import Headline from '../common/Headline';
 import { TeamProps } from '~/shared/types';
 import WidgetWrapper from '../common/WidgetWrapper';
 import ItemTeam from '../common/ItemTeam';
+import { toSlug } from '~/utils/utils';
 
 const Team = ({ header, teams, id, hasBackground = false }: TeamProps) => (
   <WidgetWrapper id={id ? id : ''} hasBackground={hasBackground} containerClass="">
@@ -15,7 +16,8 @@ const Team = ({ header, teams, id, hasBackground = false }: TeamProps) => (
               occupation={occupation}
               image={image}
               items={items}
-              containerClass=""
+              linkHref={`/team/${toSlug(name)}`}
+              containerClass="cursor-pointer"
               imageClass="h-72 w-60 rounded-md object-cover shadow-lg bg-[var(--brand-primary-400)] dark:bg-[var(--brand-primary-700)]"
               panelClass="relative mt-3 text-center"
               nameClass="mb-1.5 text-xl font-bold text-[var(--brand-primary-600)] dark:text-white"

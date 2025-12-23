@@ -147,6 +147,10 @@ type Team = {
   occupation: string;
   image: Image;
   items?: Array<Item>;
+  /** Optional link for clicking image/name to navigate to detail */
+  linkHref?: string;
+  /** Optional biography paragraphs for detail page */
+  bio?: Array<string>;
   containerClass?: string;
   imageClass?: string;
   panelClass?: string;

@@ -17,3 +17,10 @@ export const getSuffixNumber = (number: number, digits: number = 1): string => {
     .find((item) => number >= item.value);
   return lookupItem ? (number / lookupItem.value).toFixed(digits).replace(rx, '$1') + lookupItem.symbol : '0';
 };
+
+// Slugify a string into lower-kebab-case for URLs
+export const toSlug = (str: string): string =>
+  str
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)+/g, '');

@@ -280,6 +280,183 @@ export const teamAbout: TeamProps = {
         src: '/images/team/mable.png',
         alt: 'Mable Kisaka',
       },
+      bio: [
+        'Mable Kisaka is the Managing Partner and Team Leader, providing strategic leadership across international trade, investment, corporate, and policy advisory work. She is a seasoned trade and legal expert with over a decade of experience advising governments, regional institutions, development partners, and private-sector actors on frameworks that promote sustainable, inclusive, and competitive economic growth across Africa.',
+        'She holds a Master of Laws (LL.M) in International Business and Economic Law from Georgetown University Law Center and a Bachelor of Laws (LLB) from Makerere University. An Advocate of the Ugandan Bar, Mable is dual-trained in international trade and investment law, arbitration, and corporate governance, with a strong focus on regional and global trade regimes.',
+        'Mable serves as Chairperson of the East Africa Law Society International Trade and Regional Integration Committee, where she leads regional thought leadership on trade, investment, digital economy regulation, competition law, and dispute resolution. She oversees the development of policy briefs and position papers, convenes high-level stakeholder dialogues, and supports EAC Partner States in aligning national trade laws with regional and international commitments.',
+        "She was appointed as a Trade Expert on major national and regional policy assignments, including the review and update of Uganda's National Trade Policy, Trade Policy Implementation and Development Plan, and National Export Development Strategy (NEDS) under TradeMark Africa.",
+        'Mable has also led and contributed to regional advisory work for COMESA, including a landmark study across all 21 Member States on intellectual property rights infringement and illicit trade, which informed regional enforcement and reform initiatives. Her broader advisory experience includes assignments with the World Bank on business readiness, investment climate reform, gender and trade, and access to justice.',
+        'As Managing Partner, she leads multidisciplinary teams delivering corporate, commercial, trade, and investment advisory services, advising multinationals and SMEs on market entry, regulatory compliance, cross-border transactions, and investment structuring. She is a Certified Trainer with the International Trade Centre (ITC) and Afreximbank, having trained over 100 firms on AfCFTA opportunities and export competitiveness.',
+        'Mable is also experienced in commercial litigation, arbitration, mediation, and negotiation, and is a Chartered and Certified Mediator. She is widely recognized for integrating law, policy, sustainability, and economic strategy, with a strong commitment to empowering SMEs, strengthening institutions, advancing ESG-aligned trade models, and building trade frameworks that deliver meaningful development impact across Africa.',
+        "Beyond her professional work, she is a mentor, speaker, and advocate for women's leadership in trade and law, and remains actively engaged in regional and global policy conversations shaping Africa's economic future.",
+      ],
+      items: [
+        {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: '#',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: '#',
+        },
+      ],
+    },
+    {
+      name: 'Dr. Chantelle G. Moyo',
+      occupation: 'Climate Governance Legal Specialist | Environmental, Energy & Natural Resources Law',
+      image: {
+        src: '/images/team/chantelle-moyo.png',
+        alt: 'Dr. Chantelle G. Moyo',
+      },
+      bio: [
+        'Dr. Chantelle G. Moyo is a Climate Governance Legal Specialist, environmental lawyer, and seasoned researcher with over a decade of experience spanning environmental governance, natural resource governance, mining law, climate change law, energy governance, and sustainable development in Africa and the Global South.',
+        'She holds a PhD in Law and Development (Climate Change and Energy) from North-West University, an LL.M in Environmental Law from the University of KwaZulu-Natal, and a Bachelor of Laws (LLB) from the same institution. She has also completed advanced training in Climate Change and Renewable Energy Finance at the Frankfurt School of Finance & Management, and specialized programs in climate governance and negotiations through the African Group of Negotiators Expert Support.',
+        "Dr. Moyo's practice focuses on climate governance, energy transition, extractives regulation, environmental law, and sustainable finance, advising governments, development partners, civil society organizations, and private actors on legal and policy frameworks that support low-carbon development, energy security, and responsible natural resource management.",
+        'She brings deep expertise in national, regional (African), and international climate policy and negotiation processes, including climate finance, renewable energy regulation, carbon markets, ecosystem services, and environmental accountability mechanisms.',
+        'Dr. Moyo has provided independent advisory services to leading international and regional institutions, including the International Development Law Organization, the Natural Resource Governance Institute, Oxfam Africa, USAID, the Ford Foundation, and the SAGE Foundation. Her advisory work has covered climate change law, energy governance, mining regulation, ESG frameworks, and environmental justice across multiple African jurisdictions.',
+        'She has also served as Programme Manager at the Konrad Adenauer Stiftung, where she led regional programmes on Energy Security, Climate Change, and Economic Governance in Sub-Saharan Africa, managing multi-country initiatives and stakeholder engagement across government, private sector, and civil society.',
+        'A prolific scholar, Dr. Moyo has over 15 peer-reviewed publications, including journal articles, book chapters, and an edited volume with regional and international publishers. Her recent work includes a chapter contribution in the Handbook of Energy Law in the Low Carbon Transition and a policy-focused article published by the United Nations Environment Programme on inclusive and transparent environmental governance.',
+        'Her research combines legal analysis, empirical policy research, and interdisciplinary methods to inform reforms in extractives governance, climate adaptation and mitigation, and sustainable energy transitions.',
+        "Within the firm's Climate, Sustainability & Environmental Policy Advisory practice, Dr. Moyo supports work on climate governance frameworks, ESG compliance, access to climate finance, carbon markets, environmental regulation, and climate-related trade measures, working closely with legal, policy, and economic teams to deliver integrated solutions.",
+      ],
+      items: [
+        {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: '#',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: '#',
+        },
+      ],
+    },
+    {
+      name: 'Kasula Racheal',
+      occupation: 'Advocate | Anti-Corruption & Anti-Money Laundering (AML) Specialist',
+      image: {
+        src: '/images/team/default.jpg',
+        alt: 'Kasula Racheal',
+      },
+      bio: [
+        "Kasula is an Advocate and Anti-Corruption and Anti-Money Laundering (AML) Specialist with over ten years of experience in governance, financial crime investigations, compliance advisory, and institutional reform within Uganda's public sector and regulatory environment.",
+        "She holds a Master of Laws (LL.M) from the University of East London, a Postgraduate Diploma in Legal Practice from the Law Development Centre, and a Bachelor of Laws (LLB) from the Uganda Christian University. She is also a Certified Anti-Money Laundering Specialist (CAMS) and holds an Executive Diploma in Anti-Corruption and Diplomacy from the United Nations Institute for Training and Research.",
+        "Kasula's practice focuses on anti-corruption enforcement, AML/CFT compliance, financial crime investigations, and integrity systems, advising institutions on corruption risk management, asset tracing, lifestyle audits, financial profiling, and regulatory compliance aligned with international standards.",
+        "She is an Investigator at the Inspectorate of Government of Uganda, where she has led and contributed to systemic investigations into corruption, maladministration, abuse of office, and breaches of the rule of law across Ministries, Departments, and Agencies. Her work informed policy reforms, administrative justice interventions, and legislative amendments.",
+        "Kasula played a key role in drafting Lifestyle Audit Guidelines as a national compliance tool for assessing unexplained wealth, contributed technical input to amendments of the Leadership Code Act, and conducted nationwide compliance spot checks and benchmarking with regulatory bodies, including the Uganda Revenue Authority. She has also engaged in cross-border financial crime matters involving Mutual Legal Assistance and cooperation with international partners.",
+        "In addition to investigative and advisory work, Kasula designs and delivers capacity-building programs for organizations and compliance teams on AML controls, asset declarations, corruption prevention, and governance frameworks. She brings strong analytical capability, leveraging data-driven financial analysis to support evidence-based decision-making, institutional accountability, and ethical governance.",
+      ],
+      items: [
+        {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: '#',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: '#',
+        },
+      ],
+    },
+    {
+      name: 'Dr. Richard Sebaggala',
+      occupation: 'Economist Specialist | Trade & Development Economics',
+      image: {
+        src: '/images/team/richard.jpg',
+        alt: 'Dr. Richard Sebaggala',
+      },
+      bio: [
+        'Dr. Richard Sebaggala is a Trade Economist with over fifteen years of experience in international trade, investment, and development policy research across Africa. His work focuses on translating complex economic data into actionable policy and regulatory insights that support export competitiveness, regional integration, and inclusive growth.',
+        'He holds a PhD in Applied Economics from the University of Agder, an MSc in Quantitative Economics from Makerere University, and a BA in Economics. He is also a senior lecturer in economics and a long-standing research fellow, contributing to policy research, capacity building, and academic leadership in Uganda.',
+        'He has led and contributed to several flagship trade and industrial policy assignments, including major studies for the Uganda Free Zones Authority under the African Continental Free Trade Area (AfCFTA), covering market entry strategies for Ugandan exporters and assessments of opportunities and constraints within Special Economic Zones.',
+        'Dr. Sebaggala has served as an Economist and policy advisor on nationally significant assignments commissioned by TradeMark Africa for Uganda\'s Ministry of Trade, Industry, and Cooperatives, including the National Export Development Strategy (2025/26–2030/31) and the National Trade Policy Development and Implementation Plan. In these roles, he led analytical work on sector competitiveness, trade diagnostics, and investment facilitation reforms to advance Uganda\'s export-led growth agenda.',
+        'He has advised governments and private-sector stakeholders on trade compliance, export diversification, customs cooperation, and rules-of-origin implementation within the East African Community (EAC) and COMESA frameworks.',
+        'Dr. Sebaggala brings strong quantitative expertise, including Computable General Equilibrium (CGE) modelling, panel data econometrics, and advanced trade policy analysis, with specialized training from regional and international institutions. In recent years, he has integrated artificial intelligence and machine learning techniques into trade and macroeconomic analysis to enhance evidence-based decision-making for governments, regional bodies, and development partners.',
+      ],
+      items: [
+        {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: '#',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: '#',
+        },
+      ],
+    },
+    {
+      name: 'Amos Nakeba',
+      occupation: 'Specialist - Financial Integrity, Risk & Governance Advisory',
+      image: {
+        src: '/images/team/default.jpg',
+        alt: 'Amos Nakeba',
+      },
+      bio: [
+        'Amos specializes in Financial Integrity, Risk & Governance Advisory, leading high-level advisory work across banking and financial services, enterprise risk management, internal audit, anti-money laundering (AML), corporate governance, ESG, and strategic management.',
+        'He holds a Master of Science in Finance and Accounting and a Bachelor of Commerce from Makerere University. He is a Chartered Accountant (ACCA – UK), Certified Public Accountant (ICPAU), and a Certified Systems Security Professional (CSSP), with extensive executive training in enterprise risk management, governance, compliance, ESG, AML, strategic leadership, and process-based auditing from institutions in the US, UK, Europe, and Africa.',
+        'He brings over 20 years of senior leadership experience in the financial services and energy sectors, having previously served as Head of Internal Audit / Chief Internal Auditor at Cairo Bank Uganda Limited, a subsidiary of Banque du Caire. In this role, he led institution-wide audit, risk, and compliance functions within a regulated banking environment under the supervision of the Bank of Uganda.',
+        'Amos has held several senior executive roles in reputable regional and international institutions, including Deputy General Manager – Internal Audit at Bank of Africa, Senior Manager Audit and Inspection, Head of Compliance at Eskom PTY (South Africa’s national power utility), and Chief Finance Officer at UGAFODE, a regulated financial institution.',
+        'He currently serves on the Audit and Risk Committee of the Institute of Internal Auditors Uganda, an affiliate of the Institute of Internal Auditors, contributing to thought leadership and oversight on audit quality, risk governance, and professional standards.',
+        'In his advisory role, Amos supports clients with financial integrity frameworks, AML/CFT compliance, enterprise risk design, internal audit transformation, governance strengthening, ESG integration, business restructuring, and strategic decision-making.',
+      ],
+      items: [
+        {
+          title: 'Know more on Twitter',
+          icon: IconBrandTwitter,
+          href: '#',
+        },
+        {
+          title: 'Know more on Linkedin',
+          icon: IconBrandLinkedin,
+          href: '#',
+        },
+        {
+          title: 'Contact by email',
+          icon: IconMail,
+          href: '#',
+        },
+      ],
+    },
+    {
+      name: 'Nalwadda Allen Namukisa',
+      occupation: 'Associate | Advocate',
+      image: {
+        src: '/images/team/allen-nalwadda.png',
+        alt: 'Nalwadda Allen Namukisa',
+      },
+      bio: [
+        'Nalwadda Allen Namukisa is an Advocate and Associate at the firm. She holds a Bachelor of Laws (LLB) from Makerere University and a Postgraduate Diploma in Legal Practice from the Law Development Centre.',
+        'Allen is a dedicated and versatile lawyer with a growing practice across several core firm practice areas, including Corporate and Commercial Law, Company Law, Business and Investment Advisory, Land Transactions, Family Law, and International Trade and Investment Law. Her work supports both domestic and cross-border legal matters, with a strong emphasis on commercially practical and compliance-focused solutions.',
+        'She provides comprehensive legal support through legal research, drafting and review of commercial agreements, preparation of pleadings and submissions, and regulatory advisory. Allen regularly assists corporate clients with business registration, corporate governance advisory, compliance with statutory requirements, and transactional documentation, contributing to efficient market entry and operational compliance.',
+        'Allen has a strong interest in international trade and cross-border transactions, reinforced by her attainment of a Certificate in Intra-African Trade (How to Trade under the AfCFTA) in May 2025. Her practice integrates trade-related regulatory considerations into corporate structuring and commercial advisory work.',
+        'Beyond traditional legal practice, Allen has contributed to policy and development-oriented research aligned with the firm\'s trade and regional integration focus. She served as a research assistant on a project commissioned by TradeMark Africa in collaboration with the Ministry of Trade, Industry and Cooperatives, supporting the review and update of Uganda\'s National Trade Policy (2025) and the accompanying policy review report through targeted legal and policy research.',
+      ],
       items: [
         {
           title: 'Know more on Twitter',
@@ -300,11 +477,19 @@ export const teamAbout: TeamProps = {
     },
     {
       name: 'Adrian Kalule',
-      occupation: 'Advocate | Associate',
+      occupation: 'Associate | Advocate',
       image: {
         src: '/images/team/adrian-kalule.png',
         alt: 'Adrian Kalule',
       },
+      bio: [
+        'Adrian Kalule is an Associate with a growing practice in dispute resolution, litigation, and arbitration, complemented by corporate and regulatory advisory work. He holds a Postgraduate Diploma in Legal Practice from the Law Development Centre and a Bachelor of Laws (LLB) from Makerere University.',
+        'Adrian advises clients on resolving commercial, regulatory, and policy-related disputes through litigation, arbitration, and mediation. His work includes drafting pleadings and submissions, supporting domestic and international arbitration proceedings, participating in negotiations and mediations, and conducting dispute-focused legal research. He also has practical experience supporting arbitral tribunals and serving as a rapporteur in professional dispute resolution settings.',
+        'In corporate, regulatory, and transactional advisory, Adrian advises on contract drafting, review, and negotiation; regulatory compliance; transaction support; and general corporate advisory, including banking and finance-related legal research. His practice integrates risk mitigation and dispute prevention strategies, enabling clients to structure transactions and compliance frameworks that reduce exposure to litigation and regulatory enforcement.',
+        'Through his role at Handel, Adrian contributes to policy-oriented legal research and advisory, particularly at the intersection of digital regulation and governance, data protection and technology law, and inclusive development and regulatory reform. He has supported stakeholder consultations, regulatory assessments, and the preparation of analytical reports for development-focused projects.',
+        'Before joining Handel, Adrian gained hands-on experience in an Alternative Dispute Resolution-focused institution, where he supported arbitration, commercial mediation and negotiation proceedings through to settlement. He has also worked in public interest law, legislative review, and human rights monitoring, strengthening his litigation research and advocacy skills.',
+        'Adrian has published on law, governance, and public policy issues and is a member of the East African Law Society Technology & Media Committee and the Young ICCA Community.',
+      ],
       items: [
         {
           title: 'Know more on Twitter',
@@ -324,62 +509,17 @@ export const teamAbout: TeamProps = {
       ],
     },
     {
-      name: 'Allen Nalwadda',
-      occupation: 'Associate',
-      image: {
-        src: '/images/team/allen-nalwadda.png',
-        alt: 'Allen Nalwadda',
-      },
-      items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
-      ],
-    },
-    {
-      name: 'Chantelle Moyo',
-      occupation: 'Chief Marketing Office',
-      image: {
-        src: '/images/team/chantelle-moyo.png',
-        alt: 'Chantelle Moyo',
-      },
-      items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
-      ],
-    },
-    {
-      name: 'Laura Adams',
-      occupation: 'Chief Financial Officer',
+      name: 'Tumwebaze Charity',
+      occupation: 'Office Administrator',
       image: {
         src: '/images/team/IMG_1387.png',
-        alt: 'Laura Adams',
+        alt: 'Tumwebaze Charity',
       },
+      bio: [
+        'Tumwebaze Charity is the Office Administrator, providing essential administrative and operational support that ensures the firm\'s day-to-day functions run efficiently and professionally.',
+        'She holds a Certificate from Kampala International University and has prior experience as an Administrative Assistant and Data Clerk, supporting office operations, records management, and data handling. Her training includes computer skills, typing and printing, communication, leadership, and client handling, equipping her to manage both administrative tasks and front-office responsibilities effectively.',
+        'In her role, Charity supports the firm through office coordination, document management, data entry, scheduling, and client interface support, contributing to smooth internal workflows and timely service delivery. She plays a key role in maintaining organized records, supporting staff productivity, and ensuring a welcoming and efficient office environment.',
+      ],
       items: [
         {
           title: 'Know more on Twitter',
@@ -398,13 +538,18 @@ export const teamAbout: TeamProps = {
         },
       ],
     },
-    {
-      name: 'Jim Cook',
-      occupation: 'Chief Customer Relations Officer',
+        {
+      name: 'Nahabwe Elijah',
+      occupation: 'Legal Clerk & Assistant',
       image: {
         src: '/images/team/IMG_3286.png',
-        alt: 'Jim Cook',
+        alt: 'Nahabwe Elijah',
       },
+      bio: [
+        'Nahabwe Elijah is a Legal Clerk and Assistant with training in practical legal processes and court support. He holds a Diploma in Law from the Law Development Centre, where he also served as a coordinator.',
+        'He has hands-on experience from the Wakiso Chief Magistrates Court and from his work as a Legal Clerk at a law firm, where he supported advocates in day-to-day legal and administrative functions. His responsibilities included organizing and maintaining case files, drafting weekly office schedules, following up court matters, effecting service of court documents, and preparing affidavits of service.',
+        'Nahabwe brings a strong sense of confidentiality, teamwork, and professionalism to his work and is eager to learn and grow within legal practice.',
+      ],
       items: [
         {
           title: 'Know more on Twitter',
@@ -423,56 +568,6 @@ export const teamAbout: TeamProps = {
         },
       ],
     },
-    // {
-    //   name: 'Robert Williams',
-    //   occupation: 'Chief Operations Officer',
-    //   image: {
-    //     src: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
-    //     alt: 'Robert Williams',
-    //   },
-    //   items: [
-    //     {
-    //       title: 'Know more on Twitter',
-    //       icon: IconBrandTwitter,
-    //       href: '#',
-    //     },
-    //     {
-    //       title: 'Know more on Linkedin',
-    //       icon: IconBrandLinkedin,
-    //       href: '#',
-    //     },
-    //     {
-    //       title: 'Contact by email',
-    //       icon: IconMail,
-    //       href: '#',
-    //     },
-    //   ],
-    // },
-    // {
-    //   name: 'Emily Davis',
-    //   occupation: 'Chief Strategy Officer',
-    //   image: {
-    //     src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80',
-    //     alt: 'Emily Davis',
-    //   },
-    //   items: [
-    //     {
-    //       title: 'Know more on Twitter',
-    //       icon: IconBrandTwitter,
-    //       href: '#',
-    //     },
-    //     {
-    //       title: 'Know more on Linkedin',
-    //       icon: IconBrandLinkedin,
-    //       href: '#',
-    //     },
-    //     {
-    //       title: 'Contact by email',
-    //       icon: IconMail,
-    //       href: '#',
-    //     },
-    //   ],
-    // },
   ],
 };
 
