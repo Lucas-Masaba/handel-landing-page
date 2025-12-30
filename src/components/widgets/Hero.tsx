@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { HeroProps } from '~/shared/types';
 import CTA from '../common/CTA';
-import verticalLogo from '~/assets/images/vertical-logo.svg';
-import verticalLogoDark from '~/assets/images/vertical-logo-dark.svg';
+import verticalLogo from '~/assets/images/handel-logo-vertical-cropped-removebg-preview.png';
+import verticalLogoDark from '~/assets/images/handel-logo-vertical-dark-2-cropped-removebg-preview.png';
 
 const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: HeroProps) => {
   return (
