@@ -272,7 +272,7 @@ export const teamAbout: TeamProps = {
   header: {
     title: 'The Team',
     subtitle:
-      'Proin quis neque vehicula, sagittis felis ut, scelerisque mi. Nullam consequat, erat eu luctus sodales, ipsum tellus facilisis magna, eu condimentum lectus.',
+      'Our multidisciplinary team of legal, trade, and policy experts is dedicated to delivering integrated solutions that drive client success across Uganda and the region.',
     tagline: 'team',
   },
   teams: [
