@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import useEmblaCarousel, { EmblaCarouselType } from 'embla-carousel-react';
+import useEmblaCarousel, { type UseEmblaCarouselType } from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
 import { GalleryProps } from '~/shared/types';
@@ -25,7 +25,6 @@ const Gallery = ({
       loop: true, 
       align: 'center', 
       skipSnaps: false,
-      speed: 10,
       dragFree: false,
     },
     [autoplay.current]
@@ -35,7 +34,8 @@ const Gallery = ({
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
   const canShowControls = (images?.length || 0) > 1;
 
-  const onSelect = useCallback((api: EmblaCarouselType) => {
+  const onSelect = useCallback((api: UseEmblaCarouselType[1] | undefined) => {
+    if (!api) return;
     setSelectedIndex(api.selectedScrollSnap());
   }, []);
 

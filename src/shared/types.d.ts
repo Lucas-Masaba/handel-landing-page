@@ -102,7 +102,6 @@ type FormProps = {
 };
 
 type Image = {
-type Image = {
   link?: string;
   src: string | StaticImageData;
   alt: string;

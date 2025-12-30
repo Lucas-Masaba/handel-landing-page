@@ -804,7 +804,7 @@ export const proBonoFocusAbout = {
     subtitle:
       'We dedicate substantial resources to advancing access to justice, supporting vulnerable communities, and promoting legal and policy reforms in the public interest.',
   },
-  columns: 2,
+  columns: 3 as const,
   items: [
     {
       title: 'Access to Justice for Marginalized Communities',
