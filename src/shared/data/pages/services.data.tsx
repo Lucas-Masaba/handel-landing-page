@@ -12,6 +12,17 @@ import {
   IconShield,
   IconTrendingUp,
   IconUsers,
+  IconWorldWww,
+  IconBuildingBank,
+  IconGavel,
+  IconCoin,
+  IconDeviceDesktop,
+  IconHome,
+  IconPlane,
+  IconChartBar,
+  IconLeaf,
+  IconLock,
+  IconCash,
 } from '@tabler/icons-react';
 
 import {
@@ -29,9 +40,9 @@ import cameraBackImg from '~/assets/images/camera-back.jpg';
 
 // Hero data on Services page *******************
 export const heroServices: HeroProps = {
-  title: 'Professional Business Services',
+  title: 'Handel Advocates | Global Consulting',
   subtitle:
-    'Comprehensive solutions across consulting and legal domains. Our expertise drives your success with tailored strategies and compliance assurance.',
+    'Driving Regional and International Success Through Law and Policy. Elite legal services and strategic advisory across international trade, corporate law, investment, regulatory compliance, and cross-border commerce across Uganda, EAC, COMESA, AfCFTA, and global markets.',
   // callToAction: {
   //   text: 'Start Exploring',
   //   href: 'https://github.com/onwidget/Handel',
@@ -47,39 +58,54 @@ export const heroServices: HeroProps = {
 export const features2Services: FeaturesProps = {
   id: 'featuresTwo-on-services',
   header: {
-    title: 'Our Services',
+    title: 'Practice Areas',
+    subtitle: 'Comprehensive legal and consulting services across international trade, corporate law, investment, compliance, and strategic advisory.',
   },
   items: [
     {
-      title: 'Next.Js + Tailwind CSS Integration',
-      description: 'Nullam non sodales massa. Ut justo neque, elementum et vehicula vel, pellentesque non orci.',
-      icon: IconBrandTailwind,
+      title: 'International Trade & Regional Integration',
+      description: 'Trade remedies, customs compliance, RTA advisory, WTO dispute settlement, export controls, competition law, and sector-specific trade advisory.',
+      icon: IconWorldWww,
     },
     {
-      title: 'Ready-to-use Components',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      icon: IconComponents,
+      title: 'Business & Commercial Transactions',
+      description: 'Commercial contracts, joint ventures, distribution agreements, supply chain arrangements, and cross-border trade within EAC, COMESA, and AfCFTA.',
+      icon: IconFileText,
     },
     {
-      title: 'Best Practices',
-      description: 'Morbi sit amet arcu vitae metus molestie auctor sit amet in risus. Sed vel lacinia purus.',
-      icon: IconListCheck,
+      title: 'Corporate Law & Governance',
+      description: 'Company formation, M&A, shareholder agreements, corporate restructuring, board advisory, directors\' duties, and compliance frameworks.',
+      icon: IconBriefcase,
     },
     {
-      title: 'Excellent Page Speed',
-      description: 'Phasellus id cursus urna. Nullam feugiat tellus sed euismod venenatis.',
-      icon: IconRocket,
+      title: 'Anti-Corruption & Compliance',
+      description: 'Risk assessments, compliance program design, due diligence, investigations, and representation in enforcement proceedings (FCPA, UK Bribery Act, OECD).',
+      icon: IconShield,
     },
     {
-      title: 'Search Engine Optimization (SEO)',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
-      icon: IconArrowsRightLeft,
+      title: 'Anti-Money Laundering (AML) & CFT',
+      description: 'AML/CFT program development, KYC/CDD frameworks, transaction monitoring, cross-border financial compliance, and regulatory inspections.',
+      icon: IconBuildingBank,
     },
     {
-      title: 'Open to new ideas and contributions',
-      description: 'Maecenas urna augue, commodo vitae lectus euismod, tempor aliquam arcu.',
-      icon: IconBulb,
+      title: 'Digital Trade, Technology & E-Commerce',
+      description: 'Digital trade regulation, data protection, fintech licensing, online consumer protection, cloud contracts, and digital platform advisory.',
+      icon: IconDeviceDesktop,
+    },
+    {
+      title: 'Real Estate, Land & Property Law',
+      description: 'Land acquisition, commercial/residential transactions, lease agreements, investment structuring, mortgages, and dispute resolution.',
+      icon: IconHome,
+    },
+    {
+      title: 'Immigration & Mobility Law',
+      description: 'Work permits, investor permits, residence visas, immigration compliance, EAC travel facilitation, and corporate mobility strategies.',
+      icon: IconPlane,
+    },
+    {
+      title: 'Foreign Direct Investment (FDI) & Market Entry',
+      description: 'Investment structuring, UIA processes, incentives, sector-specific licensing, PPPs, joint ventures, and local content compliance.',
+      icon: IconTrendingUp,
     },
   ],
 };
@@ -89,27 +115,27 @@ export const contentServicesOne: ContentProps = {
   id: 'contentOne-on-services-one',
   hasBackground: false,
   content:
-    'Handel Advocates',
+    'The firm provides comprehensive legal services across multiple practice areas beyond international trade, including corporate and commercial law, anti-corruption compliance, AML/CFT, digital trade, real estate, immigration, and foreign direct investment advisory.',
   items: [
     {
-      title: 'Corporate Law',
-      description: 'Comprehensive legal services for businesses, including formation, governance, and compliance.',
-      icon: IconScale,
-    },
-    {
-      title: 'Contract Negotiation',
-      description: 'Drafting, reviewing, and negotiating contracts to protect clients interests and ensure favorable terms.',
+      title: 'Business & Commercial Transactions',
+      description: 'Contract drafting, review and negotiation. Joint ventures, distribution agreements, and cross-border trade transactions.',
       icon: IconFileText,
     },
     {
-      title: 'Litigation Support',
-      description: 'Providing assistance and expertise in legal disputes and court proceedings to protect clients interests.',
-      icon: IconShield,
+      title: 'Digital Trade, Technology & E-Commerce',
+      description: 'Digital trade regulation, data protection, fintech licensing, and online consumer protection across Uganda and the region.',
+      icon: IconDeviceDesktop,
     },
     {
-      title: 'Regulatory Advice',
-      description: 'Guidance on navigating complex regulatory environments to ensure compliance and mitigate risks.',
-      icon: IconBriefcase,
+      title: 'Real Estate & Property Law',
+      description: 'Land acquisition, commercial and residential transactions, lease agreements, and property investment structuring.',
+      icon: IconHome,
+    },
+    {
+      title: 'Foreign Direct Investment (FDI) Advisory',
+      description: 'Investment structuring, UIA processes, sector-specific licensing, PPPs, and joint venture compliance.',
+      icon: IconTrendingUp,
     },
   ],
   image: {
@@ -125,31 +151,37 @@ export const contentServicesTwo: ContentProps = {
   id: 'contentOne-on-services-two',
   hasBackground: false,
   content:
-    'Handel Global Consulting',
+    'Handel Global Consulting - Strategic Advisory Services',
   items: [
     {
-      title: 'Strategy & Operations',
-      description:
-        'Strategy development and operational excellence to drive business growth and efficiency.',
-        icon: IconTrendingUp,
+      title: 'Trade Policy & Regional Integration',
+      description: 'Comprehensive trade policy research, negotiation support for EAC/COMESA/AfCFTA, export competitiveness studies, and market access strategy.',
+      icon: IconChartBar,
     },
     {
-      title: 'M&A Advisory',
-      description:
-        'Guidance on mergers, acquisitions, and partnerships to maximize value and ensure successful transactions.',
-        icon: IconBriefcase,
+      title: 'Climate, Sustainability & Environmental Policy',
+      description: 'Climate finance structuring, carbon markets, ESG frameworks, energy transition advisory, and sustainability program design.',
+      icon: IconLeaf,
     },
     {
-      title: 'Organizational Development',
-      description:
-        'Building effective organizational structures and cultures to enhance performance and employee engagement.',
-        icon: IconUsers,
+      title: 'International Development & Public Policy',
+      description: 'Policy formulation, institutional strengthening, public sector reforms, and program design with multilateral development partners.',
+      icon: IconUsers,
     },
     {
-      title: 'Compliance Consulting',
-      description:
-        'Ensuring adherence to legal and regulatory requirements to mitigate risks and maintain ethical standards.',
-        icon: IconShield,
+      title: 'AML/CFT & Financial Integrity',
+      description: 'National risk assessments, AML/CFT program design, compliance frameworks, FATF standards implementation, and financial intelligence support.',
+      icon: IconLock,
+    },
+    {
+      title: 'Anti-Corruption & Good Governance',
+      description: 'Anti-corruption strategies, integrity risk mapping, public procurement reform, beneficial ownership transparency, and ethics training.',
+      icon: IconGavel,
+    },
+    {
+      title: 'Finance, Investment & Development Funding',
+      description: 'Project finance advisory, blended finance structures, investment climate assessments, and capital mobilization strategies.',
+      icon: IconCash,
     }
   ],
   image: {

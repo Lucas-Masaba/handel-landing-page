@@ -9,11 +9,11 @@ const Hero2 = ({ title, subtitle, tagline, callToAction, callToAction2, image }:
         <div className="block py-12 text-center md:flex md:py-12 md:text-left lg:py-16">
           <div className="mx-auto flex max-w-5xl basis-[56%] items-center">
             <div className="max-w-3xl pb-12 pr-0 md:py-0 md:pr-8 md:pb-0 lg:pr-16">
-              {/* {tagline && (
-                <p className="text-base font-semibold tracking-wide uppercase text-primary-600 dark:text-primary-200">
+              {tagline && (
+                <p className="text-base font-semibold tracking-wide uppercase text-primary-600 dark:text-white">
                   {tagline}
                 </p>
-              )} */}
+              )}
               {title && (
                 <h1 className="leading-tighter font-heading mb-4 px-4 text-5xl font-bold tracking-tighter md:px-0 md:text-[3.48rem]">
                   {title}
@@ -30,7 +30,7 @@ const Hero2 = ({ title, subtitle, tagline, callToAction, callToAction2, image }:
           </div>
           <div className="items-center flex-1 block md:flex">
             <div className="relative object-cover h-full max-w-4xl m-auto">
-              {/* {image && (
+              {image && (
                 <Image
                   className="mx-auto h-full w-auto rounded-md bg-[var(--brand-primary-400)] object-cover drop-shadow-2xl dark:bg-[var(--brand-primary-700)]"
                   src={image.src}
@@ -42,7 +42,7 @@ const Hero2 = ({ title, subtitle, tagline, callToAction, callToAction2, image }:
                   placeholder="blur"
                   priority
                 />
-              )} */}
+              )}
             </div>
           </div>
         </div>

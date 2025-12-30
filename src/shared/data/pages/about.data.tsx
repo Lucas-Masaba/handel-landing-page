@@ -9,6 +9,7 @@ import {
   TestimonialsProps,
 } from '~/shared/types';
 import hero2Img from '~/assets/images/hero2.jpg';
+import containerImage from 'public/images/containers.jpg';
 import {
   IconAdjustments,
   IconAward,
@@ -19,10 +20,13 @@ import {
   IconCirclesRelation,
   IconClock,
   IconFlame,
+  IconBriefcase,
   IconHeartHandshake,
   IconHomeEco,
   IconMail,
   IconMapPin,
+  IconTrendingUp,
+  IconUsers,
   IconNumber1,
   IconNumber2,
   IconNumber3,
@@ -38,21 +42,20 @@ import {
 
 // Hero2 data on About page *******************
 export const hero2About: HeroProps = {
-  title: 'About Handel',
+  title: 'Handel Advocates I Global Consulting',
   subtitle:
-    'Two divisions. One purpose — drive growth and protect your business.',
-  tagline: 'Handel',
+    'Integrated legal and strategic advisory services driving regional and international success across Uganda, the EAC, SADC, COMESA, and beyond.',
+  tagline: 'About Handel',
   callToAction: {
-    text: 'Our Story',
-    href: '/about',
-    targetBlank: true,
+    text: 'Explore Our Services',
+    href: '/services',
   },
   callToAction2: {
-    text: 'Contact us',
+    text: 'Contact Us',
     href: '/contact',
   },
   image: {
-    src: hero2Img,
+    src: containerImage,
     alt: 'Handel Team',
   },
 };
@@ -62,7 +65,7 @@ export const statsAbout: StatsProps = {
   id: 'stats-on-about',
   hasBackground: true,
   items: [
-    {
+    { 
       title: 50,
       description: 'Clients',
     },
@@ -86,10 +89,10 @@ export const featuresFourAbout: FeaturesProps = {
   id: 'features-four-on-about',
   hasBackground: false,
   header: {
-    title: 'Our mission',
+    title: 'An Integrated Model',
     subtitle:
-      'Quisque laoreet nisi et lectus consectetur, at placerat libero dictum. Donec sed hendrerit turpis. Nunc vel nibh blandit, hendrerit turpis non, mattis magna. Duis feugiat dui mi, eget iaculis ligula gravida congue. Nam quis mauris id eros imperdiet imperdiet. In et dolor non nisi vestibulum rhoncus nec eget dolor.',
-    tagline: 'Mission and Values',
+      'Handel Advocates I Global Consulting brings together elite legal practice with strategic policy advisory to serve clients across Uganda, the EAC, SADC, COMESA, and international markets.',
+    tagline: 'Our Approach',
   },
 };
 
@@ -98,43 +101,31 @@ export const featuresFourAboutTwo: FeaturesProps = {
   id: 'features-four-on-about-two',
   hasBackground: false,
   header: {
-    title: 'Our values',
-    subtitle: 'Etiam tellus tortor, mattis id mauris et, lobortis ullamcorper nunc.',
+    title: 'Why Handel?',
+    subtitle: undefined,
   },
   isAfterContent: true,
   columns: 2,
   items: [
     {
-      title: 'Customer-centricity',
-      description: 'Nullam non sodales massa. Ut justo neque, elementum et vehicula vel, pellentesque non orci.',
-      icon: IconUser,
+      title: 'Deep Local & Regional Expertise',
+      description: 'Grounded understanding of Uganda, combined with extensive regional experience across EAC, SADC, and COMESA.',
+      icon: IconMapPin,
     },
     {
-      title: 'Innovation and adaptability',
-      description:
-        'Etiam ornare, purus nec venenatis porttitor, velit leo convallis dui, at porttitor nibh tortor quis velit.',
-      icon: IconBulb,
+      title: 'International Standards & Best Practices',
+      description: 'We bring global expertise, WTO-aligned strategy, and international compliance standards to every engagement.',
+      icon: IconCirclesRelation,
     },
     {
-      title: 'Quality assurance',
-      description: 'Morbi sit amet arcu vitae metus molestie auctor sit amet in risus. Sed vel lacinia purus.',
-      icon: IconThumbUp,
+      title: 'Strategic Business Orientation',
+      description: 'Legal and policy advice anchored in commercial realities—driving growth, reducing risk, and creating competitive advantage.',
+      icon: IconTrendingUp,
     },
     {
-      title: 'Accessibility and customization',
-      description: 'Phasellus id cursus urna. Nullam feugiat tellus sed euismod venenatis.',
-      icon: IconAdjustments,
-    },
-    {
-      title: 'Collaboration and partnership',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis.',
-      icon: IconHeartHandshake,
-    },
-    {
-      title: 'Ethical and responsible design',
-      description: 'Maecenas urna augue, commodo vitae lectus euismod, tempor aliquam arcu.',
-      icon: IconHomeEco,
+      title: 'Multidisciplinary Capabilities',
+      description: 'A team of lawyers, economists, trade policy experts, and regulatory professionals working in seamless collaboration.',
+      icon: IconUsers,
     },
   ],
 };
@@ -234,30 +225,42 @@ export const featuresAbout: FeaturesProps = {
   id: 'features-on-about',
   hasBackground: true,
   header: {
-    title: 'Our record of excellence',
+    title: 'Why Clients Choose Handel',
     subtitle:
-      'Etiam lobortis elementum ornare. Vestibulum lacinia magna ut eleifend facilisis. Cras ac mi nec diam auctor dictum.',
-    tagline: 'Achievements',
+      'Integrated legal and strategic advisory that combines deep local expertise, regional reach across EAC, SADC, and COMESA, and international standards.',
+    tagline: 'Our Advantage',
   },
   columns: 1,
   items: [
     {
-      title: 'Global recognition',
+      title: 'Deep Local Expertise',
       description:
-        'Nullam porttitor lacus elit, sed pellentesque eros aliquam eget. Phasellus interdum placerat enim sed vehicula. Ut tincidunt, magna in iaculis maximus, lectus ante dignissim neque, imperdiet sodales enim augue a quam.',
-      icon: IconAward,
+        'Comprehensive understanding of Uganda\'s legal and regulatory environment, from trade and customs to investment licensing and sector-specific requirements.',
+      icon: IconMapPin,
     },
     {
-      title: 'Innovator of the year award',
+      title: 'Regional Reach',
       description:
-        'Cras mollis elit massa, vel interdum libero molestie a. Nulla facilisi. Suspendisse cursus non sapien ut tincidunt. Sed non tortor sit amet nisl tristique facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
-      icon: IconAward,
+        'Extensive experience with EAC Common Market, SADC, COMESA, and AfCFTA frameworks, enabling seamless regional market access and cross-border operations.',
+      icon: IconCirclesRelation,
     },
     {
-      title: 'Sustainability award',
+      title: 'Integrated Legal & Strategic Advisory',
       description:
-        'Sed non tortor sit amet nisl tristique facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent in tempor orci. Vestibulum velit justo, dignissim quis nisl nec, scelerisque ultrices mi sapien diam quis elit.',
-      icon: IconAward,
+        'Unique combination of elite legal representation and strategic policy consulting, providing comprehensive solutions under one roof.',
+      icon: IconScale,
+    },
+    {
+      title: 'Government & Institutional Relationships',
+      description:
+        'Deep experience advising governments, regional institutions, development partners, and private sector organizations across policy and regulatory matters.',
+      icon: IconUser,
+    },
+    {
+      title: 'Multisector Experience',
+      description:
+        'Proven track record across agriculture, manufacturing, digital trade, energy, extractives, financial services, and infrastructure sectors.',
+      icon: IconBriefcase,
     },
   ],
 };
@@ -284,11 +287,11 @@ export const teamAbout: TeamProps = {
         'Mable Kisaka is the Managing Partner and Team Leader, providing strategic leadership across international trade, investment, corporate, and policy advisory work. She is a seasoned trade and legal expert with over a decade of experience advising governments, regional institutions, development partners, and private-sector actors on frameworks that promote sustainable, inclusive, and competitive economic growth across Africa.',
         'She holds a Master of Laws (LL.M) in International Business and Economic Law from Georgetown University Law Center and a Bachelor of Laws (LLB) from Makerere University. An Advocate of the Ugandan Bar, Mable is dual-trained in international trade and investment law, arbitration, and corporate governance, with a strong focus on regional and global trade regimes.',
         'Mable serves as Chairperson of the East Africa Law Society International Trade and Regional Integration Committee, where she leads regional thought leadership on trade, investment, digital economy regulation, competition law, and dispute resolution. She oversees the development of policy briefs and position papers, convenes high-level stakeholder dialogues, and supports EAC Partner States in aligning national trade laws with regional and international commitments.',
-        "She was appointed as a Trade Expert on major national and regional policy assignments, including the review and update of Uganda's National Trade Policy, Trade Policy Implementation and Development Plan, and National Export Development Strategy (NEDS) under TradeMark Africa.",
+        'She was appointed as a Trade Expert on major national and regional policy assignments, including the review and update of Uganda’s National Trade Policy, Trade Policy Implementation and Development Plan, and National Export Development Strategy (NEDS) under TradeMark Africa. In addition, she was appointed as a consultant to develop policy and regulatory recommendations to improve the cross-border digital trade regulatory framework within the East African Community, under GIZ.',
         'Mable has also led and contributed to regional advisory work for COMESA, including a landmark study across all 21 Member States on intellectual property rights infringement and illicit trade, which informed regional enforcement and reform initiatives. Her broader advisory experience includes assignments with the World Bank on business readiness, investment climate reform, gender and trade, and access to justice.',
         'As Managing Partner, she leads multidisciplinary teams delivering corporate, commercial, trade, and investment advisory services, advising multinationals and SMEs on market entry, regulatory compliance, cross-border transactions, and investment structuring. She is a Certified Trainer with the International Trade Centre (ITC) and Afreximbank, having trained over 100 firms on AfCFTA opportunities and export competitiveness.',
         'Mable is also experienced in commercial litigation, arbitration, mediation, and negotiation, and is a Chartered and Certified Mediator. She is widely recognized for integrating law, policy, sustainability, and economic strategy, with a strong commitment to empowering SMEs, strengthening institutions, advancing ESG-aligned trade models, and building trade frameworks that deliver meaningful development impact across Africa.',
-        "Beyond her professional work, she is a mentor, speaker, and advocate for women's leadership in trade and law, and remains actively engaged in regional and global policy conversations shaping Africa's economic future.",
+        'Beyond her professional work, she is a mentor, speaker, and advocate for women’s leadership in trade and law, and remains actively engaged in regional and global policy conversations shaping Africa’s economic future.',
       ],
       items: [
         {
@@ -318,13 +321,13 @@ export const teamAbout: TeamProps = {
       bio: [
         'Dr. Chantelle G. Moyo is a Climate Governance Legal Specialist, environmental lawyer, and seasoned researcher with over a decade of experience spanning environmental governance, natural resource governance, mining law, climate change law, energy governance, and sustainable development in Africa and the Global South.',
         'She holds a PhD in Law and Development (Climate Change and Energy) from North-West University, an LL.M in Environmental Law from the University of KwaZulu-Natal, and a Bachelor of Laws (LLB) from the same institution. She has also completed advanced training in Climate Change and Renewable Energy Finance at the Frankfurt School of Finance & Management, and specialized programs in climate governance and negotiations through the African Group of Negotiators Expert Support.',
-        "Dr. Moyo's practice focuses on climate governance, energy transition, extractives regulation, environmental law, and sustainable finance, advising governments, development partners, civil society organizations, and private actors on legal and policy frameworks that support low-carbon development, energy security, and responsible natural resource management.",
+        'Dr. Moyo’s practice focuses on climate governance, energy transition, extractives regulation, environmental law, and sustainable finance, advising governments, development partners, civil society organizations, and private actors on legal and policy frameworks that support low-carbon development, energy security, and responsible natural resource management.',
         'She brings deep expertise in national, regional (African), and international climate policy and negotiation processes, including climate finance, renewable energy regulation, carbon markets, ecosystem services, and environmental accountability mechanisms.',
         'Dr. Moyo has provided independent advisory services to leading international and regional institutions, including the International Development Law Organization, the Natural Resource Governance Institute, Oxfam Africa, USAID, the Ford Foundation, and the SAGE Foundation. Her advisory work has covered climate change law, energy governance, mining regulation, ESG frameworks, and environmental justice across multiple African jurisdictions.',
         'She has also served as Programme Manager at the Konrad Adenauer Stiftung, where she led regional programmes on Energy Security, Climate Change, and Economic Governance in Sub-Saharan Africa, managing multi-country initiatives and stakeholder engagement across government, private sector, and civil society.',
         'A prolific scholar, Dr. Moyo has over 15 peer-reviewed publications, including journal articles, book chapters, and an edited volume with regional and international publishers. Her recent work includes a chapter contribution in the Handbook of Energy Law in the Low Carbon Transition and a policy-focused article published by the United Nations Environment Programme on inclusive and transparent environmental governance.',
         'Her research combines legal analysis, empirical policy research, and interdisciplinary methods to inform reforms in extractives governance, climate adaptation and mitigation, and sustainable energy transitions.',
-        "Within the firm's Climate, Sustainability & Environmental Policy Advisory practice, Dr. Moyo supports work on climate governance frameworks, ESG compliance, access to climate finance, carbon markets, environmental regulation, and climate-related trade measures, working closely with legal, policy, and economic teams to deliver integrated solutions.",
+        'Within the firm’s Climate, Sustainability & Environmental Policy Advisory practice, Dr. Moyo supports work on climate governance frameworks, ESG compliance, access to climate finance, carbon markets, environmental regulation, and climate-related trade measures, working closely with legal, policy, and economic teams to deliver integrated solutions.',
       ],
       items: [
         {
@@ -348,16 +351,16 @@ export const teamAbout: TeamProps = {
       name: 'Kasula Racheal',
       occupation: 'Advocate | Anti-Corruption & Anti-Money Laundering (AML) Specialist',
       image: {
-        src: '/images/team/default.jpg',
+        src: '/images/team/kasula-rachael.png',
         alt: 'Kasula Racheal',
       },
       bio: [
-        "Kasula is an Advocate and Anti-Corruption and Anti-Money Laundering (AML) Specialist with over ten years of experience in governance, financial crime investigations, compliance advisory, and institutional reform within Uganda's public sector and regulatory environment.",
-        "She holds a Master of Laws (LL.M) from the University of East London, a Postgraduate Diploma in Legal Practice from the Law Development Centre, and a Bachelor of Laws (LLB) from the Uganda Christian University. She is also a Certified Anti-Money Laundering Specialist (CAMS) and holds an Executive Diploma in Anti-Corruption and Diplomacy from the United Nations Institute for Training and Research.",
-        "Kasula's practice focuses on anti-corruption enforcement, AML/CFT compliance, financial crime investigations, and integrity systems, advising institutions on corruption risk management, asset tracing, lifestyle audits, financial profiling, and regulatory compliance aligned with international standards.",
-        "She is an Investigator at the Inspectorate of Government of Uganda, where she has led and contributed to systemic investigations into corruption, maladministration, abuse of office, and breaches of the rule of law across Ministries, Departments, and Agencies. Her work informed policy reforms, administrative justice interventions, and legislative amendments.",
-        "Kasula played a key role in drafting Lifestyle Audit Guidelines as a national compliance tool for assessing unexplained wealth, contributed technical input to amendments of the Leadership Code Act, and conducted nationwide compliance spot checks and benchmarking with regulatory bodies, including the Uganda Revenue Authority. She has also engaged in cross-border financial crime matters involving Mutual Legal Assistance and cooperation with international partners.",
-        "In addition to investigative and advisory work, Kasula designs and delivers capacity-building programs for organizations and compliance teams on AML controls, asset declarations, corruption prevention, and governance frameworks. She brings strong analytical capability, leveraging data-driven financial analysis to support evidence-based decision-making, institutional accountability, and ethical governance.",
+        'Racheal is an Advocate and Anti-Corruption and Anti-Money Laundering (AML) Specialist with over ten years of experience in governance, financial crime investigations, compliance advisory, and institutional reform within Uganda’s public sector and regulatory environment. ',
+        'She holds a Master of Laws (LL.M) from the University of East London, a Postgraduate Diploma in Legal Practice from the Law Development Centre, and a Bachelor of Laws (LLB) from the Uganda Christian University. She is also a Certified Anti-Money Laundering Specialist (CAMS) and a Certified Fraud Examiner. She holds an Executive Diploma in Anti-Corruption and Diplomacy from the United Nations Institute for Training and Research.',
+        'Racheal’s practice focuses on anti-corruption enforcement, AML/CFT compliance, financial crime investigations, and integrity systems, advising institutions on corruption risk management, asset tracing, lifestyle audits, financial profiling, and regulatory compliance aligned with international standards.',
+        'She is an Investigator at the Inspectorate of Government of Uganda, where she has led and contributed to systemic investigations into corruption, maladministration, abuse of office, and breaches of the rule of law across Ministries, Departments, and Agencies. Her work informed policy reforms, administrative justice interventions, and legislative amendments.',
+        'Racheal played a key role in drafting Lifestyle Audit Guidelines as a national compliance tool for assessing unexplained wealth, contributed technical input to amendments of the Leadership Code Act, and conducted nationwide compliance spot checks and benchmarking with regulatory bodies, including the Uganda Revenue Authority. She has also engaged in cross-border financial crime matters involving Mutual Legal Assistance and cooperation with international partners.',
+        'In addition to investigative and advisory work, Racheal designs and delivers capacity-building programs for organizations and compliance teams on AML controls, asset declarations, corruption prevention, and governance frameworks. She brings strong analytical capability, leveraging data-driven financial analysis to support evidence-based decision-making, institutional accountability, and ethical governance.',
       ],
       items: [
         {
@@ -388,7 +391,7 @@ export const teamAbout: TeamProps = {
         'Dr. Richard Sebaggala is a Trade Economist with over fifteen years of experience in international trade, investment, and development policy research across Africa. His work focuses on translating complex economic data into actionable policy and regulatory insights that support export competitiveness, regional integration, and inclusive growth.',
         'He holds a PhD in Applied Economics from the University of Agder, an MSc in Quantitative Economics from Makerere University, and a BA in Economics. He is also a senior lecturer in economics and a long-standing research fellow, contributing to policy research, capacity building, and academic leadership in Uganda.',
         'He has led and contributed to several flagship trade and industrial policy assignments, including major studies for the Uganda Free Zones Authority under the African Continental Free Trade Area (AfCFTA), covering market entry strategies for Ugandan exporters and assessments of opportunities and constraints within Special Economic Zones.',
-        'Dr. Sebaggala has served as an Economist and policy advisor on nationally significant assignments commissioned by TradeMark Africa for Uganda\'s Ministry of Trade, Industry, and Cooperatives, including the National Export Development Strategy (2025/26–2030/31) and the National Trade Policy Development and Implementation Plan. In these roles, he led analytical work on sector competitiveness, trade diagnostics, and investment facilitation reforms to advance Uganda\'s export-led growth agenda.',
+        "Dr. Sebaggala has served as an Economist and policy advisor on nationally significant assignments commissioned by TradeMark Africa for Uganda's Ministry of Trade, Industry, and Cooperatives, including the National Export Development Strategy (2025/26–2030/31) and the National Trade Policy Development and Implementation Plan. In these roles, he led analytical work on sector competitiveness, trade diagnostics, and investment facilitation reforms to advance Uganda's export-led growth agenda.",
         'He has advised governments and private-sector stakeholders on trade compliance, export diversification, customs cooperation, and rules-of-origin implementation within the East African Community (EAC) and COMESA frameworks.',
         'Dr. Sebaggala brings strong quantitative expertise, including Computable General Equilibrium (CGE) modelling, panel data econometrics, and advanced trade policy analysis, with specialized training from regional and international institutions. In recent years, he has integrated artificial intelligence and machine learning techniques into trade and macroeconomic analysis to enhance evidence-based decision-making for governments, regional bodies, and development partners.',
       ],
@@ -744,4 +747,100 @@ export const contactAbout: ContactProps = {
       type: 'submit',
     },
   },
+};
+
+// Pro Bono & Community Engagement data on About page *******************
+export const proBonoAbout = {
+  id: 'probono-on-about',
+  hasBackground: true,
+  header: {
+    title: 'Pro Bono & Community Engagement',
+    subtitle:
+      'Access to justice and meaningful community engagement sit at the heart of our mission. We believe that legal expertise and policy knowledge should serve not only commercial clients but also those who need it most.',
+    tagline: 'Giving Back',
+  },
+  content:
+    'Handel is committed to promoting access to justice, supporting vulnerable communities, and contributing to legal and policy reforms that advance the public good. We dedicate significant resources to pro bono legal services and community-driven initiatives.',
+  images: [
+    {
+      src: '/images/community/cake-cutting.jpeg',
+      alt: 'Community legal workshop',
+      // caption: 'Legal literacy workshops for small business owners',
+    },
+    {
+      src: '/images/community/crafted-hand-bags.jpeg',
+      alt: 'Youth empowerment program',
+      // caption: 'Youth empowerment and rights education',
+    },
+    {
+      src: '/images/community/group-2.jpeg',
+      alt: 'Women farmers training',
+      // caption: 'Supporting women farmers with trade compliance training',
+    },
+    {
+      src: '/images/community/group.jpeg',
+      alt: 'Community legal clinic',
+      // caption: 'Free legal clinics in rural communities',
+    },
+    {
+      src: '/images/community/kalule-speaking.jpeg',
+      alt: 'Legal aid partnership',
+      // caption: 'Partnerships with NGOs for access to justice',
+    },
+    {
+      src: '/images/community/mable-speaking.jpeg',
+      alt: 'Policy reform advocacy',
+      // caption: 'Advocating for inclusive trade and investment policies',
+    },
+  ],
+};
+
+// Pro Bono Focus Areas data on About page *******************
+export const proBonoFocusAbout = {
+  id: 'probono-focus-on-about',
+  hasBackground: false,
+  header: {
+    title: 'Our Pro Bono Commitment',
+    subtitle:
+      'We dedicate substantial resources to advancing access to justice, supporting vulnerable communities, and promoting legal and policy reforms in the public interest.',
+  },
+  columns: 2,
+  items: [
+    {
+      title: 'Access to Justice for Marginalized Communities',
+      description:
+        'Representing individuals and communities facing barriers to legal representation, including women, youth, persons with disabilities, and rural populations on issues such as land rights, labor rights, and discrimination.',
+      icon: IconUsers,
+    },
+    {
+      title: 'Legal Literacy & Capacity Building',
+      description:
+        'Conducting workshops, trainings, and outreach programs to educate communities, SMEs, and civil society organizations about their legal rights, trade compliance requirements, and dispute resolution mechanisms.',
+      icon: IconBook,
+    },
+    {
+      title: 'Policy Reform & Legislative Advocacy',
+      description:
+        'Contributing to national and regional policy processes by providing technical input on trade, investment, anti-corruption, and governance reforms. Participating in public consultations and stakeholder engagement forums.',
+      icon: IconScale,
+    },
+    {
+      title: 'Support for SMEs & Informal Traders',
+      description:
+        'Advising small and medium enterprises and informal cross-border traders on customs procedures, regional trade frameworks, business registration, and regulatory compliance at no cost or reduced fees.',
+      icon: IconBriefcase,
+    },
+    {
+      title: 'Women Empowerment & Gender Equality',
+      description:
+        'Supporting women-led businesses, women farmers, and women\'s rights organizations on legal issues related to trade, land ownership, inheritance, and access to finance.',
+      icon: IconHeartHandshake,
+    },
+    {
+      title: 'Environmental & Climate Justice',
+      description:
+        'Providing legal support to communities affected by environmental degradation and climate change, including representation in environmental disputes and advocacy for stronger environmental protections.',
+      icon: IconHomeEco,
+    },
+  ],
 };

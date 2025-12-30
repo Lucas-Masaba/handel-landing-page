@@ -51,7 +51,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           </div>
 
           <div className="md:col-span-3">
-            <h1 className="text-3xl font-extrabold tracking-tight text-[var(--brand-primary-600)] dark:text-white sm:text-4xl">
+            <h1 className="text-3xl font-extrabold tracking-tight text-[var(--brand-primary-600)] dark:text-[var(--brand-accent-500)] sm:text-4xl">
               {name}
             </h1>
             <p className="mt-2 text-lg font-medium text-gray-600 dark:text-slate-300">{occupation}</p>

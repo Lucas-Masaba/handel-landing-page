@@ -10,6 +10,7 @@ import Stats from '~/components/widgets/Stats';
 import Steps from '~/components/widgets/Steps';
 import Team2 from '~/components/widgets/Team2';
 import Testimonials2 from '~/components/widgets/Testimonials2';
+import Gallery from '~/components/widgets/Gallery';
 import {
   contactAbout,
   faqsAbout,
@@ -22,6 +23,8 @@ import {
   testimonials2About,
   featuresAbout,
   teamAbout,
+  proBonoAbout,
+  proBonoFocusAbout,
 } from '~/shared/data/pages/about.data';
 
 import { contact2Contact } from '~/shared/data/pages/contact.data';
@@ -33,13 +36,15 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     <>
-      {/* <Hero2 {...hero2About} /> */}
+      <Hero2 {...hero2About} />
       <Stats {...statsAbout} />
-      {/* <Features4 {...featuresFourAbout} /> */}
+      <Features4 {...featuresFourAbout} />
       <Features4 {...featuresFourAboutTwo} />
       <Steps {...stepsAbout} />
       <Features3 {...features3About} />
       <Features {...featuresAbout} />
+      <Gallery {...proBonoAbout} />
+      <Features3 {...proBonoFocusAbout} />
       <Team2 {...teamAbout} />
       {/* <Testimonials2 {...testimonials2About} /> */}
       {/* <FAQs {...faqsAbout} /> */}

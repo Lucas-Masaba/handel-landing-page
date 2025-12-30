@@ -102,9 +102,17 @@ type FormProps = {
 };
 
 type Image = {
+type Image = {
   link?: string;
   src: string | StaticImageData;
   alt: string;
+  caption?: string;
+};
+
+type GalleryProps = Widget & {
+  header?: Header;
+  content?: string;
+  images: Array<Image>;
 };
 
 type Item = {

@@ -25,7 +25,7 @@ const Content = ({
     <div className="mx-auto max-w-7xl">
       <div className={`  md:gap-16`}>
         <div className="self-center md:basis-1/2">
-          {/* {content && <div className="mb-8 text-3xl sm:text-5xl text-[var(--brand-primary-600)] lg:mb-12 dark:text-[var(--brand-accent-500)]">{content}</div>} */}
+          {content && <div className="mb-8 text-xl text-center sm:text-2xl text-[var(--brand-primary-600)] lg:mb-12 dark:text-[var(--brand-accent-500)]">{content}</div>}
           <ItemGrid
             items={items}
             columns={1}

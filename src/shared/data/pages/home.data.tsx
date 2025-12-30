@@ -8,6 +8,7 @@ import {
   IconCheck,
   IconClock,
   IconComponents,
+  IconCirclesRelation,
   IconDownload,
   IconListCheck,
   IconMail,
@@ -45,27 +46,12 @@ import gasImg from '~/assets/images/gas.jpg';
 
 // Hero data on Home page *******************
 export const heroHome: HeroProps = {
-  title: (
-    <>
-      Strategic Business Advice
-& Trusted Legal Counsel
-    </>
-  ),
-  subtitle: (
-    <>
-      <span className="hidden md:inline">
-        <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
-          Handel Global Consulting
-        </span>{' '}
-        helps organizations scale with operations & strategy. <span className="font-semibold underline decoration-primary-600 decoration-wavy decoration-1 underline-offset-2">
-          Handel Advocates
-        </span>{' '} provides commercial and corporate legal services.
-      </span>{' '}
-    </>
-  ),
+  title: 'Driving Regional and International Success Through Law and Policy',
+  subtitle:
+    'Handel Advocates I Global Consulting provides integrated legal and strategic advisory services across Uganda, the EAC, SADC, COMESA, and international markets. We bring together cutting-edge legal expertise with deep policy insight to help clients navigate complexity, seize opportunities, and drive sustainable growth.',
   callToAction2: {
-    text: 'Learn more',
-    href: '/about',
+    text: 'Our Services',
+    href: '/services',
   },
   image: {
     src: heroImg,
@@ -185,36 +171,37 @@ export const contentHomeOne: ContentProps = {
   id: 'contentOne-on-home-one',
   hasBackground: true,
   header: {
-    title: 'Our Services',
-    subtitle: 'Comprehensive solutions across consulting and legal domains',
-    tagline: 'Services',
+    title: 'An Integrated Model',
+    subtitle:
+      'Handel Advocates I Global Consulting bridges law, policy, and strategy to deliver holistic solutions for clients operating across Uganda, the EAC, SADC, COMESA, and international markets.',
+    tagline: 'Why Handel',
   },
   content:
-    'Handel Global Consulting',
+    'We combine elite legal expertise with strategic advisory, offering a seamless experience that addresses both legal obligations and strategic opportunities.',
   items: [
     {
-      title: 'Strategy & Operations',
+      title: 'Integrated Legal & Consulting Services',
       description:
-        'Handel is an internationally operating law firm based in the heart of Europe with a focus on the resolution of complex cross-border disputes before arbitral tribunals and state courts.',
-        icon: IconTrendingUp,
+        'Our team delivers both legal representation and strategic policy advisory, ensuring clients get comprehensive support across the full spectrum of their needs.',
+      icon: IconFileText,
     },
     {
-      title: 'M&A Advisory',
+      title: 'Regional & International Reach',
       description:
-        'We also advise clients on the preparation and implementation of large-scale business ventures, including construction and infrastructure projects, from contract formation to the final steps of project execution. Our specialisation and experience in dispute resolution allow us to provide legal and strategic advice with a discerning eye, assisting our clients in realizing their business projects while minimising their exposure to litigation and liability risks.',
-        icon: IconBriefcase,
+          'Deep understanding of Uganda, EAC, SADC, COMESA, and AfCFTA frameworks, plus global trade rules and international best practices.',
+      icon: IconMapPin,
     },
     {
-      title: 'Organizational Development',
+      title: 'Multidisciplinary Expertise',
       description:
-        'Our team of internationally recognized lawyers combines legal expertise and deep industry knowledge to provide legal and strategic advice on a variety of commercial and corporate law issues, including company law, IP and competition law, real estate law, and insurance law.',
-        icon: IconUsers,
+        'Lawyers, economists, trade policy experts, and regulatory professionals working together to deliver comprehensive solutions.',
+      icon: IconUsers,
     },
     {
-      title: 'Compliance Consulting',
+      title: 'Client-Centric Approach',
       description:
-        'The close relationship we enjoy with our long-standing clients has presented us with opportunities to also provide our services in a less conventional approach, serving as our clients’ legal department or an extension thereof. Based on these experiences we now offer tailored solutions to all our clients, allowing them to outsource (parts of) their in-house legal work to us, as needed.  ',
-        icon: IconShield,
+        "We tailor our services to each client's unique needs, whether multinational corporation, government, SME, or development partner.",
+      icon: IconCheck,
     }
   ],
   image: {
@@ -230,28 +217,28 @@ export const contentHomeTwo: ContentProps = {
   id: 'contentOne-on-home-two',
   hasBackground: true,
   content:
-    'Handel Advocates',
+    'Why Clients Choose Handel',
   items: [
     {
-      title: 'Corporate Law',
-      description: 'We assist our clients in achieving their business objectives in a way that seamlessly blends into the legal background conditions they operate in and, where necessary, shape these in a practical and cost-effective way. Despite our specialisation in arbitration and litigation, we do not consider the litigious process as the be-all and end-all – this sharpest arrow in our quiver is available to our clients, however, in those cases in which all other means have failed.',
+      title: 'Deep Local & Regional Expertise',
+      description: "Grounded understanding of Uganda's legal and regulatory environment, combined with extensive regional experience across EAC, SADC, and COMESA.",
+      icon: IconMapPin,
+    },
+    {
+      title: 'International Standards',
+      description: 'Our team brings global best practices, WTO-aligned strategy, and international compliance expertise to every engagement.',
       icon: IconScale,
     },
-    // {
-    //   title: 'Contract Negotiation',
-    //   description: 'Drafting, reviewing, and negotiating contracts to protect clients interests and ensure favorable terms.',
-    //   icon: IconFileText,
-    // },
-    // {
-    //   title: 'Litigation Support',
-    //   description: 'Providing assistance and expertise in legal disputes and court proceedings to protect clients interests.',
-    //   icon: IconShield,
-    // },
-    // {
-    //   title: 'Regulatory Advice',
-    //   description: 'Guidance on navigating complex regulatory environments to ensure compliance and mitigate risks.',
-    //   icon: IconBriefcase,
-    // },
+    {
+      title: 'Strategic Business Focus',
+      description: 'We understand that legal and policy advice must serve broader business objectives—driving growth, reducing risk, and creating competitive advantage.',
+      icon: IconTrendingUp,
+    },
+    {
+      title: 'Proven Track Record',
+      description: 'Successfully representing multinationals, SMEs, governments, and development partners across complex legal and policy challenges.',
+      icon: IconUsers,
+    },
   ],
   image: {
     src: cameraBackImg,
