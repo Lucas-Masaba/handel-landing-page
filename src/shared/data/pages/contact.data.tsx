@@ -93,12 +93,12 @@ export const contact2Contact: ContactProps = {
       name: 'textarea',
       placeholder: 'Write your message...',
     },
-    checkboxes: [
-      {
-        label: 'Have you read our privacy policy?',
-        value: '',
-      },
-    ],
+    // checkboxes: [
+    //   {
+    //     label: 'Have you read our privacy policy?',
+    //     value: '',
+    //   },
+    // ],
     btn: {
       title: 'Send Message',
       type: 'submit',

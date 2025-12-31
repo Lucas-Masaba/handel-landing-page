@@ -14,8 +14,8 @@ const Features2 = ({ header, items, columns = 3, id }: FeaturesProps) => (
         defaultColumns={3}
         panelClass="card flex flex-start min-w-screen-sm items-stretch h-full"
         iconClass="h-8 w-8 mr-4 text-[var(--brand-primary-600)] dark:text-[var(--brand-accent-500)]"
-        titleClass="text-xl font-bold text-[var(--brand-primary-600)] dark:text-white"
-        descriptionClass="text-md text-gray-500 dark:text-gray-400"
+        titleClass="text-base font-bold text-[var(--brand-primary-600)] dark:text-white"
+        descriptionClass="text-sm text-gray-500 dark:text-gray-400 text-justify"
         actionClass="justify-start"
       />
     </div>

@@ -33,7 +33,7 @@ const Dropdown = ({ options, activeTab, onActiveTabSelected, iconUp, iconDown }:
   return (
     <div className="relative mt-4 rounded-md border border-gray-400 text-left">
       <div onClick={dropdownHandler} className="flex select-none items-center justify-between rounded-md p-3">
-        <div className="text-lg">{selectedOption}</div>
+        <div className="text-base">{selectedOption}</div>
         {iconDown && iconUp ? (
           isDropdownOpen === false ? (
             iconDown
@@ -52,7 +52,7 @@ const Dropdown = ({ options, activeTab, onActiveTabSelected, iconUp, iconDown }:
             <div
               key={`option-${index}`}
               onClick={() => onOptionSelected(option, index)}
-                className={`flex cursor-pointer items-center bg-white p-3 text-lg dark:bg-[var(--brand-primary-600)] ${
+                className={`flex cursor-pointer items-center bg-white p-3 text-base dark:bg-[var(--brand-primary-600)] ${
                 activeTab !== index ? 'pl-10' : 'text-primary-600 dark:text-primary-200'
               }`}
             >

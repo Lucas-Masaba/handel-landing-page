@@ -40,7 +40,7 @@ const FAQs4 = ({ header, tabs, id, hasBackground = false }: FAQsProps) => {
                         tabIndex={0}
                         onClick={onSelectTab}
                       >
-                        <span className="w-full text-xl hover:underline">{tab.link?.label}</span>
+                        <span className="w-full text-base hover:underline">{tab.link?.label}</span>
                       </li>
                     );
                   })}

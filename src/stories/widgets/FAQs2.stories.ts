@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import Component from '~/components/widgets/FAQs2';
+import Component from '~/components/widgets/Accordion';
 import { faqs2Home as mockData } from '~/shared/data/pages/home.data';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Widgets/FAQs2',
+  title: 'Widgets/Accordion',
   component: Component,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout

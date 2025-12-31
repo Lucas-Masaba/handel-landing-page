@@ -29,7 +29,7 @@ const Steps = ({
           <Headline
             header={header}
             containerClass="text-center"
-            titleClass="text-3xl sm:text-4xl"
+            titleClass="text-2xl sm:text-3xl"
             subtitleClass="text-center"
           />
         )}

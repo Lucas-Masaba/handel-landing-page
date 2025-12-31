@@ -66,7 +66,7 @@ const Gallery = ({
           </div>
         )}
         {content && (
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 md:mb-16 text-lg text-muted dark:text-slate-400 text-center">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 md:mb-16 text-base text-muted dark:text-slate-400 text-center text-justify">
             {content}
           </div>
         )}
@@ -93,7 +93,7 @@ const Gallery = ({
                     {/* Caption */}
                     {image.caption && (
                       <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8 md:p-12 lg:p-16">
-                        <p className="text-white text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight max-w-4xl">
+                        <p className="text-white text-base sm:text-lg md:text-xl font-semibold leading-tight max-w-4xl">
                           {image.caption}
                         </p>
                       </div>

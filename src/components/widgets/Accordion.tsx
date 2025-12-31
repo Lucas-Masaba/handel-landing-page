@@ -4,7 +4,14 @@ import { IconChevronDown, IconChevronUp } from '@tabler/icons-react';
 import { FAQsProps, Item } from '~/shared/types';
 import WidgetWrapper from '../common/WidgetWrapper';
 
-const FAQs2 = ({ header, items, id, hasBackground = false }: FAQsProps) => (
+/**
+ * Accordion Component
+ * 
+ * A reusable collapsible accordion/accordion widget that displays items
+ * with expand/collapse functionality. Can be used for FAQs, documentation,
+ * feature lists, or any expandable content.
+ */
+const Accordion = ({ header, items, id, hasBackground = false }: FAQsProps) => (
   <WidgetWrapper id={id ? id : ''} hasBackground={hasBackground} containerClass="max-w-6xl">
     {header && <Headline header={header} titleClass="text-2xl sm:text-3xl" />}
     <Collapse
@@ -16,4 +23,4 @@ const FAQs2 = ({ header, items, id, hasBackground = false }: FAQsProps) => (
   </WidgetWrapper>
 );
 
-export default FAQs2;
+export default Accordion;

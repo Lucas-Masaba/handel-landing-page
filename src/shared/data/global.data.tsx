@@ -25,55 +25,42 @@ export const announcementData: AnnouncementProps = {
 export const headerData: HeaderProps = {
   links: [
     {
-      label: 'Pages',
-      icon: IconChevronDown,
+      label: 'About',
+      href: '#about-handel',
+    },
+    {
+      label: 'Services',
       links: [
         {
-          label: 'Services',
-          href: '/services',
+          label: 'International Trade',
+          href: '#international-trade',
         },
-        // {
-        //   label: 'Pricing',
-        //   href: '/pricing',
-        // },
         {
-          label: 'About us',
-          href: '/about',
+          label: 'Practice Areas',
+          href: '#practice-areas',
         },
-        // {
-        //   label: 'Contact us',
-        //   href: '/contact',
-        // },
-        // {
-        //   label: 'FAQs',
-        //   href: '/faqs',
-        // },
-        // {
-        //   label: 'Terms & Conditions',
-        //   href: '/terms',
-        // },
-        // {
-        //   label: 'Privacy Policy',
-        //   href: '/privacy',
-        // },
+        {
+          label: 'Consulting',
+          href: '#global-consulting',
+        },
       ],
+    },
+    {
+      label: 'Pro Bono',
+      href: '#pro-bono',
+    },
+    {
+      label: 'Team',
+      href: '#team-on-about',
     },
     {
       label: 'Publications',
       href: '/publications',
     },
-    {
-      label: 'Projects',
-      href: '/projects',
-    },
-    // {
-    //   label: 'Contact',
-    //   href: '/contact',
-    // },
   ],
   actions: [
     {
-      text: 'Contact Us',
+      text: 'Contact',
       href: '/contact',
       targetBlank: true,
     },

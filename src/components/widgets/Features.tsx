@@ -5,7 +5,7 @@ import ItemGrid from '../common/ItemGrid';
 
 const Features = ({ id, header, items, columns = 3, hasBackground = false }: FeaturesProps) => (
   <WidgetWrapper id={id ? id : ''} containerClass="scroll-mt-16 max-w-6xl">
-    {header && <Headline header={header} titleClass="text-4xl md:text-5xl" />}
+    {header && <Headline header={header} titleClass="text-2xl md:text-3xl" />}
     <ItemGrid
       id={id}
       items={items}
@@ -14,8 +14,8 @@ const Features = ({ id, header, items, columns = 3, hasBackground = false }: Fea
       containerClass={`pb-6 ${columns === 2 ? 'max-w-5xl' : ''}`}
       panelClass={`flex max-w-full ${columns === 2 ? 'sm:max-w-md mx-auto' : ''}`}
       iconClass="h-12 w-12 flex items-center justify-center rounded-md text-[var(--brand-primary-600)] bg-[var(--brand-accent-500)] p-2 md:p-3 mt-1.5 mb-4 mr-4 rtl:ml-4 rtl:mr-0"
-      titleClass="mb-3 text-xl font-bold text-[var(--brand-primary-600)] dark:text-white"
-      descriptionClass="text-gray-600 dark:text-slate-400"
+      titleClass="mb-3 text-base font-bold text-[var(--brand-primary-600)] dark:text-white"
+      descriptionClass="text-sm text-gray-600 dark:text-slate-400 text-justify"
       actionClass="justify-start"
     />
   </WidgetWrapper>

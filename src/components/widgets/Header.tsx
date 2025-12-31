@@ -64,7 +64,7 @@ const Header = () => {
     >
       <div className="mx-auto w-full max-w-7xl md:flex md:justify-between md:py-3.5 md:px-4">
         <div
-            className={`flex justify-between py-3 px-3 md:py-0 md:px-0 ${
+            className={`flex justify-between py-2 px-3 md:py-0 md:px-0 ${
               isToggleMenuOpen
                 ? 'md:bg-transparent md:dark:bg-transparent md:border-none bg-white dark:bg-[var(--brand-primary-600)] border-b border-gray-200 dark:border-[var(--brand-primary-800)]'
               : ''
@@ -91,7 +91,7 @@ const Header = () => {
         >
           <ul
             ref={ref}
-            className="flex flex-col w-full mt-2 text-xl mb-36 md:m-0 md:w-auto md:flex-row md:self-center md:pt-0 md:text-base"
+            className="flex flex-col w-full mt-2 text-base mb-36 md:m-0 md:w-auto md:flex-row md:self-center md:pt-0 md:text-sm lg:text-base font-sans"
           >
             {links &&
               links.map(({ label, href, icon: Icon, links }, index) => (
@@ -99,7 +99,7 @@ const Header = () => {
                   {links && links.length ? (
                     <>
                       <button
-                        className="flex items-center px-4 py-3 font-medium transition duration-150 ease-in-out hover:text-[var(--brand-accent-700)] dark:hover:text-white"
+                        className="flex items-center px-3 lg:px-4 py-3 font-medium transition duration-150 ease-in-out hover:text-[var(--brand-accent-700)] dark:hover:text-white whitespace-nowrap"
                         onClick={() => handleDropdownOnClick(index)}
                       >
                         {label}{' '}
@@ -133,7 +133,7 @@ const Header = () => {
                     </>
                   ) : (
                     <Link
-                      className="flex items-center px-4 py-3 font-medium transition duration-150 ease-in-out hover:text-[var(--brand-accent-700)] dark:hover:text-white"
+                      className="flex items-center px-3 lg:px-4 py-3 font-medium transition duration-150 ease-in-out hover:text-[var(--brand-accent-700)] dark:hover:text-white whitespace-nowrap"
                       href={href as string}
                       onClick={() => (isToggleMenuOpen ? handleToggleMenuOnClick() : handleDropdownOnClick(index))}
                     >

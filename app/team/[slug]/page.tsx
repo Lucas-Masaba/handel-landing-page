@@ -51,10 +51,10 @@ export default function Page({ params }: { params: { slug: string } }) {
           </div>
 
           <div className="md:col-span-3">
-            <h1 className="text-3xl font-extrabold tracking-tight text-[var(--brand-primary-600)] dark:text-[var(--brand-accent-500)] sm:text-4xl">
+            <h1 className="text-2xl font-extrabold tracking-tight text-[var(--brand-primary-600)] dark:text-[var(--brand-accent-500)] sm:text-3xl">
               {name}
             </h1>
-            <p className="mt-2 text-lg font-medium text-gray-600 dark:text-slate-300">{occupation}</p>
+            <p className="mt-2 text-base font-medium text-gray-600 dark:text-slate-300">{occupation}</p>
 
             <div className="flex flex-wrap items-center gap-3 mt-6">
               {items?.map(({ title, href, icon: Icon }, idx) => (
@@ -75,9 +75,9 @@ export default function Page({ params }: { params: { slug: string } }) {
 
             <div className="mt-8 space-y-4 text-base leading-7 text-gray-700 dark:text-slate-300">
               {member.bio && member.bio.length > 0 ? (
-                member.bio.map((paragraph, idx) => <p key={idx}>{paragraph}</p>)
+                member.bio.map((paragraph, idx) => <p key={idx} className="text-justify">{paragraph}</p>)
               ) : (
-                <p>
+                <p className="text-justify">
                   {name} is a core member of Handel. This profile page will feature a detailed biography, areas of
                   expertise, notable work, and ways to engage. For now, use the social links above or the contact page to
                   reach out.

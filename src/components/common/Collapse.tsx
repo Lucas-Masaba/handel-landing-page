@@ -3,6 +3,7 @@
 import { IconChevronDown, IconChevronUp } from '@tabler/icons-react';
 import useCollapse from '~/hooks/useCollapse';
 import { CollapseProps } from '~/shared/types';
+import { parseDescription, ContentRenderer } from '~/utils/contentParser';
 
 const Collapse = ({ items, classCollapseItem, iconUp, iconDown }: CollapseProps) => {
   const { activeIndex, handleSetIndex } = useCollapse();
@@ -24,7 +25,7 @@ const Collapse = ({ items, classCollapseItem, iconUp, iconDown }: CollapseProps)
               aria-controls={`accordion__panel-${index}`}
               role="button"
             >
-              <h2 className="w-full pr-2 text-lg font-medium leading-6 text-[var(--brand-primary-600)] dark:text-slate-300">{title}</h2>
+              <h2 className="w-full pr-2 text-base font-medium leading-6 text-[var(--brand-primary-600)] dark:text-slate-300">{title}</h2>
               {iconDown && iconUp ? (
                 activeIndex === index ? (
                   iconUp
@@ -43,7 +44,15 @@ const Collapse = ({ items, classCollapseItem, iconUp, iconDown }: CollapseProps)
                 aria-labelledby={`accordion__heading-${index}`}
                 id={`accordion__panel-${index}`}
               >
-                <p className="mt-2 text-gray-600 dark:text-slate-400">{description}</p>
+                {typeof description === 'string' ? (
+                  <ContentRenderer content={parseDescription(description)} />
+                ) : Array.isArray(description) ? (
+                  <div className="mt-2 text-sm text-gray-600 dark:text-slate-400">
+                    {description.map((item, itemIndex) => (
+                      <p key={itemIndex} className="mb-2 text-justify">{item}</p>
+                    ))}
+                  </div>
+                ) : null}
               </div>
             )}
           </div>

@@ -35,7 +35,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-custom)', ...defaultTheme.fontFamily.sans],
+        sans: ['var(--font-body)', ...defaultTheme.fontFamily.sans],
+        heading: ['var(--font-heading)', ...defaultTheme.fontFamily.serif],
       },
     },
   },

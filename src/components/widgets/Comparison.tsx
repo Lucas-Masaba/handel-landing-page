@@ -18,7 +18,7 @@ const Comparison = ({ header, columns, id, hasBackground = false }: ComparisonPr
           } first-of-type:pl-6 last-of-type:border-none dark:border-[var(--brand-primary-800)]  md:px-5 md:first-of-type:w-full md:first-of-type:pl-5`}
         >
           <h3
-            className={`mb-4 border-b border-solid border-gray-300 pb-4 text-lg font-medium uppercase leading-6 text-[var(--brand-primary-600)] dark:border-[var(--brand-primary-800)] dark:text-white ${
+            className={`mb-4 border-b border-solid border-gray-300 pb-4 text-base font-medium uppercase leading-6 text-[var(--brand-primary-600)] dark:border-[var(--brand-primary-800)] dark:text-white ${
               index === 0 ? 'text-left' : 'text-center'
             }`}
           >
@@ -37,7 +37,7 @@ const Comparison = ({ header, columns, id, hasBackground = false }: ComparisonPr
                 ) : index !== 0 ? (
                   <p className="mt-2">{title2}</p>
                 ) : (
-                  <h4 className="mt-2 text-lg">{title2}</h4>
+                  <h4 className="mt-2 text-base">{title2}</h4>
                 )}
               </div>
             ))}

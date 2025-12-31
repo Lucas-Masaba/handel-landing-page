@@ -6,7 +6,7 @@ import Hero from '~/components/widgets/Hero';
 import { heroContact, contact2Contact, features2Contact } from '~/shared/data/pages/contact.data';
 
 export const metadata: Metadata = {
-  title: 'Contact us',
+  title: 'Contact Us',
 };
 
 const Page = () => {

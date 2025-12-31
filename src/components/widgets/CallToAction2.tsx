@@ -5,8 +5,8 @@ const Card = ({ title, description, href, form }: Item) => (
   <div className="card mb-6 px-5 py-4">
     <div className="flex items-center justify-between">
       <div className="w-full">
-        <h3 className="mb-3 text-xl font-bold text-gray-700 dark:text-white">{title}</h3>
-        <p className="text-gray-600 dark:text-slate-400">{description}</p>
+        <h3 className="mb-3 text-base font-bold text-gray-700 dark:text-white">{title}</h3>
+        <p className="text-gray-600 dark:text-slate-400 text-justify">{description}</p>
       </div>
       {href && (
         <div className="flex h-10 w-10 items-center justify-center">
@@ -49,7 +49,7 @@ const CallToAction2 = ({ title, subtitle, items }: CallToActionProps) => (
       <div className="row-gap-10 grid gap-6 md:grid-cols-2">
         <div className="mx-auto md:my-auto md:ml-0 md:pb-6 md:pr-24">
           <h2 className="mb-3 flex justify-center text-6xl font-bold md:justify-start">{title}</h2>
-          <p className="text-center text-xl text-gray-200 dark:text-slate-300 md:text-left rtl:md:text-right">
+          <p className="text-center text-base text-gray-200 dark:text-slate-300 md:text-left rtl:md:text-right text-justify">
             {subtitle}
           </p>
         </div>

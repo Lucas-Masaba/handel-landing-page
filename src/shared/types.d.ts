@@ -291,6 +291,7 @@ type FeaturesProps = Widget & {
 type ContentProps = Widget & {
   header?: Header;
   content?: string;
+  contentAfterItems?: string;
   items?: Array<Item>;
   image?: Image;
   isReversed?: boolean;

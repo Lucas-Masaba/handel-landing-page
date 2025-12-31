@@ -33,12 +33,12 @@ const ItemTeam = ({
         {linkHref ? (
           <Link href={linkHref} aria-label={`${name} details`} className="block">
             <h3 className={twMerge('', nameClass)}>{name}</h3>
-            <p className={twMerge('', occupationClass)}>{occupation}</p>
+            <p className={twMerge('text-justify', occupationClass)}>{occupation}</p>
           </Link>
         ) : (
           <>
             <h3 className={twMerge('', nameClass)}>{name}</h3>
-            <p className={twMerge('', occupationClass)}>{occupation}</p>
+            <p className={twMerge('text-justify', occupationClass)}>{occupation}</p>
           </>
         )}
         <ul className={twMerge('', itemsClass)}>

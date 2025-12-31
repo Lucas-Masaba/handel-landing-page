@@ -270,9 +270,9 @@ export const teamAbout: TeamProps = {
   id: 'team-on-about',
   hasBackground: false,
   header: {
-    title: 'The Team',
-    subtitle:
-      'Our multidisciplinary team of legal, trade, and policy experts is dedicated to delivering integrated solutions that drive client success across Uganda and the region.',
+    // title: 'The Team',
+    // subtitle:
+    //   'Our multidisciplinary team of legal, trade, and policy experts is dedicated to delivering integrated solutions that drive client success across Uganda and the region.',
     tagline: 'team',
   },
   teams: [
@@ -736,12 +736,12 @@ export const contactAbout: ContactProps = {
       name: 'textarea',
       placeholder: 'Write your message...',
     },
-    checkboxes: [
-      {
-        label: 'Have you read our privacy policy?',
-        value: '',
-      },
-    ],
+    // checkboxes: [
+    //   {
+    //     label: 'Have you read our privacy policy?',
+    //     value: '',
+    //   },
+    // ],
     btn: {
       title: 'Contact us',
       type: 'submit',

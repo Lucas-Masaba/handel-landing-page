@@ -6,7 +6,7 @@ import { toSlug } from '~/utils/utils';
 
 const Team = ({ header, teams, id, hasBackground = false }: TeamProps) => (
   <WidgetWrapper id={id ? id : ''} hasBackground={hasBackground} containerClass="">
-    {header && <Headline header={header} titleClass="text-2xl sm:text-3xl" />}
+    {header && <Headline header={header} titleClass="text-2xl sm:text-3xl" subtitleClass="text-justify text-left ml-0" containerClass="text-left ml-0" />}
     <div className="flex items-stretch justify-center">
       <div className="grid grid-cols-1 gap-4 dark:text-white sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
         {teams.map(({ name, occupation, image, items }, index) => (

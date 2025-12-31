@@ -20,13 +20,13 @@ const ItemGrid = ({
       {items && (
         <div
           className={twMerge(
-            `grid mx-auto gap-8 md:gap-y-12 ${
+            `grid gap-8 md:gap-y-12 ${
               (columns || defaultColumns) === 4
-                ? 'lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2'
+                ? 'lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 mx-auto'
                 : (columns || defaultColumns) === 3
-                ? 'lg:grid-cols-3 sm:grid-cols-2'
+                ? 'lg:grid-cols-3 sm:grid-cols-2 mx-auto'
                 : (columns || defaultColumns) === 2
-                ? 'sm:grid-cols-2'
+                ? 'sm:grid-cols-2 mx-auto'
                 : 'max-w-4xl'
             }`,
             containerClass,
@@ -35,18 +35,18 @@ const ItemGrid = ({
           {items.map(({ title, description, icon: Icon, callToAction }, index) => (
             <div key={id ? `item-${id}-${index}` : `item-grid-${index}`}>
               <div className={(twMerge('flex flex-row max-w-md'), panelClass)}>
-                <div className="flex justify-center">
+                <div className="flex items-start pt-0.5 flex-shrink-0">
                   {Icon ? (
-                    <Icon className={twMerge('w-6 h-6 mr-2 rtl:mr-0 rtl:ml-2', iconClass)} />
+                    <Icon className={twMerge('w-5 h-5 mr-3 rtl:mr-0 rtl:ml-3', iconClass)} />
                   ) : DefaultIcon ? (
-                    <DefaultIcon className={twMerge('w-6 h-6 mr-2 rtl:mr-0 rtl:ml-2', iconClass)} />
+                    <DefaultIcon className={twMerge('w-5 h-5 mr-3 rtl:mr-0 rtl:ml-3', iconClass)} />
                   ) : null}
                 </div>
-                <div className="mt-0.5">
-                  {title && <h3 className={twMerge('text-xl font-bold', titleClass)}>{title}</h3>}
+                <div>
+                  {title && <h3 className={twMerge('text-base font-normal', titleClass)}>{title}</h3>}
                   {description && (
                     <p
-                      className={twMerge(`text-black dark:text-white ${title ? 'mt-3' : ''}`, descriptionClass)}
+                      className={twMerge(`text-sm text-black dark:text-white ${title ? 'mt-2' : ''} text-justify`, descriptionClass)}
                     >
                       {description}
                     </p>
