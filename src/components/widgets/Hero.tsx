@@ -1,13 +1,49 @@
+'use client';
+
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
 import { HeroProps } from '~/shared/types';
 import CTA from '../common/CTA';
 import verticalLogo from '~/assets/images/handel-logo-vertical-cropped-removebg-preview.png';
 import verticalLogoDark from '~/assets/images/handel-logo-vertical-dark-2-cropped-removebg-preview.png';
 
+const BACKGROUND_IMAGES = [
+  '/images/background-images/paper.jpg',
+  '/images/background-images/blocks.jpg',
+  '/images/background-images/brick-wall.jpg',
+  '/images/background-images/concrete-mesh.jpg',
+  '/images/background-images/geometric-bg.jpg',
+];
+
 const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: HeroProps) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % BACKGROUND_IMAGES.length);
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const currentImage = BACKGROUND_IMAGES[currentImageIndex];
+  const nextImage = BACKGROUND_IMAGES[(currentImageIndex + 1) % BACKGROUND_IMAGES.length];
   return (
-    <section id="heroOne">
-      <div className="px-4 mx-auto max-w-7xl sm:px-6">
+    <section 
+      id="heroOne"
+      className="relative overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 min-h-screen flex items-center"
+      style={{
+        backgroundImage: `url(${currentImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+        mixBlendMode: 'multiply',
+        transition: 'background-image 1.5s ease-in-out',
+      }}
+    >
+      {/* Gradient overlay mask to keep background color visible */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-50/50 to-slate-100/50 dark:from-slate-900/70 dark:to-slate-800/70 pointer-events-none"></div>
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 relative z-10 w-full">
         <div className="py-12 md:py-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
             {/* Left: Text Content */}
@@ -18,7 +54,7 @@ const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: 
                 </h1>
               )}
               {subtitle && (
-                <p className="mt-6 mb-8 text-base font-normal text-gray-600 dark:text-slate-400 text-justify">
+                <p className="mt-6 mb-8 text-base font-normal text-[var(--brand-primary-600)] dark:text-slate-400 text-justify">
                   {subtitle}
                 </p>
               )}
@@ -29,7 +65,7 @@ const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: 
             </div>
 
             {/* Right: Image */}
-            <div className="order-1 md:order-2 flex justify-center md:justify-end">
+            <div className="order-1 md:order-2 flex justify-center md:justify-end md:ml-auto">
               <div className="max-w-xs">
                 <Image
                   src={verticalLogo}

@@ -41,7 +41,7 @@ const PracticeAreas = ({ header, items, id, hasBackground = false }: FAQsProps) 
         {header && (
           <Headline 
             header={header} 
-            titleClass="text-2xl sm:text-3xl" 
+            titleClass="text-2xl sm:text-3xl text-[var(--brand-primary-600)]" 
             containerClass="text-left ml-0"
           />
         )}
@@ -55,7 +55,7 @@ const PracticeAreas = ({ header, items, id, hasBackground = false }: FAQsProps) 
               <div
                 key={`practice-${index}`}
                 onClick={() => setSelectedPractice(item)}
-                className="card p-6 cursor-pointer hover:shadow-lg transition-shadow duration-200 flex gap-4"
+                className="card p-6 cursor-pointer hover:shadow-2xl hover:-translate-y-1 hover:border-[var(--brand-accent-500)] hover:bg-[var(--brand-primary-600)] transition-all duration-300 ease-out flex gap-4 !bg-[var(--brand-primary-600)] !border-[var(--brand-primary-800)] text-white shadow-lg"
               >
                 <div className="flex-shrink-0">
                   <div className="w-12 h-12 rounded-lg bg-[var(--brand-accent-500)] flex items-center justify-center">
@@ -64,10 +64,10 @@ const PracticeAreas = ({ header, items, id, hasBackground = false }: FAQsProps) 
                 </div>
                 
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-base font-bold text-[var(--brand-primary-600)] dark:text-white mb-2 text-justify">
+                  <h3 className="text-base font-bold text-white mb-2 text-justify">
                     {item.title}
                   </h3>
-                  <p className="text-sm text-gray-600 dark:text-slate-400 text-justify line-clamp-2">
+                  <p className="text-sm text-slate-200 text-justify line-clamp-2">
                     {item.description}
                   </p>
                 </div>

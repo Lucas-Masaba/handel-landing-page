@@ -3,6 +3,7 @@ import {
   IconBrandGithub,
   IconBrandInstagram,
   IconBrandTwitter,
+  IconBrandLinkedin,
   IconChevronDown,
   IconRss,
 } from '@tabler/icons-react';
@@ -61,12 +62,12 @@ export const headerData: HeaderProps = {
   actions: [
     {
       text: 'Contact',
-      href: '/contact',
-      targetBlank: true,
+      href: '/#contact',
+      targetBlank: false,
     },
   ],
   isSticky: true,
-  showToggleTheme: true,
+  showToggleTheme: false,
   showRssFeed: false,
   position: 'right',
 };
@@ -74,16 +75,16 @@ export const headerData: HeaderProps = {
 // Footer data
 export const footerData: FooterProps = {
   title: 'Handel',
-  links: [
-    {
-      label: 'Terms & Conditions',
-      href: '/terms',
-    },
-    {
-      label: 'Privacy Policy',
-      href: '/privacy',
-    },
-  ],
+  // links: [
+  //   {
+  //     label: 'Terms & Conditions',
+  //     href: '/terms',
+  //   },
+  //   {
+  //     label: 'Privacy Policy',
+  //     href: '/privacy',
+  //   },
+  // ],
   columns: [
     {
       title: 'Product',
@@ -213,16 +214,16 @@ export const footerData: FooterProps = {
 
 // Footer2 data
 export const footerData2: FooterProps = {
-  links: [
-    {
-      label: 'Terms & Conditions',
-      href: '/terms',
-    },
-    {
-      label: 'Privacy Policy',
-      href: '/privacy',
-    },
-  ],
+  // links: [
+  //   {
+  //     label: 'Terms & Conditions',
+  //     href: '/terms',
+  //   },
+  //   {
+  //     label: 'Privacy Policy',
+  //     href: '/privacy',
+  //   },
+  // ],
   columns: [
     {
       title: 'Address',
@@ -239,8 +240,8 @@ export const footerData2: FooterProps = {
   ],
   socials: [
     { label: 'Twitter', icon: IconBrandTwitter, href: '#' },
-    { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
-    { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
+    { label: 'LinkedIn', icon: IconBrandLinkedin, href: '#' },
+    // { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
     // { label: 'RSS', icon: IconRss, href: '#' },
     // { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/onwidget/Handel' },
   ],

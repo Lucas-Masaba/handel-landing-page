@@ -49,7 +49,7 @@ export const heroServices: HeroProps = {
   //   targetBlank: true,
   // },
   image: {
-    src: heroImg,
+    src: '/images/hero.jpg',
     alt: 'Hero Handel',
   },
 };
@@ -139,7 +139,7 @@ export const contentServicesOne: ContentProps = {
     },
   ],
   image: {
-    src: cameraBackImg,
+    src: '/images/camera-back.jpg',
     alt: 'Colorful Image',
   },
   isReversed: true,
@@ -185,7 +185,7 @@ export const contentServicesTwo: ContentProps = {
     }
   ],
   image: {
-    src: cameraFrontImg,
+    src: '/images/camera-front.jpg',
     alt: 'Colorful Image',
   },
   isReversed: false,

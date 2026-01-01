@@ -16,7 +16,7 @@ export const heroContact: HeroProps = {
 
 // Contact data on Contact page *******************
 export const contact2Contact: ContactProps = {
-  id: 'contactTwo-on-contact',
+  id: 'contact',
   hasBackground: true,
   header: {
     title: 'Contact us',

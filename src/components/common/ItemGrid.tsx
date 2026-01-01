@@ -20,7 +20,7 @@ const ItemGrid = ({
       {items && (
         <div
           className={twMerge(
-            `grid gap-8 md:gap-y-12 ${
+            `grid gap-4 md:gap-6 ${
               (columns || defaultColumns) === 4
                 ? 'lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 mx-auto'
                 : (columns || defaultColumns) === 3

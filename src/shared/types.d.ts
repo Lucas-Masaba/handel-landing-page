@@ -294,6 +294,7 @@ type ContentProps = Widget & {
   contentAfterItems?: string;
   items?: Array<Item>;
   image?: Image;
+  slideshow?: Array<{ src: string; alt: string }>;
   isReversed?: boolean;
   isAfterContent?: boolean;
 };

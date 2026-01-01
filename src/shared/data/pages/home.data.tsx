@@ -5,7 +5,7 @@ import {
   IconBrandTailwind,
   IconBrandTwitter,
   IconBulb,
-  IconCheck,
+  IconCircle,
   IconClock,
   IconComponents,
   IconCirclesRelation,
@@ -42,6 +42,11 @@ import tailwindCssLogo from '~/assets/images/tailwind-css-logo.png';
 import typescriptLogo from '~/assets/images/typescript-logo.png';
 import cameraFrontImg from '~/assets/images/camera-front.jpg';
 import cameraBackImg from '~/assets/images/camera-back.jpg';
+import tradeImg from 'public/images/display-images/trade.jpg';
+import africaMap from 'public/images/display-images/africa-map.png';
+import hammerImg from 'public/images/display-images/hammer.jpg';
+import handshakeImg from 'public/images/display-images/handshake.png';
+import workingImg from 'public/images/display-images/working.jpg';
 import gasImg from '~/assets/images/gas.jpg';
 
 // Hero data on Home page *******************
@@ -59,8 +64,10 @@ export const heroHome: HeroProps = {
 };
 
 // ABOUT SECTION - Exact content as provided
+// ABOUT HANDEL SECTION - Exact content as provided
 export const aboutHandel: ContentProps = {
   id: 'about-handel',
+  hasBackground: true,
   header: {
     title: 'Navigating Trade Across Uganda, the EAC, COMESA & Beyond',
   },
@@ -69,11 +76,17 @@ export const aboutHandel: ContentProps = {
 Handel Advocates is a premier Ugandan law firm offering elite legal services across international trade, corporate and commercial law, investment, regulatory compliance, and cross-border advisory. We are uniquely positioned to support clients operating in Uganda, the East African Community (EAC), the Common Market for Eastern and Southern Africa (COMESA), and the broader African and global market.
 
 Our work combines deep legal insight, policy fluency, and a commercial mindset that enables clients to thrive in dynamic, interconnected business environments.`,
+  image: {
+    src: africaMap,
+    alt: 'About Handel',
+  },
+  isReversed: false,
 };
 
 // INTEGRATED MODEL SECTION - Exact content as provided
 export const integratedModel: ContentProps = {
   id: 'integrated-model',
+  hasBackground: false,
   header: {
     title: 'Handel - Where Law, Policy, and Strategy Converge',
   },
@@ -91,11 +104,17 @@ Together, the two entities offer a unified platform that combines:`,
     },
   ],
   contentAfterItems: `This integrated model enables us to deliver solutions that are not only compliant with local, regional, and international legal frameworks but also strategically sound, operationally practical, and aligned with global best practices.`,
+  image: {
+    src: hammerImg,
+    alt: 'Integrated Model',
+  },
+  isReversed: true,
 };
 
 // COMBINED ADVANTAGES SECTION - Exact content as provided
 export const combinedAdvantages: ContentProps = {
   id: 'combined-advantages',
+  hasBackground: true,
   content: `Handel Advocates and Global Consulting combines:`,
   items: [
     {
@@ -112,22 +131,34 @@ export const combinedAdvantages: ContentProps = {
     },
   ],
   contentAfterItems: `Our clients choose us for our strategic insight, rigorous legal analysis, and commitment to practical, results-oriented representation.`,
+  image: {
+    src: workingImg,
+    alt: 'Combined Advantages',
+  },
+  isReversed: false,
 };
 
 // INTERNATIONAL TRADE SECTION - Exact content as provided
 export const internationalTradePractice: ContentProps = {
   id: 'international-trade',
+  hasBackground: false,
   header: {
     title: 'International Trade & Regional Integration Practice',
   },
   content: `Handel Advocates' International Trade & Regional Integration Practice provides sophisticated, end-to-end advice to help clients maximize opportunities and mitigate risks in Uganda, across the East African Community (EAC), within COMESA, and under the African Continental Free Trade Area (AfCFTA), as well as before global bodies such as the WTO.
 
 Backed by a team of experienced trade lawyers, policy experts, economists, and regulatory specialists, we support clients in navigating complex customs processes, regional market access rules, trade remedies, export controls, investment measures, and cross-border disputes. With deep local insight and regional reach, we deliver practical, commercially grounded solutions to the most challenging international trade matters.`,
+  image: {
+    src: tradeImg,
+    alt: 'International Trade',
+  },
+  isReversed: true,
 };
 
 // WHY CLIENTS CHOOSE HANDEL - Exact content as provided
 export const whyClientsChoose: ContentProps = {
   id: 'why-clients-choose',
+  hasBackground: true,
   header: {
     title: 'Why Clients Choose Handel',
   },
@@ -152,6 +183,11 @@ This experience gives us credibility and informed perspective when engaging poli
       description: `From agriculture and manufacturing to logistics, telecoms, energy, and extractives, we support clients across all major industries impacted by trade rules.`,
     },
   ],
+  image: {
+    src: handshakeImg,
+    alt: 'Why Clients Choose Handel',
+  },
+  isReversed: false,
 };
 
 // PRACTICE AREAS - Exact content as provided, expandable
@@ -484,6 +520,7 @@ In collaboration with Handel Advocates, we ensure that investment processes foll
 // PRO BONO SECTION - Exact content as provided
 export const proBono: ContentProps = {
   id: 'pro-bono',
+  hasBackground: false,
   header: {
     title: 'Pro Bono & Community Engagement',
   },
@@ -502,6 +539,19 @@ export const proBono: ContentProps = {
       description: 'Our pro bono and community engagement work is not incidental. It reflects a deliberate institutional commitment to responsible practice, inclusive growth, and shared prosperity. By combining professional expertise with compassion and practical support, Handel Advocates seeks to contribute to stronger, more resilient communities while upholding the highest standards of professionalism and integrity.',
     },
   ],
+  slideshow: [
+    { src: '/images/community/cake-cutting.jpeg', alt: 'Cake cutting ceremony' },
+    { src: '/images/community/crafted-hand-bags.jpeg', alt: 'Crafted hand bags' },
+    { src: '/images/community/group-2.jpeg', alt: 'Community group photo' },
+    { src: '/images/community/group.jpeg', alt: 'Group gathering' },
+    { src: '/images/community/kalule-speaking.jpeg', alt: 'Kalule speaking' },
+    { src: '/images/community/mable-speaking.jpeg', alt: 'Mable speaking' },
+    { src: '/images/community/product-display.jpeg', alt: 'Product display' },
+    { src: '/images/community/sit-down-discussion.jpeg', alt: 'Sit down discussion' },
+    { src: '/images/community/sit-down-with-products.jpeg', alt: 'Sit down with products' },
+    { src: '/images/community/speakers.jpeg', alt: 'Speakers' },
+  ],
+  isReversed: false,
 };
 
 // SocialProof data on Home page *******************
@@ -646,7 +696,7 @@ export const contentHomeOne: ContentProps = {
       title: 'Client-Centric Approach',
       description:
         "We tailor our services to each client's unique needs, whether multinational corporation, government, SME, or development partner.",
-      icon: IconCheck,
+      icon: IconCircle,
     }
   ],
   image: {

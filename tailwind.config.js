@@ -38,6 +38,15 @@ module.exports = {
         sans: ['var(--font-body)', ...defaultTheme.fontFamily.sans],
         heading: ['var(--font-heading)', ...defaultTheme.fontFamily.serif],
       },
+      animation: {
+        fadeIn: 'fadeIn 0.8s ease-in-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
     },
   },
   plugins: [require('@tailwindcss/typography')],

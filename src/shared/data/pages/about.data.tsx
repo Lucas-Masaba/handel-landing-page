@@ -417,7 +417,7 @@ export const teamAbout: TeamProps = {
       name: 'Amos Nakeba',
       occupation: 'Specialist - Financial Integrity, Risk & Governance Advisory',
       image: {
-        src: '/images/team/default.jpg',
+        src: '/images/team/amos.png',
         alt: 'Amos Nakeba',
       },
       bio: [
@@ -515,7 +515,7 @@ export const teamAbout: TeamProps = {
       name: 'Tumwebaze Charity',
       occupation: 'Office Administrator',
       image: {
-        src: '/images/team/IMG_1387.png',
+        src: '/images/team/charity.png',
         alt: 'Tumwebaze Charity',
       },
       bio: [
@@ -545,7 +545,7 @@ export const teamAbout: TeamProps = {
       name: 'Nahabwe Elijah',
       occupation: 'Legal Clerk & Assistant',
       image: {
-        src: '/images/team/IMG_3286.png',
+        src: '/images/team/elijah.png',
         alt: 'Nahabwe Elijah',
       },
       bio: [
