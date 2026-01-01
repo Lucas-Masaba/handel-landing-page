@@ -42,7 +42,7 @@ import {
 
 // Hero2 data on About page *******************
 export const hero2About: HeroProps = {
-  title: 'Handel Advocates I Global Consulting',
+  title: 'Handel Advocates | Global Consulting',
   subtitle:
     'Integrated legal and strategic advisory services driving regional and international success across Uganda, the EAC, SADC, COMESA, and beyond.',
   tagline: 'About Handel',
@@ -91,7 +91,7 @@ export const featuresFourAbout: FeaturesProps = {
   header: {
     title: 'An Integrated Model',
     subtitle:
-      'Handel Advocates I Global Consulting brings together elite legal practice with strategic policy advisory to serve clients across Uganda, the EAC, SADC, COMESA, and international markets.',
+      'Handel Advocates | Global Consulting brings together elite legal practice with strategic policy advisory to serve clients across Uganda, the EAC, SADC, COMESA, and international markets.',
     tagline: 'Our Approach',
   },
 };

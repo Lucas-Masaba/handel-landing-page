@@ -668,7 +668,7 @@ export const contentHomeOne: ContentProps = {
   header: {
     title: 'An Integrated Model',
     subtitle:
-      'Handel Advocates I Global Consulting bridges law, policy, and strategy to deliver holistic solutions for clients operating across Uganda, the EAC, SADC, COMESA, and international markets.',
+      'Handel Advocates | Global Consulting bridges law, policy, and strategy to deliver holistic solutions for clients operating across Uganda, the EAC, SADC, COMESA, and international markets.',
     tagline: 'Why Handel',
   },
   content:
