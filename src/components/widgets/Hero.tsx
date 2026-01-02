@@ -8,11 +8,11 @@ import verticalLogo from '~/assets/images/handel-logo-vertical-cropped-removebg-
 import verticalLogoDark from '~/assets/images/handel-logo-vertical-dark-2-cropped-removebg-preview.png';
 
 const BACKGROUND_IMAGES = [
-  '/images/background-images/paper.jpg',
-  // '/images/background-images/blocks.jpg',
-  '/images/background-images/brick-wall.jpg',
-  '/images/background-images/concrete-mesh.jpg',
-  '/images/background-images/geometric-bg.jpg',
+  '/images/background-images/paper.webp',
+  // '/images/background-images/blocks.webp',
+  '/images/background-images/brick-wall.webp',
+  '/images/background-images/concrete-mesh.webp',
+  '/images/background-images/geometric-bg.webp',
 ];
 
 const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: HeroProps) => {
@@ -31,21 +31,34 @@ const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: 
   return (
     <section 
       id="heroOne"
-      className="relative overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 min-h-screen flex items-center"
-      style={{
-        backgroundImage: `url(${currentImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
-        mixBlendMode: 'multiply',
-        transition: 'background-image 1.5s ease-in-out',
-      }}
+      className="relative flex items-center min-h-screen overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800"
     >
+      {/* Background image layers for smooth crossfade transition */}
+      <div className="absolute inset-0 pointer-events-none">
+        {BACKGROUND_IMAGES.map((img, index) => (
+          <Image
+            key={img}
+            src={img}
+            alt=""
+            fill
+            priority={index === 0}
+            quality={85}
+            sizes="100vw"
+            className={`object-cover transition-opacity duration-[2000ms] ease-in-out ${
+              index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+            }`}
+            style={{
+              mixBlendMode: 'multiply',
+            }}
+          />
+        ))}
+      </div>
+
       {/* Gradient overlay mask to keep background color visible */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-50/50 to-slate-100/50 dark:from-slate-900/70 dark:to-slate-800/70 pointer-events-none"></div>
-      <div className="px-4 mx-auto max-w-7xl sm:px-6 relative z-10 w-full">
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-slate-50/50 to-slate-100/50 dark:from-slate-900/70 dark:to-slate-800/70"></div>
+      <div className="relative z-10 w-full px-4 mx-auto max-w-7xl sm:px-6">
         <div className="py-12 md:py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+          <div className="grid items-center grid-cols-1 gap-8 md:grid-cols-2 md:gap-16">
             {/* Left: Text Content */}
             <div className="order-2 md:order-1">
               {title && (
@@ -65,7 +78,7 @@ const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: 
             </div>
 
             {/* Right: Image */}
-            <div className="order-1 md:order-2 flex justify-center md:justify-end md:ml-auto">
+            <div className="flex justify-center order-1 md:order-2 md:justify-end md:pr-20">
               <div className="max-w-xs">
                 <Image
                   src={verticalLogo}

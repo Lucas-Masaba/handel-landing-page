@@ -297,18 +297,18 @@ export const teamAbout: TeamProps = {
         {
           title: 'Know more on Twitter',
           icon: IconBrandTwitter,
-          href: '#',
+          href: 'https://x.com/MableKisaka',
         },
         {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: '#',
+          href: 'https://ug.linkedin.com/in/mablekisaka',
         },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
+        // {
+        //   title: 'Contact by email',
+        //   icon: IconMail,
+        //   href: '#',
+        // },
       ],
     },
     {
@@ -340,11 +340,11 @@ export const teamAbout: TeamProps = {
           icon: IconBrandLinkedin,
           href: '#',
         },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
+        // {
+        //   title: 'Contact by email',
+        //   icon: IconMail,
+        //   href: '#',
+        // },
       ],
     },
     {
@@ -373,11 +373,11 @@ export const teamAbout: TeamProps = {
           icon: IconBrandLinkedin,
           href: '#',
         },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
+        // {
+        //   title: 'Contact by email',
+        //   icon: IconMail,
+        //   href: '#',
+        // },
       ],
     },
     {
@@ -406,11 +406,11 @@ export const teamAbout: TeamProps = {
           icon: IconBrandLinkedin,
           href: '#',
         },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
+        // {
+        //   title: 'Contact by email',
+        //   icon: IconMail,
+        //   href: '#',
+        // },
       ],
     },
     {
@@ -439,11 +439,11 @@ export const teamAbout: TeamProps = {
           icon: IconBrandLinkedin,
           href: '#',
         },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
+        // {
+        //   title: 'Contact by email',
+        //   icon: IconMail,
+        //   href: '#',
+        // },
       ],
     },
     {
@@ -504,11 +504,11 @@ export const teamAbout: TeamProps = {
           icon: IconBrandLinkedin,
           href: '#',
         },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
+        // {
+        //   title: 'Contact by email',
+        //   icon: IconMail,
+        //   href: '#',
+        // },
       ],
     },
     {
@@ -534,11 +534,11 @@ export const teamAbout: TeamProps = {
           icon: IconBrandLinkedin,
           href: '#',
         },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
+        // {
+        //   title: 'Contact by email',
+        //   icon: IconMail,
+        //   href: '#',
+        // },
       ],
     },
         {
@@ -564,11 +564,11 @@ export const teamAbout: TeamProps = {
           icon: IconBrandLinkedin,
           href: '#',
         },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
+        // {
+        //   title: 'Contact by email',
+        //   icon: IconMail,
+        //   href: '#',
+        // },
       ],
     },
   ],

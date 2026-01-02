@@ -46,10 +46,10 @@ export const headerData: HeaderProps = {
         },
       ],
     },
-    {
-      label: 'Pro Bono',
-      href: '#pro-bono',
-    },
+    // {
+    //   label: 'Pro Bono',
+    //   href: '#pro-bono',
+    // },
     {
       label: 'Team',
       href: '#team-on-about',
