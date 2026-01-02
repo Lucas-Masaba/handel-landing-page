@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import Modal from '../common/Modal';
 import { 
-  IconX, 
   IconBriefcase,
   IconTrendingUp,
   IconLeaf,
@@ -73,35 +73,15 @@ const GlobalConsultingAreas = ({ header, items, id, hasBackground = false }: FAQ
 
       {/* Modal */}
       {selectedArea && (
-        <div 
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4"
-          onClick={() => setSelectedArea(null)}
+        <Modal
+          isOpen={!!selectedArea}
+          onClose={() => setSelectedArea(null)}
+          title={String(selectedArea.title || '')}
+          maxWidth="max-w-4xl"
+          maxHeight="max-h-[80vh]"
         >
-          <div 
-            className="bg-white dark:bg-[var(--brand-primary-600)] rounded-lg max-w-4xl max-h-[90vh] overflow-y-auto shadow-2xl"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="sticky top-0 bg-white dark:bg-[var(--brand-primary-600)] border-b border-gray-200 dark:border-[var(--brand-primary-800)] p-6 flex justify-between items-start">
-              <h2 className="text-2xl font-bold text-[var(--brand-primary-600)] dark:text-[var(--brand-accent-500)] pr-8 text-justify">
-                {selectedArea.title}
-              </h2>
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setSelectedArea(null);
-                }}
-                className="flex-shrink-0 p-2 hover:bg-gray-100 dark:hover:bg-[var(--brand-primary-700)] rounded-full transition-colors"
-                aria-label="Close"
-              >
-                <IconX className="w-6 h-6 text-gray-600 dark:text-slate-400" />
-              </button>
-            </div>
-            
-            <div className="p-6">
-              <ContentRenderer content={parseDescription(String(selectedArea.description || ''))} />
-            </div>
-          </div>
-        </div>
+          <ContentRenderer content={parseDescription(String(selectedArea.description || ''))} />
+        </Modal>
       )}
     </>
   );

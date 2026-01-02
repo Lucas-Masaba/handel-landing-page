@@ -4,6 +4,8 @@ import { SITE } from '~/config.js';
 
 import Hero from '~/components/widgets/Hero';
 import Content from '~/components/widgets/Content';
+import ProBonoContent from '~/components/widgets/ProBonoContent';
+import WhyChooseUs from '~/components/widgets/WhyChooseUs';
 
 import GlobalConsultingAreas from '~/components/widgets/GlobalConsultingAreas';
 import PracticeAreas from '~/components/widgets/PracticeAreas';
@@ -35,11 +37,11 @@ export default function Page() {
       <Content {...aboutHandel} />
       <Content {...integratedModel} />
       <Content {...combinedAdvantages} />
-      <Content {...internationalTradePractice} />
-      <Content {...whyClientsChoose} />
+      {/* <Content {...internationalTradePractice} /> */}
+      <WhyChooseUs {...whyClientsChoose} />
       <PracticeAreas {...practiceAreas} />
       <GlobalConsultingAreas {...globalConsultingAreas} />
-      <Content {...proBono} />
+      <ProBonoContent {...proBono} />
       <Team2 {...teamAbout} />
       <Contact {...contact2Contact} />
     </>

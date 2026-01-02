@@ -471,11 +471,11 @@ export const teamAbout: TeamProps = {
           icon: IconBrandLinkedin,
           href: '#',
         },
-        {
-          title: 'Contact by email',
-          icon: IconMail,
-          href: '#',
-        },
+        // {
+        //   title: 'Contact by email',
+        //   icon: IconMail,
+        //   href: '#',
+        // },
       ],
     },
     {

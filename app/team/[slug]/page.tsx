@@ -54,7 +54,7 @@ export default function Page({ params }: { params: { slug: string } }) {
             <h1 className="text-2xl font-extrabold tracking-tight text-[var(--brand-primary-600)] dark:text-[var(--brand-accent-500)] sm:text-3xl">
               {name}
             </h1>
-            <p className="mt-2 text-base font-medium text-gray-600 dark:text-slate-300">{occupation}</p>
+            <p className="mt-2 text-base font-medium text-[var(--brand-accent-500)] dark:text-slate-300">{occupation}</p>
 
             <div className="flex flex-wrap items-center gap-3 mt-6">
               {items?.map(({ title, href, icon: Icon }, idx) => (

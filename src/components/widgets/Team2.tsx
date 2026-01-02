@@ -9,7 +9,7 @@ const Team = ({ header, teams, id, hasBackground = false }: TeamProps) => (
     className="relative not-prose scroll-mt-[72px] overflow-hidden"
     id={id ? id : ''}
     style={{
-      backgroundImage: 'url(/images/background-images/building.jpg)',
+      backgroundImage: 'url(/images/background-images/building.webp)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundAttachment: 'fixed',
@@ -17,12 +17,12 @@ const Team = ({ header, teams, id, hasBackground = false }: TeamProps) => (
     }}
   >
     {/* Gradient overlay mask to keep background color visible */}
-    <div className="absolute inset-0 bg-gradient-to-br from-slate-50/70 to-slate-100/70 dark:from-slate-900/80 dark:to-slate-800/80 pointer-events-none"></div>
+    <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-slate-50/70 to-slate-100/70 dark:from-slate-900/80 dark:to-slate-800/80"></div>
     
-    <div className="relative mx-auto max-w-7xl px-4 md:px-6 py-12 md:py-16 lg:py-20 text-default z-10">
+    <div className="relative z-10 px-4 py-12 mx-auto max-w-7xl md:px-6 md:py-16 lg:py-20 text-default">
       {header && <Headline header={header} titleClass="text-2xl sm:text-3xl" subtitleClass="text-justify text-left ml-0" containerClass="text-left ml-0" />}
       <div className="flex items-stretch justify-start">
-        <div className="grid grid-cols-1 gap-3 dark:text-white sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 w-full">
+        <div className="grid w-full grid-cols-1 gap-3 dark:text-white sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
           {teams.map(({ name, occupation, image, items }, index) => (
             <div key={`item-team-two-${index}`} className="flex">
               <ItemTeam
@@ -32,10 +32,10 @@ const Team = ({ header, teams, id, hasBackground = false }: TeamProps) => (
                 items={items}
                 linkHref={`/team/${toSlug(name)}`}
                 containerClass="card flex flex-col justify-center w-full text-left cursor-pointer overflow-hidden"
-                imageClass="w-full h-60 object-cover object-center scale-110"
+                imageClass="w-60 h-80 object-cover object-top"
                 panelClass="flex-1 flex flex-col px-3 py-3"
                 nameClass="text-base font-semibold text-[var(--brand-primary-600)] dark:text-[var(--brand-accent-500)] mt-0.5 text-left"
-                occupationClass="text-sm text-body-color min-h-[1.5rem] flex items-start justify-start text-left mt-0.5"
+                occupationClass="text-sm text-body-color min-h-[1.5rem] flex items-start justify-start text-left mt-0.5 text-[var(--brand-accent-500)]"
                 itemsClass="flex justify-start relative px-0 pt-2 mx-0 overflow-hidden mt-auto"
               />
             </div>

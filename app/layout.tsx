@@ -50,7 +50,7 @@ export default function RootLayout({ children }: LayoutProps) {
         <Providers>
           {/* <Announcement /> */}
           <Header />
-          <main>{children}</main>
+          <main className="relative z-0 bg-[var(--brand-primary-50)] dark:bg-[var(--brand-primary-600)]">{children}</main>
           <Footer2 />
         </Providers>
       </body>

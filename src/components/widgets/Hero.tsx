@@ -32,28 +32,17 @@ const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: 
     <section 
       id="heroOne"
       className="relative flex items-center min-h-screen overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800"
+      style={{
+        backgroundImage: `url(${currentImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+        mixBlendMode: 'multiply',
+        transition: 'background-image 1.5s ease-in-out',
+      }}
     >
-      {/* Background image layers for smooth crossfade transition */}
-      <div className="absolute inset-0 pointer-events-none">
-        {BACKGROUND_IMAGES.map((img, index) => (
-          <Image
-            key={img}
-            src={img}
-            alt=""
-            fill
-            priority={index === 0}
-            quality={85}
-            sizes="100vw"
-            className={`object-cover transition-opacity duration-[2000ms] ease-in-out ${
-              index === currentImageIndex ? 'opacity-100' : 'opacity-0'
-            }`}
-            style={{
-              mixBlendMode: 'multiply',
-            }}
-          />
-        ))}
-      </div>
-
+      {/* Color mask overlay */}
+      <div className="absolute inset-0 pointer-events-none bg-[var(--brand-primary-700)] opacity-30 dark:opacity-0"></div>
       {/* Gradient overlay mask to keep background color visible */}
       <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-slate-50/50 to-slate-100/50 dark:from-slate-900/70 dark:to-slate-800/70"></div>
       <div className="relative z-10 w-full px-4 mx-auto max-w-7xl sm:px-6">
@@ -78,7 +67,7 @@ const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: 
             </div>
 
             {/* Right: Image */}
-            <div className="flex justify-center order-1 md:order-2 md:justify-end md:pr-20">
+            <div className="flex justify-center order-1 md:order-2 md:justify-end md:pr-16">
               <div className="max-w-xs">
                 <Image
                   src={verticalLogo}

@@ -1,13 +1,15 @@
+'use client';
+
 import Image from 'next/image';
 import { IconSphere } from '@tabler/icons-react';
 
 import { ContentProps } from '~/shared/types';
 import Headline from '../common/Headline';
 import WidgetWrapper from '../common/WidgetWrapper';
-import ItemGrid from '../common/ItemGrid';
+import ItemGridWithModal from '../common/ItemGridWithModal';
 import ImageSlideshow from '../common/ImageSlideshow';
 
-const Content = ({
+const ProBonoContent = ({
   header,
   content,
   contentAfterItems,
@@ -27,9 +29,9 @@ const Content = ({
     {header && <Headline header={header} titleClass="text-2xl sm:text-3xl text-[var(--brand-primary-600)]" />}
     <div className="mx-auto max-w-7xl">
       <div className={`flex flex-col ${isReversed ? 'md:flex-row-reverse' : 'md:flex-row'} md:gap-16 md:min-h-[500px] lg:min-h-[600px]`}>
-        <div className="self-start md:basis-1/2">
+        <div className="self-center md:basis-1/2">
           {content && <div className="mb-8 text-base text-center text-[var(--brand-primary-600)] lg:mb-12 dark:text-[var(--brand-accent-500)] whitespace-pre-line text-justify">{content}</div>}
-          <ItemGrid
+          <ItemGridWithModal
             items={items}
             columns={1}
             defaultIcon={IconSphere}
@@ -38,6 +40,7 @@ const Content = ({
             titleClass="text-base font-normal leading-6 text-[var(--brand-primary-600)] dark:text-white mt-1 mb-2"
             descriptionClass="mt-1"
             iconClass="flex-shrink-0 w-5 h-5 flex items-center justify-center rounded-full bg-[var(--brand-accent-500)] text-[var(--brand-primary-600)] mr-3 rtl:mr-0 rtl:ml-3 mt-0.5 p-0.5"
+            enableModal={true}
           />
           {contentAfterItems && <div className="mt-8 text-base text-center text-[var(--brand-primary-600)] dark:text-[var(--brand-accent-500)] whitespace-pre-line text-justify">{contentAfterItems}</div>}
         </div>
@@ -47,7 +50,7 @@ const Content = ({
           ) : image ? (
             <div className="relative w-full h-96 md:h-full">
               <Image
-                className="object-cover w-full h-full rounded-lg shadow-lg"
+                className="w-full h-full object-cover rounded-lg shadow-lg"
                 src={image.src}
                 fill
                 alt={image.alt}
@@ -63,4 +66,4 @@ const Content = ({
   </WidgetWrapper>
 );
 
-export default Content;
+export default ProBonoContent;

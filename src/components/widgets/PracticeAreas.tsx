@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import Modal from '../common/Modal';
 import { 
-  IconX, 
   IconBriefcase,
   IconGavel,
   IconContract,
@@ -46,7 +46,7 @@ const PracticeAreas = ({ header, items, id, hasBackground = false }: FAQsProps) 
           />
         )}
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {items?.map((item, index) => {
             const iconIndex = String(index + 1);
             const IconComponent = practiceAreasIcons[iconIndex] || IconBriefcase;
@@ -64,10 +64,10 @@ const PracticeAreas = ({ header, items, id, hasBackground = false }: FAQsProps) 
                 </div>
                 
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-base font-bold text-white mb-2 text-justify">
+                  <h3 className="mb-2 text-base font-bold text-justify text-white">
                     {item.title}
                   </h3>
-                  <p className="text-sm text-slate-200 text-justify line-clamp-2">
+                  <p className="text-sm text-justify text-slate-200 line-clamp-2">
                     {item.description}
                   </p>
                 </div>
@@ -79,35 +79,15 @@ const PracticeAreas = ({ header, items, id, hasBackground = false }: FAQsProps) 
 
       {/* Modal */}
       {selectedPractice && (
-        <div 
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4"
-          onClick={() => setSelectedPractice(null)}
+        <Modal
+          isOpen={!!selectedPractice}
+          onClose={() => setSelectedPractice(null)}
+          title={String(selectedPractice.title || '')}
+          maxWidth="max-w-4xl"
+          maxHeight="max-h-[80vh]"
         >
-          <div 
-            className="bg-white dark:bg-[var(--brand-primary-600)] rounded-lg max-w-4xl max-h-[90vh] overflow-y-auto shadow-2xl"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="sticky top-0 bg-white dark:bg-[var(--brand-primary-600)] border-b border-gray-200 dark:border-[var(--brand-primary-800)] p-6 flex justify-between items-start">
-              <h2 className="text-2xl font-bold text-[var(--brand-primary-600)] dark:text-[var(--brand-accent-500)] pr-8 text-justify">
-                {selectedPractice.title}
-              </h2>
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setSelectedPractice(null);
-                }}
-                className="flex-shrink-0 p-2 hover:bg-gray-100 dark:hover:bg-[var(--brand-primary-700)] rounded-full transition-colors"
-                aria-label="Close"
-              >
-                <IconX className="w-6 h-6 text-gray-600 dark:text-slate-400" />
-              </button>
-            </div>
-            
-            <div className="p-6">
-              <ContentRenderer content={parseDescription(String(selectedPractice.description || ''))} />
-            </div>
-          </div>
-        </div>
+          <ContentRenderer content={parseDescription(String(selectedPractice.description || ''))} />
+        </Modal>
       )}
     </>
   );

@@ -57,7 +57,7 @@ const Header = () => {
 
   return (
     <header
-      className={`top-0 z-40 mx-auto w-full flex-none bg-white transition-all duration-100 ease-in dark:bg-[var(--brand-primary-600)] md:bg-[rgba(var(--brand-primary-50-rgb),0.9)] md:backdrop-blur-sm dark:md:bg-[rgba(var(--brand-primary-600),0.9)] ${
+      className={`top-0 z-40 mx-auto w-full flex-none bg-slate-900 transition-all duration-100 ease-in md:bg-[rgba(15,23,42,0.9)] md:backdrop-blur-sm ${
         isSticky ? 'sticky' : 'relative'
       } ${isToggleMenuOpen ? 'h-screen md:h-auto' : 'h-auto'}`}
       id="header"
@@ -66,7 +66,7 @@ const Header = () => {
         <div
             className={`flex justify-between py-2 px-3 md:py-0 md:px-0 ${
               isToggleMenuOpen
-                ? 'md:bg-transparent md:dark:bg-transparent md:border-none bg-white dark:bg-[var(--brand-primary-600)] border-b border-gray-200 dark:border-[var(--brand-primary-800)]'
+                ? 'md:bg-transparent md:border-none bg-slate-900 border-b border-slate-700'
               : ''
           }`}
         >
@@ -86,7 +86,7 @@ const Header = () => {
         <nav
           className={`${isToggleMenuOpen ? 'block px-3' : 'hidden'} h-screen md:w-full ${
             position === 'right' ? 'justify-end' : position === 'left' ? 'justify-start' : 'justify-center'
-          } w-auto overflow-y-auto dark:text-slate-200 md:mx-5 md:flex md:h-auto md:items-center md:overflow-visible`}
+          } w-auto overflow-y-auto text-slate-200 md:mx-5 md:flex md:h-auto md:items-center md:overflow-visible`}
           aria-label="Main navigation"
         >
           <ul
@@ -99,7 +99,7 @@ const Header = () => {
                   {links && links.length ? (
                     <>
                       <button
-                        className="flex items-center px-3 lg:px-4 py-3 font-medium transition duration-150 ease-in-out hover:text-[var(--brand-accent-700)] dark:hover:text-white whitespace-nowrap"
+                        className="flex items-center px-3 lg:px-4 py-3 font-medium transition duration-150 ease-in-out hover:text-white whitespace-nowrap"
                         onClick={() => handleDropdownOnClick(index)}
                       >
                         {label}{' '}
@@ -114,12 +114,12 @@ const Header = () => {
                       <ul
                         className={`${
                           isDropdownOpen[index] ? 'block' : 'md:hidden'
-                        } rounded pl-4 font-medium drop-shadow-xl md:absolute md:min-w-[200px] md:bg-[rgba(var(--brand-primary-50-rgb),0.7)] md:pl-0 md:backdrop-blur-md dark:md:bg-[rgba(var(--brand-primary-600-rgb),0.7)] md:border md:border-gray-200 md:dark:border-slate-700`}
+                        } rounded pl-4 font-medium drop-shadow-xl md:absolute md:min-w-[200px] md:bg-[rgba(15,23,42,0.9)] md:pl-0 md:backdrop-blur-md md:border md:border-slate-700`}
                       >
                         {links.map(({ label: label2, href: href2 }, index2) => (
                           <li key={`item-link-${index2}`}>
                             <Link
-                              className="block px-5 py-2 whitespace-no-wrap first:rounded-t last:rounded-b dark:hover:bg-[var(--brand-primary-700)] md:hover:bg-[var(--brand-primary-50)]"
+                              className="block px-5 py-2 whitespace-no-wrap first:rounded-t last:rounded-b hover:bg-slate-800"
                               href={href2 as string}
                               onClick={() =>
                                 isToggleMenuOpen ? handleToggleMenuOnClick() : handleCloseDropdownOnClick(index)
@@ -133,7 +133,7 @@ const Header = () => {
                     </>
                   ) : (
                     <Link
-                      className="flex items-center px-3 lg:px-4 py-3 font-medium transition duration-150 ease-in-out hover:text-[var(--brand-accent-700)] dark:hover:text-white whitespace-nowrap"
+                      className="flex items-center px-3 lg:px-4 py-3 font-medium transition duration-150 ease-in-out hover:text-white whitespace-nowrap"
                       href={href as string}
                       onClick={() => (isToggleMenuOpen ? handleToggleMenuOnClick() : handleDropdownOnClick(index))}
                     >
@@ -147,7 +147,7 @@ const Header = () => {
         <div
           className={`${
             isToggleMenuOpen ? 'block' : 'hidden'
-          } fixed bottom-0 left-0 w-full justify-end p-3 md:static md:mb-0 md:flex md:w-auto md:self-center md:p-0 md:bg-transparent md:dark:bg-transparent md:border-none bg-white dark:bg-[var(--brand-primary-600)] border-t border-gray-200 dark:border-[var(--brand-primary-800)]`}
+          } fixed bottom-0 left-0 w-full justify-end p-3 md:static md:mb-0 md:flex md:w-auto md:self-center md:p-0 md:bg-transparent md:border-none bg-slate-900 border-t border-slate-700`}
         >
           <div className="flex items-center justify-between w-full md:w-auto">
             {showToggleTheme && <ToggleDarkMode />}

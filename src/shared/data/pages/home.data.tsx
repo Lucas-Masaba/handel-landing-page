@@ -68,9 +68,9 @@ export const heroHome: HeroProps = {
 export const aboutHandel: ContentProps = {
   id: 'about-handel',
   hasBackground: true,
-  header: {
-    title: 'Navigating Trade Across Uganda, the EAC, COMESA & Beyond',
-  },
+  // header: {
+  //   title: 'Navigating Trade Across Uganda, the EAC, COMESA & Beyond',
+  // },
   content: `In today's fast-evolving global and regional marketplace, businesses operating in Uganda and across Africa face a multifaceted legal landscape shaped by domestic legislation, regional economic communities, and global trade rules. As cross-border value chains deepen and regulatory frameworks become more intricate, companies, governments, and development institutions require strategic legal counsel that understands the unique interplay between international, regional, and national trade regimes.
 
 Handel Advocates is a premier Ugandan law firm offering elite legal services across international trade, corporate and commercial law, investment, regulatory compliance, and cross-border advisory. We are uniquely positioned to support clients operating in Uganda, the East African Community (EAC), the Common Market for Eastern and Southern Africa (COMESA), and the broader African and global market.
@@ -200,7 +200,10 @@ export const practiceAreas: FAQsProps = {
   items: [
     {
       title: 'International Trade & Regional Integration',
-      description: `a. Trade Remedies & Trade Defense
+      description: `Handel Advocates' International Trade & Regional Integration Practice provides sophisticated, end-to-end advice to help clients maximize opportunities and mitigate risks in Uganda, across the East African Community (EAC), within COMESA, and under the African Continental Free Trade Area (AfCFTA), as well as before global bodies such as the WTO.
+
+Backed by a team of experienced trade lawyers, policy experts, economists, and regulatory specialists, we support clients in navigating complex customs processes, regional market access rules, trade remedies, export controls, investment measures, and cross-border disputes. With deep local insight and regional reach, we deliver practical, commercially grounded solutions to the most challenging international trade matters.
+a. Trade Remedies & Trade Defense
 
 As African markets expand and global competition intensifies, allegations of unfair trade practices such as dumping or prohibited subsidies have become more common. Handel Advocates assists governments, industries, and private sector players in navigating the full spectrum of trade remedy laws and investigations.
 
