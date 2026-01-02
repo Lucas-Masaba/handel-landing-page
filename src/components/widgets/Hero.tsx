@@ -9,7 +9,7 @@ import verticalLogoDark from '~/assets/images/handel-logo-vertical-dark-2-croppe
 
 const BACKGROUND_IMAGES = [
   '/images/background-images/paper.jpg',
-  '/images/background-images/blocks.jpg',
+  // '/images/background-images/blocks.jpg',
   '/images/background-images/brick-wall.jpg',
   '/images/background-images/concrete-mesh.jpg',
   '/images/background-images/geometric-bg.jpg',
@@ -54,7 +54,7 @@ const Hero = ({ title, subtitle, tagline, callToAction, callToAction2, image }: 
                 </h1>
               )}
               {subtitle && (
-                <p className="mt-6 mb-8 text-base font-normal text-[var(--brand-primary-600)] dark:text-slate-400 text-justify">
+                <p className="mt-6 mb-8 text-base text-[var(--brand-accent-500)] font-bold dark:text-slate-400 text-justify">
                   {subtitle}
                 </p>
               )}
