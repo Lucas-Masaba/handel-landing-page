@@ -121,7 +121,7 @@ export const combinedAdvantages: ContentProps = {
       title: 'Deep local roots in Uganda',
     },
     {
-      title: 'Regional presence across EAC, SADC and COMESA',
+      title: 'Regional practice spanning the EAC, COMESA, and SADC, with pan-African reach through the AfCFTA',
     },
     {
       title: 'International-level expertise on trade, investment and cross-border commerce',
