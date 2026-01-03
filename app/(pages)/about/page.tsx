@@ -29,6 +29,8 @@ import {
 
 import { contact2Contact } from '~/shared/data/pages/contact.data';
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: `About us`,
 };

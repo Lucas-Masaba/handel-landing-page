@@ -55,7 +55,7 @@ export const heroHome: HeroProps = {
   subtitle: 'Driving Regional and International Success Through Law and Policy',
   callToAction2: {
     text: 'Explore Our Services',
-    href: '#international-trade',
+    href: '#practice-areas',
   },
   image: {
     src: heroImg,

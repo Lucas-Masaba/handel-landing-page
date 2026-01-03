@@ -1,33 +1,23 @@
 import type { Metadata } from 'next';
 
-import Link from 'next/link';
-
 import { findLatestPosts } from '~/utils/posts';
+import PublicationsList from './PublicationsList';
 
 export const metadata: Metadata = {
   title: 'Publications',
 };
 
-export default async function Home({}) {
+export default async function Publications() {
   const posts = await findLatestPosts();
+
   return (
     <section className="max-w-3xl px-6 py-12 mx-auto sm:px-6 sm:py-16 lg:py-20">
       <header>
-        <h1 className="mb-8 text-4xl font-bold tracking-tighter text-center leading-tighter font-heading md:mb-16 md:text-5xl">
+        <h1 className="mb-8 text-4xl font-bold tracking-tighter leading-tighter font-heading md:mb-16 md:text-5xl">
           Publications
         </h1>
       </header>
-      <div className="grid grid-cols-1 gap-6 p-4 md:p-0 lg:grid-cols-2">
-        {posts.map(({ slug, title, image }: { slug: string, title: string, image: string }) => (
-          <div key={slug} className="flex flex-col overflow-hidden border border-[var(--brand-primary-50)] dark:border-white dark:text-white dark:bg-[var(--brand-primary-500)] shadow-lg rounded-xl">
-            <Link href={`/${slug}`}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={image || '/images/hero.jpg'} alt={title} className="object-cover w-full h-48" />
-              <h2 className="p-4 font-bold">{title}</h2>
-            </Link>
-          </div>
-        ))}
-      </div>
+      <PublicationsList posts={posts} />
     </section>
   );
 }

@@ -1,6 +1,7 @@
 'use client';
 
-import { ReactNode, useEffect } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { IconX } from '@tabler/icons-react';
 
 interface ModalProps {
@@ -20,6 +21,13 @@ const Modal = ({
   maxWidth = 'max-w-2xl',
   maxHeight = 'max-h-[80vh]'
 }: ModalProps) => {
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   // Close modal on ESC key press
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
@@ -27,6 +35,7 @@ const Modal = ({
     };
     
     if (isOpen) {
+      setIsAnimating(true);
       document.addEventListener('keydown', handleEscape);
       // Prevent body scroll when modal is open
       document.body.style.overflow = 'hidden';
@@ -38,15 +47,25 @@ const Modal = ({
     };
   }, [isOpen, onClose]);
 
-  if (!isOpen) return null;
+  if (!isOpen && !isAnimating) return null;
+  if (!mounted) return null;
 
-  return (
+  const handleBackdropClick = () => {
+    setIsAnimating(false);
+    setTimeout(onClose, 300);
+  };
+
+  const modalContent = (
     <div 
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-50"
-      onClick={onClose}
+      className={`fixed inset-0 z-50 flex items-center justify-center p-4 bg-black transition-opacity duration-300 ${
+        isAnimating ? 'bg-opacity-50' : 'bg-opacity-0'
+      }`}
+      onClick={handleBackdropClick}
     >
       <div 
-        className={`relative w-full ${maxWidth} ${maxHeight} overflow-y-auto bg-white rounded-lg shadow-xl dark:bg-slate-800`}
+        className={`relative w-full ${maxWidth} ${maxHeight} overflow-y-auto bg-white rounded-lg shadow-xl dark:bg-slate-800 transition-all duration-300 ${
+          isAnimating ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
+        }`}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
@@ -55,7 +74,10 @@ const Modal = ({
             {title}
           </h2>
           <button
-            onClick={onClose}
+            onClick={() => {
+              setIsAnimating(false);
+              setTimeout(onClose, 300);
+            }}
             className="flex-shrink-0 p-1 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-full transition-colors"
             aria-label="Close modal"
           >
@@ -70,6 +92,8 @@ const Modal = ({
       </div>
     </div>
   );
+
+  return createPortal(modalContent, document.body);
 };
 
 export default Modal;

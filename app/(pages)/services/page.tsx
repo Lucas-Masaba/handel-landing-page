@@ -17,6 +17,8 @@ import {
   testimonialsServices,
 } from '~/shared/data/pages/services.data';
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: 'Services',
 };

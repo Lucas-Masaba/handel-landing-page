@@ -31,11 +31,12 @@ export const headerData: HeaderProps = {
     },
     {
       label: 'Services',
+      icon: IconChevronDown,
       links: [
-        {
-          label: 'International Trade',
-          href: '#international-trade',
-        },
+        // {
+        //   label: 'International Trade',
+        //   href: '#international-trade',
+        // },
         {
           label: 'Practice Areas',
           href: '#practice-areas',

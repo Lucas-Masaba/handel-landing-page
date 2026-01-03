@@ -67,9 +67,15 @@ const ItemGridWithModal = ({
                       </p>
                       <button
                         onClick={() => setSelectedItem({ title: String(title || ''), description: String(description) })}
-                        className="mt-3 text-sm font-semibold text-[var(--brand-primary-600)] hover:underline dark:text-[var(--brand-accent-500)] cursor-pointer"
+                        className="mt-3 text-sm font-semibold text-[var(--brand-accent-500)] dark:text-[var(--brand-accent-500)] cursor-pointer group"
                       >
-                        Read more...
+                        <span className="group-hover:hidden">Read more...</span>
+                        <span className="hidden group-hover:inline">
+                          Read more
+                          <span className="inline-block animate-blink" style={{ animationDelay: '0s' }}>.</span>
+                          <span className="inline-block animate-blink" style={{ animationDelay: '0.2s' }}>.</span>
+                          <span className="inline-block animate-blink" style={{ animationDelay: '0.4s' }}>.</span>
+                        </span>
                       </button>
                     </>
                   ) : (
@@ -96,13 +102,13 @@ const ItemGridWithModal = ({
       )}
 
       {/* Modal */}
-      {enableModal && selectedItem && (
+      {enableModal && (
         <Modal
           isOpen={selectedItem !== null}
           onClose={() => setSelectedItem(null)}
-          title={selectedItem.title}
+          title={selectedItem?.title || ''}
         >
-          {selectedItem.description}
+          {selectedItem?.description || ''}
         </Modal>
       )}
     </>

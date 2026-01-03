@@ -40,11 +40,31 @@ module.exports = {
       },
       animation: {
         fadeIn: 'fadeIn 0.8s ease-in-out',
+        fadeInUp: 'fadeInUp 0.3s ease-out forwards',
+        slideDown: 'slideDown 0.3s ease-out forwards',
+        slideUp: 'slideUp 0.3s ease-out forwards',
+        blink: 'blink 0.6s infinite',
       },
       keyframes: {
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
+        },
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        slideDown: {
+          '0%': { transform: 'translateY(-100%)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(0)', opacity: '1' },
+          '100%': { transform: 'translateY(-100%)', opacity: '0' },
+        },
+        blink: {
+          '0%, 100%': { opacity: '0.3' },
+          '50%': { opacity: '1' },
         },
       },
     },

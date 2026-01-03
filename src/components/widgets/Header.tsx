@@ -84,18 +84,28 @@ const Header = () => {
           </div>
         </div>
         <nav
-          className={`${isToggleMenuOpen ? 'block px-3' : 'hidden'} h-screen md:w-full ${
+          className={`${
+            isToggleMenuOpen ? 'block px-3 animate-slideDown' : 'hidden md:block md:opacity-100'
+          } h-screen md:w-full ${
             position === 'right' ? 'justify-end' : position === 'left' ? 'justify-start' : 'justify-center'
-          } w-auto overflow-y-auto text-slate-200 md:mx-5 md:flex md:h-auto md:items-center md:overflow-visible`}
+          } w-auto overflow-y-auto text-slate-200 md:mx-5 md:flex md:h-auto md:items-center md:overflow-visible md:transition-none md:animate-none`}
           aria-label="Main navigation"
         >
           <ul
             ref={ref}
-            className="flex flex-col w-full mt-2 text-base mb-36 md:m-0 md:w-auto md:flex-row md:self-center md:pt-0 md:text-sm lg:text-base font-sans"
+            className={`flex flex-col w-full mt-2 text-base mb-36 md:m-0 md:w-auto md:flex-row md:self-center md:pt-0 md:text-sm lg:text-base font-sans md:px-0 ${
+              isToggleMenuOpen ? 'animate-fadeInUp' : ''
+            }`}
           >
             {links &&
               links.map(({ label, href, icon: Icon, links }, index) => (
-                <li key={`item-link-${index}`} className={links?.length ? 'dropdown' : ''}>
+                <li 
+                  key={`item-link-${index}`} 
+                  className={`${links?.length ? 'dropdown' : ''} ${
+                    isToggleMenuOpen ? 'animate-fadeInUp md:animate-none' : ''
+                  }`}
+                  style={{ animationDelay: `${index * 50}ms` }}
+                >
                   {links && links.length ? (
                     <>
                       <button
@@ -107,19 +117,27 @@ const Header = () => {
                           <Icon
                             className={`${
                               isDropdownOpen[index] ? 'rotate-180' : ''
-                            } ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden h-3.5 w-3.5 md:inline`}
+                            } ml-0.5 rtl:ml-0 rtl:mr-0.5 h-3.5 w-3.5 transition-transform duration-300 ease-in-out`}
                           />
                         )}
                       </button>
                       <ul
                         className={`${
-                          isDropdownOpen[index] ? 'block' : 'md:hidden'
-                        } rounded pl-4 font-medium drop-shadow-xl md:absolute md:min-w-[200px] md:bg-[rgba(15,23,42,0.9)] md:pl-0 md:backdrop-blur-md md:border md:border-slate-700`}
+                          isDropdownOpen[index] ? 'block' : 'hidden md:block'
+                        } ${
+                          isDropdownOpen[index] ? 'md:opacity-100 md:translate-y-0 md:scale-100' : 'md:opacity-0 md:-translate-y-2 md:scale-95 md:pointer-events-none'
+                        } rounded pl-4 font-medium drop-shadow-xl md:absolute md:min-w-[200px] md:bg-[rgba(15,23,42,0.9)] md:pl-0 md:backdrop-blur-md md:border md:border-slate-700 md:transition-all md:duration-200 md:ease-out origin-top`}
                       >
                         {links.map(({ label: label2, href: href2 }, index2) => (
-                          <li key={`item-link-${index2}`}>
+                          <li 
+                            key={`item-link-${index2}`}
+                            className={`${
+                              isDropdownOpen[index] ? 'md:animate-fadeInUp' : ''
+                            }`}
+                            style={{ animationDelay: `${index2 * 50}ms` }}
+                          >
                             <Link
-                              className="block px-5 py-2 whitespace-no-wrap first:rounded-t last:rounded-b hover:bg-slate-800"
+                              className="block px-5 py-2 whitespace-no-wrap first:rounded-t last:rounded-b hover:bg-slate-800 transition-colors duration-150"
                               href={href2 as string}
                               onClick={() =>
                                 isToggleMenuOpen ? handleToggleMenuOnClick() : handleCloseDropdownOnClick(index)
@@ -146,8 +164,11 @@ const Header = () => {
         </nav>
         <div
           className={`${
-            isToggleMenuOpen ? 'block' : 'hidden'
-          } fixed bottom-0 left-0 w-full justify-end p-3 md:static md:mb-0 md:flex md:w-auto md:self-center md:p-0 md:bg-transparent md:border-none bg-slate-900 border-t border-slate-700`}
+            isToggleMenuOpen ? 'block' : 'hidden md:flex'
+          } fixed bottom-0 left-0 w-full justify-end p-3 md:static md:mb-0 md:w-auto md:self-center md:p-0 md:bg-transparent md:border-none bg-slate-900 border-t border-slate-700 ${
+            isToggleMenuOpen ? 'animate-fadeInUp' : ''
+          }`}
+          style={{ animationDelay: '200ms' }}
         >
           <div className="flex items-center justify-between w-full md:w-auto">
             {showToggleTheme && <ToggleDarkMode />}
@@ -163,11 +184,15 @@ const Header = () => {
             {actions && actions.length > 0 && (
               <div className="flex flex-wrap justify-end ml-4 rtl:ml-0 rtl:mr-4 w-max">
                 {actions.map((callToAction, index) => (
-                  <CTA
+                  <div
                     key={`item-action-${index}`}
-                    callToAction={callToAction as CallToActionType}
-                    linkClass="btn btn-primary m-1 py-2 px-5 text-sm font-semibold shadow-none md:px-6"
-                  />
+                    onClick={() => isToggleMenuOpen && handleToggleMenuOnClick()}
+                  >
+                    <CTA
+                      callToAction={callToAction as CallToActionType}
+                      linkClass="btn btn-primary m-1 py-2 px-5 text-sm font-semibold shadow-none md:px-6"
+                    />
+                  </div>
                 ))}
               </div>
             )}

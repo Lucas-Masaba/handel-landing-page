@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { ContentProps } from '~/shared/types';
 import Headline from '../common/Headline';
 import WidgetWrapper from '../common/WidgetWrapper';
@@ -15,6 +15,40 @@ import {
 const WhyChooseUs = ({ header, content, items, id, hasBackground = true }: ContentProps) => {
   const icons = [IconMapPin, IconWorld, IconBuildingBank, IconArrowsShuffle];
   const [selectedItem, setSelectedItem] = useState<{ title: string; description: string } | null>(null);
+  const [visibleCards, setVisibleCards] = useState<Set<number>>(new Set());
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    // Skip on server-side rendering
+    if (typeof window === 'undefined') return;
+
+    const observers = cardRefs.current.map((card, index) => {
+      if (!card) return null;
+      
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setVisibleCards(prev => new Set(prev).add(index));
+          }
+        },
+        {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px',
+        }
+      );
+
+      observer.observe(card);
+      return observer;
+    });
+
+    return () => {
+      observers.forEach((observer, index) => {
+        if (observer && cardRefs.current[index]) {
+          observer.unobserve(cardRefs.current[index]!);
+        }
+      });
+    };
+  }, [items]);
 
   return (
     <section
@@ -47,8 +81,11 @@ const WhyChooseUs = ({ header, content, items, id, hasBackground = true }: Conte
               return (
                 <div
                   key={index}
+                  ref={el => { if (el) cardRefs.current[index] = el; }}
                   onClick={() => setSelectedItem({ title: String(item.title || ''), description: String(item.description || '') })}
-                  className="flex flex-col items-start p-3 text-left transition-shadow duration-300 bg-white rounded-lg shadow-md cursor-pointer dark:bg-slate-800 hover:shadow-xl"
+                  className={`flex flex-col items-start p-3 text-left transition-all duration-300 bg-white rounded-lg shadow-md cursor-pointer dark:bg-slate-800 hover:shadow-xl border-2 border-transparent hover:border-[var(--brand-accent-500)] ${
+                    visibleCards.has(index) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
+                  }`}
                 >
                   <div className="flex items-center justify-center mb-2">
                     <Icon className="w-8 h-8 text-[var(--brand-accent-500)]" strokeWidth={2} />

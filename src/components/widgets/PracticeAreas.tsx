@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Modal from '../common/Modal';
 import { 
   IconBriefcase,
@@ -34,6 +34,40 @@ const practiceAreasIcons: Record<string, any> = {
 
 const PracticeAreas = ({ header, items, id, hasBackground = false }: FAQsProps) => {
   const [selectedPractice, setSelectedPractice] = useState<Item | null>(null);
+  const [visibleCards, setVisibleCards] = useState<Set<number>>(new Set());
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    // Skip on server-side rendering
+    if (typeof window === 'undefined') return;
+
+    const observers = cardRefs.current.map((card, index) => {
+      if (!card) return null;
+      
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setVisibleCards(prev => new Set(prev).add(index));
+          }
+        },
+        {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px',
+        }
+      );
+
+      observer.observe(card);
+      return observer;
+    });
+
+    return () => {
+      observers.forEach((observer, index) => {
+        if (observer && cardRefs.current[index]) {
+          observer.unobserve(cardRefs.current[index]!);
+        }
+      });
+    };
+  }, [items]);
 
   return (
     <>
@@ -54,8 +88,11 @@ const PracticeAreas = ({ header, items, id, hasBackground = false }: FAQsProps) 
             return (
               <div
                 key={`practice-${index}`}
+                ref={el => { if (el) cardRefs.current[index] = el; }}
                 onClick={() => setSelectedPractice(item)}
-                className="card p-6 cursor-pointer hover:shadow-2xl hover:-translate-y-1 hover:border-[var(--brand-accent-500)] hover:bg-[var(--brand-primary-600)] transition-all duration-300 ease-out flex gap-4 !bg-[var(--brand-primary-600)] !border-[var(--brand-primary-800)] text-white shadow-lg"
+                className={`card p-6 cursor-pointer hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 ease-out flex gap-4 !bg-[var(--brand-primary-600)] border-2 border-[var(--brand-primary-800)] hover:border-[var(--brand-accent-500)] text-white shadow-lg ${
+                  visibleCards.has(index) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
+                }`}
               >
                 <div className="flex-shrink-0">
                   <div className="w-12 h-12 rounded-lg bg-[var(--brand-accent-500)] flex items-center justify-center">

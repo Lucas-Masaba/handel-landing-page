@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+'use client';
 
 import { SITE } from '~/config.js';
 
@@ -25,10 +25,6 @@ import {
 
 import { contact2Contact } from '~/shared/data/pages/contact.data';
 import { teamAbout } from '~/shared/data/pages/about.data';
-
-export const metadata: Metadata = {
-  title: SITE.title,
-};
 
 export default function Page() {
   return (
