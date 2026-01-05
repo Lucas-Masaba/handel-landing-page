@@ -228,15 +228,15 @@ export const footerData2: FooterProps = {
   columns: [
     {
       title: 'Address',
-      texts: ['51 Phasellus Avenue Maecenas', 'Aliquam, AQ 52098'],
+      texts: ['Handel House', 'Plot 576', 'Benadina Close', 'Behind the American Embassy', 'Nsambya'],
     },
     {
       title: 'Phone',
-      texts: ['Reception: +105 123 4567', 'Office: +107 235 7890'],
+      texts: ['Office: +256763480363'],
     },
     {
       title: 'Email',
-      texts: ['Office: info@example.com', 'Site: https://example.com'],
+      texts: ['Office: partners@handeladvocates.com', 'Site: https://handeladvocates.com'],
     },
   ],
   socials: [

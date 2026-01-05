@@ -333,12 +333,12 @@ export const teamAbout: TeamProps = {
         {
           title: 'Know more on Twitter',
           icon: IconBrandTwitter,
-          href: '#',
+          href: 'https://x.com/chantelle_moyo?lang=en',
         },
         {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: '#',
+          href: 'https://www.linkedin.com/in/dr-chantelle-g-moyo-02967528/?originalSubdomain=ke',
         },
         // {
         //   title: 'Contact by email',
@@ -363,15 +363,15 @@ export const teamAbout: TeamProps = {
         'In addition to investigative and advisory work, Racheal designs and delivers capacity-building programs for organizations and compliance teams on AML controls, asset declarations, corruption prevention, and governance frameworks. She brings strong analytical capability, leveraging data-driven financial analysis to support evidence-based decision-making, institutional accountability, and ethical governance.',
       ],
       items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
+        // {
+        //   title: 'Know more on Twitter',
+        //   icon: IconBrandTwitter,
+        //   href: '#',
+        // },
         {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: '#',
+          href: 'https://ug.linkedin.com/in/racheal-kasula-6ab47274',
         },
         // {
         //   title: 'Contact by email',
@@ -396,15 +396,15 @@ export const teamAbout: TeamProps = {
         'Dr. Sebaggala brings strong quantitative expertise, including Computable General Equilibrium (CGE) modelling, panel data econometrics, and advanced trade policy analysis, with specialized training from regional and international institutions. In recent years, he has integrated artificial intelligence and machine learning techniques into trade and macroeconomic analysis to enhance evidence-based decision-making for governments, regional bodies, and development partners.',
       ],
       items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
+        // {
+        //   title: 'Know more on Twitter',
+        //   icon: IconBrandTwitter,
+        //   href: '#',
+        // },
         {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: '#',
+          href: 'https://ke.linkedin.com/in/sebaggala-richard-91141054',
         },
         // {
         //   title: 'Contact by email',
@@ -429,15 +429,15 @@ export const teamAbout: TeamProps = {
         'In his advisory role, Amos supports clients with financial integrity frameworks, AML/CFT compliance, enterprise risk design, internal audit transformation, governance strengthening, ESG integration, business restructuring, and strategic decision-making.',
       ],
       items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
+        // {
+        //   title: 'Know more on Twitter',
+        //   icon: IconBrandTwitter,
+        //   href: '#',
+        // },
         {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: '#',
+          href: 'https://www.linkedin.com/in/amos-nakeba-b7b200294/?originalSubdomain=ug',
         },
         // {
         //   title: 'Contact by email',
@@ -461,15 +461,15 @@ export const teamAbout: TeamProps = {
         'Beyond traditional legal practice, Allen has contributed to policy and development-oriented research aligned with the firm\'s trade and regional integration focus. She served as a research assistant on a project commissioned by TradeMark Africa in collaboration with the Ministry of Trade, Industry and Cooperatives, supporting the review and update of Uganda\'s National Trade Policy (2025) and the accompanying policy review report through targeted legal and policy research.',
       ],
       items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
+        // {
+        //   title: 'Know more on Twitter',
+        //   icon: IconBrandTwitter,
+        //   href: '#',
+        // },
         {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: '#',
+          href: 'https://www.linkedin.com/in/allen-nalwadda-namukisa-572a6b31a/?originalSubdomain=ug',
         },
         // {
         //   title: 'Contact by email',
@@ -497,12 +497,12 @@ export const teamAbout: TeamProps = {
         {
           title: 'Know more on Twitter',
           icon: IconBrandTwitter,
-          href: '#',
+          href: 'https://x.com/KaluleAdrian3/with_replies',
         },
         {
           title: 'Know more on Linkedin',
           icon: IconBrandLinkedin,
-          href: '#',
+          href: 'https://www.linkedin.com/in/adrian-kalule-182187248/?originalSubdomain=ug',
         },
         // {
         //   title: 'Contact by email',
@@ -524,16 +524,16 @@ export const teamAbout: TeamProps = {
         'In her role, Charity supports the firm through office coordination, document management, data entry, scheduling, and client interface support, contributing to smooth internal workflows and timely service delivery. She plays a key role in maintaining organized records, supporting staff productivity, and ensuring a welcoming and efficient office environment.',
       ],
       items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
+        // {
+        //   title: 'Know more on Twitter',
+        //   icon: IconBrandTwitter,
+        //   href: '#',
+        // },
+        // {
+        //   title: 'Know more on Linkedin',
+        //   icon: IconBrandLinkedin,
+        //   href: '#',
+        // },
         // {
         //   title: 'Contact by email',
         //   icon: IconMail,
@@ -554,16 +554,16 @@ export const teamAbout: TeamProps = {
         'Nahabwe brings a strong sense of confidentiality, teamwork, and professionalism to his work and is eager to learn and grow within legal practice.',
       ],
       items: [
-        {
-          title: 'Know more on Twitter',
-          icon: IconBrandTwitter,
-          href: '#',
-        },
-        {
-          title: 'Know more on Linkedin',
-          icon: IconBrandLinkedin,
-          href: '#',
-        },
+        // {
+        //   title: 'Know more on Twitter',
+        //   icon: IconBrandTwitter,
+        //   href: '#',
+        // },
+        // {
+        //   title: 'Know more on Linkedin',
+        //   icon: IconBrandLinkedin,
+        //   href: '#',
+        // },
         // {
         //   title: 'Contact by email',
         //   icon: IconMail,
@@ -698,12 +698,12 @@ export const contactAbout: ContactProps = {
   items: [
     {
       title: 'Our Address',
-      description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
+      description: ['Handel House', 'Plot 576', 'Benadina Close', 'Behind the American Embassy', 'Nsambya'],
       icon: IconMapPin,
     },
     {
       title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: handel@gmail.com'],
+      description: ['Mobile: +256763480363', 'Mail: partners@handeladvocates.com'],
       icon: IconPhoneCall,
     },
     {

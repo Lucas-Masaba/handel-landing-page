@@ -30,12 +30,12 @@ export const contact2Contact: ContactProps = {
   items: [
     {
       title: 'Our Address',
-      description: ['1230 Maecenas Street Donec Road', 'New York, EEUU'],
+      description: ['Handel House', 'Plot 576', 'Benadina Close', 'Behind the American Embassy', 'Nsambya'],
       icon: IconMapPin,
     },
     {
       title: 'Contact',
-      description: ['Mobile: +1 (123) 456-7890', 'Mail: Handel@gmail.com'],
+      description: ['Mobile: +256763480363', 'Mail: partners@handeladvocates.com'],
       icon: IconPhoneCall,
     },
     {
