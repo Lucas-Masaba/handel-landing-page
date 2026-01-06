@@ -215,7 +215,7 @@ export default function ProjectDetail({ params }: ProjectDetailsProps) {
 
           {/* Impact Section */}
           {'impact' in project && project.impact && (
-            <div className="mb-12 p-6 rounded-lg border border-[var(--brand-primary-700)] dark:border-[var(--brand-primary-200)] border-l-4 border-l-[var(--brand-accent-500)] dark:border-l-white bg-[var(--brand-primary-700)] text-white dark:bg-[var(--brand-primary-900)]">
+            <div className="mb-12 p-6 rounded-lg border border-[var(--brand-primary-600)] dark:border-[var(--brand-primary-200)] border-l-4 border-l-[var(--brand-accent-500)] dark:border-l-white bg-[var(--brand-primary-600)] text-white dark:bg-[var(--brand-primary-900)]">
               <h3 className="mb-3 text-lg font-bold tracking-tighter text-white font-heading dark:text-white">
                 Impact
               </h3>

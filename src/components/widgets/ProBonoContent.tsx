@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { IconSphere } from '@tabler/icons-react';
 import { useEffect, useRef, useState } from 'react';
 
@@ -9,6 +9,12 @@ import Headline from '../common/Headline';
 import WidgetWrapper from '../common/WidgetWrapper';
 import ItemGridWithModal from '../common/ItemGridWithModal';
 import ImageSlideshow from '../common/ImageSlideshow';
+
+const getPlaceholderProps = (src: string | StaticImageData) => {
+  if (typeof src === 'string') return {};
+  if (src.blurDataURL) return { placeholder: 'blur' as const, blurDataURL: src.blurDataURL };
+  return {};
+};
 
 const ProBonoContent = ({
   header,
@@ -73,6 +79,8 @@ const ProBonoContent = ({
     };
   }, []);
 
+  const placeholderProps = image ? getPlaceholderProps(image.src) : {};
+
   return (
   <WidgetWrapper
     id={id ? id : ''}
@@ -119,7 +127,7 @@ const ProBonoContent = ({
                 fill
                 alt={image.alt}
                 sizes="(max-width: 768px) 100vw, 50vw"
-                placeholder="blur"
+                {...placeholderProps}
                 quality={75}
               />
             </div>

@@ -6,6 +6,7 @@ import Hero from '~/components/widgets/Hero';
 import Content from '~/components/widgets/Content';
 import ProBonoContent from '~/components/widgets/ProBonoContent';
 import WhyChooseUs from '~/components/widgets/WhyChooseUs';
+import CombinedAdvantages from '~/components/widgets/CombinedAdvantages';
 
 import GlobalConsultingAreas from '~/components/widgets/GlobalConsultingAreas';
 import PracticeAreas from '~/components/widgets/PracticeAreas';
@@ -32,7 +33,7 @@ export default function Page() {
       <Hero {...heroHome} />
       <Content {...aboutHandel} />
       <Content {...integratedModel} />
-      <Content {...combinedAdvantages} />
+      <CombinedAdvantages {...combinedAdvantages} />
       {/* <Content {...internationalTradePractice} /> */}
       <WhyChooseUs {...whyClientsChoose} />
       <PracticeAreas {...practiceAreas} />

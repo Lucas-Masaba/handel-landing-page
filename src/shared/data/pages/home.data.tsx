@@ -43,7 +43,7 @@ import typescriptLogo from '~/assets/images/typescript-logo.png';
 import cameraFrontImg from '~/assets/images/camera-front.jpg';
 import cameraBackImg from '~/assets/images/camera-back.jpg';
 import tradeImg from 'public/images/display-images/trade.jpg';
-import africaMap from 'public/images/display-images/africa-map.png';
+import africaMap from 'public/images/display-images/africa-map.svg';
 import hammerImg from 'public/images/display-images/hammer.jpg';
 import handshakeImg from 'public/images/display-images/handshake.png';
 import workingImg from 'public/images/display-images/working.jpg';
@@ -68,6 +68,7 @@ export const heroHome: HeroProps = {
 export const aboutHandel: ContentProps = {
   id: 'about-handel',
   hasBackground: true,
+  isOverlayLayout: true,
   // header: {
   //   title: 'Navigating Trade Across Uganda, the EAC, COMESA & Beyond',
   // },
@@ -112,7 +113,7 @@ Together, the two entities offer a unified platform that combines:`,
 };
 
 // COMBINED ADVANTAGES SECTION - Exact content as provided
-export const combinedAdvantages: ContentProps = {
+export const combinedAdvantages = {
   id: 'combined-advantages',
   hasBackground: true,
   content: `Handel Advocates and Global Consulting combines:`,
