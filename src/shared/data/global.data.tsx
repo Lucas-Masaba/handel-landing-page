@@ -27,7 +27,7 @@ export const headerData: HeaderProps = {
   links: [
     {
       label: 'About',
-      href: '#about-handel',
+      href: '/#about-handel',
     },
     {
       label: 'Services',
@@ -35,30 +35,34 @@ export const headerData: HeaderProps = {
       links: [
         // {
         //   label: 'International Trade',
-        //   href: '#international-trade',
+        //   href: '/#international-trade',
         // },
         {
           label: 'Practice Areas',
-          href: '#practice-areas',
+          href: '/#practice-areas',
         },
         {
           label: 'Consulting',
-          href: '#global-consulting',
+          href: '/#global-consulting',
         },
       ],
     },
     // {
     //   label: 'Pro Bono',
-    //   href: '#pro-bono',
+    //   href: '/#pro-bono',
     // },
     {
       label: 'Team',
-      href: '#team-on-about',
+      href: '/#team-on-about',
     },
     {
-      label: 'Publications',
-      href: '/publications',
+      label: 'Projects',
+      href: '/projects',
     },
+    // {
+    //   label: 'Publications',
+    //   href: '/publications',
+    // },
   ],
   actions: [
     {
