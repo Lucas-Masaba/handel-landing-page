@@ -19,7 +19,7 @@ interface AdvantageCardProps {
 
 const AdvantageCard = ({ icon, title, index, isVisible }: AdvantageCardProps) => (
   <div
-    className={`group relative overflow-hidden rounded-xl bg-white dark:bg-[var(--brand-primary-900)] p-6 transition-all duration-700 ease-out hover:shadow-xl hover:scale-105 flex flex-col h-full ${
+    className={`group relative rounded-xl bg-[var(--brand-primary-600)] p-6 transition-all duration-700 ease-out hover:shadow-xl hover:scale-105 flex flex-col h-full ${
       isVisible
         ? 'opacity-100 translate-y-0'
         : 'opacity-0 translate-y-8'
@@ -29,21 +29,21 @@ const AdvantageCard = ({ icon, title, index, isVisible }: AdvantageCardProps) =>
     }}
   >
     {/* Gradient overlay on hover */}
-    <div className="absolute inset-0 bg-gradient-to-r from-[var(--brand-accent-500)]/0 via-[var(--brand-accent-500)]/5 to-[var(--brand-accent-500)]/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+    <div className="absolute inset-0 bg-gradient-to-r from-[var(--brand-accent-500)]/0 via-[var(--brand-accent-500)]/10 to-[var(--brand-accent-500)]/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl" />
 
     {/* Icon container */}
-    <div className="relative mb-3 inline-flex h-10 w-10 items-center justify-center text-[var(--brand-accent-500)] group-hover:text-[var(--brand-accent-500)] group-hover:scale-110 transition-transform duration-300">
+    <div className="relative mb-3 inline-flex h-10 w-10 items-center justify-center text-white group-hover:text-[var(--brand-accent-500)] group-hover:scale-110 transition-all duration-300">
       <div>
         {icon}
       </div>
     </div>
     {/* Content */}
-    <h3 className="relative text-base font-medium leading-6 text-[var(--brand-primary-900)] dark:text-white mb-2 group-hover:text-[var(--brand-accent-600)] dark:group-hover:text-[var(--brand-accent-400)] transition-colors text-justify">
+    <h3 className="relative text-base font-medium leading-6 text-white mb-2 transition-colors text-justify">
       {title}
     </h3>
 
     {/* Accent underline */}
-    <div className="mt-auto h-1.5 w-full rounded-full bg-[var(--brand-accent-500)] underline-bar" />
+    <div className="mt-auto h-1.5 w-full rounded-full bg-white underline-bar" />
   </div>
 );
 
@@ -125,10 +125,10 @@ const CombinedAdvantages = ({
 
       <div className="relative">
         <div className="mx-auto max-w-7xl">
-          <div className="flex flex-col md:flex-row md:items-stretch md:gap-10 lg:gap-16">
+          <div className="flex flex-col md:flex-row md:items-center md:gap-10 lg:gap-16">
             {/* Left rail: title and description */}
-            <div className="flex flex-col h-full gap-6 md:w-5/12 lg:w-5/12">
-              <div>
+            <div className="flex flex-col h-full justify-center gap-6 md:w-5/12 lg:w-5/12">
+              <div className="mb-6 md:mb-0">
                 <div
                   ref={containerRef}
                   className={`transition-all duration-700 ease-out ${
@@ -223,11 +223,10 @@ const CombinedAdvantages = ({
         .underline-bar {
           transform-origin: left;
           transform: scaleX(0);
-          transition: transform 320ms ease, background-color 240ms ease;
+          transition: transform 400ms cubic-bezier(0.34, 1.56, 0.64, 1), background-color 300ms ease;
         }
-        .group:hover .underline-bar,
-        .group:active .underline-bar {
-          background: var(--brand-accent-600);
+        .group:hover .underline-bar {
+          background-color: var(--brand-accent-500);
           transform: scaleX(1);
         }
       `}</style>

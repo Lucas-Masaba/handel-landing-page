@@ -10,7 +10,7 @@ export const projects = [
       '/images/projects/national-trade-policy/WhatsApp%20Image%202026-01-03%20at%2007.15.38.jpeg',
       '/images/projects/national-trade-policy/WhatsApp%20Image%202026-01-03%20at%2007.15.38%20(1).jpeg',
     ],
-    summary: 'Handel Global Consulting provided expert advisory support to the Government of Uganda in the comprehensive review and update of Uganda\'s National Trade Policy, the Trade Policy Implementation and Development Plan, and the National Export Development Strategy (NEDS).',
+    summary: 'Our experts provided expert advisory support to the Government of Uganda in the comprehensive review and update of Uganda\'s National Trade Policy, the Trade Policy Implementation and Development Plan, and the National Export Development Strategy (NEDS).',
     scopeOfWork: [
       'Legal and policy analysis of Uganda\'s trade legislation and institutional framework',
       'Alignment of national trade instruments with EAC, COMESA, AfCFTA, and WTO obligations',
@@ -25,9 +25,8 @@ export const projects = [
     client: 'Common Market for Eastern and Southern Africa (COMESA) Secretariat',
     role: 'Lead Team Member',
     coverage: '21 COMESA Member States',
-    image: '/images/projects/COMESA/WhatsApp%20Image%202026-01-03%20at%2007.32.29.jpeg',
+    image: '/images/projects/COMESA/WhatsApp%20Image%202026-01-03%20at%2007.32.31%20(2).jpeg',
     galleryImages: [
-      '/images/projects/COMESA/WhatsApp%20Image%202026-01-03%20at%2007.32.29.jpeg',
       '/images/projects/COMESA/WhatsApp%20Image%202026-01-03%20at%2007.32.30.jpeg',
       '/images/projects/COMESA/WhatsApp%20Image%202026-01-03%20at%2007.32.30%20(2).jpeg',
       '/images/projects/COMESA/WhatsApp%20Image%202026-01-03%20at%2007.32.30%20(3).jpeg',

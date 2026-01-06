@@ -297,7 +297,6 @@ type ContentProps = Widget & {
   slideshow?: Array<{ src: string; alt: string }>;
   isReversed?: boolean;
   isAfterContent?: boolean;
-  isOverlayLayout?: boolean;
 };
 
 type StepsProps = Widget & {

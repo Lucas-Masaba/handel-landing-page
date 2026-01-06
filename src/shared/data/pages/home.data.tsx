@@ -68,7 +68,6 @@ export const heroHome: HeroProps = {
 export const aboutHandel: ContentProps = {
   id: 'about-handel',
   hasBackground: true,
-  isOverlayLayout: true,
   // header: {
   //   title: 'Navigating Trade Across Uganda, the EAC, COMESA & Beyond',
   // },
@@ -113,10 +112,10 @@ Together, the two entities offer a unified platform that combines:`,
 };
 
 // COMBINED ADVANTAGES SECTION - Exact content as provided
-export const combinedAdvantages = {
+export const combinedAdvantages: any = {
   id: 'combined-advantages',
   hasBackground: true,
-  content: `Handel Advocates and Global Consulting combines:`,
+  content: `Handel Advocates and Global Consulting combines`,
   items: [
     {
       title: 'Deep local roots in Uganda',
@@ -131,7 +130,7 @@ export const combinedAdvantages = {
       title: 'A multidisciplinary team of lawyers, economists, and regulatory professionals',
     },
   ],
-  contentAfterItems: `Our clients choose us for our strategic insight, rigorous legal analysis, and commitment to practical, results-oriented representation.`,
+  // contentAfterItems: `Our clients choose us for our strategic insight, rigorous legal analysis, and commitment to practical, results-oriented representation.`,
   image: {
     src: workingImg,
     alt: 'Combined Advantages',
