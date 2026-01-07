@@ -32,7 +32,14 @@ import { contact2Contact } from '~/shared/data/pages/contact.data';
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: `About us`,
+  title: 'About Handel Advocates',
+  description: 'Learn about Handel Advocates, a premier Ugandan law firm offering elite legal services in international trade, regional trade law (EAC, COMESA), corporate law, and investment advisory across East Africa.',
+  keywords: ['about handel advocates', 'law firm Uganda', 'international trade lawyers', 'EAC legal services', 'COMESA law firm', 'corporate law Uganda', 'legal team East Africa'],
+  openGraph: {
+    title: 'About Handel Advocates - Leading Trade Law Firm in East Africa',
+    description: 'Premier legal services in international trade, regional trade law, and corporate advisory across Uganda, EAC, and COMESA regions.',
+    url: '/about',
+  },
 };
 
 const Page = () => {

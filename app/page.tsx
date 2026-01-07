@@ -1,6 +1,7 @@
 'use client';
 
 import { SITE } from '~/config.js';
+import { generateWebPageStructuredData } from '~/utils/seo';
 
 import Hero from '~/components/widgets/Hero';
 import Content from '~/components/widgets/Content';

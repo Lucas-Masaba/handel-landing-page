@@ -20,7 +20,14 @@ import {
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: 'Services',
+  title: 'Legal Services - International Trade, Corporate & Investment Law',
+  description: 'Comprehensive legal services including international trade law, EAC/COMESA regional trade, corporate law, investment advisory, trade policy consulting, and regulatory compliance for businesses in Uganda and East Africa.',
+  keywords: ['legal services Uganda', 'international trade law services', 'corporate law services', 'investment law', 'trade policy advisory', 'EAC legal services', 'COMESA trade law', 'regulatory compliance', 'cross-border legal services'],
+  openGraph: {
+    title: 'Legal Services - Handel Advocates',
+    description: 'Expert legal services in international trade, corporate law, and investment advisory across Uganda, EAC, and COMESA.',
+    url: '/services',
+  },
 };
 
 const Page = () => {

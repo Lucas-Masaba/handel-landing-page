@@ -92,110 +92,61 @@ export const footerData: FooterProps = {
   // ],
   columns: [
     {
-      title: 'Product',
+      title: 'Services',
       links: [
         {
-          label: 'Features',
-          href: '/',
+          label: 'International Trade Law',
+          href: '/#practice-areas',
         },
         {
-          label: 'Security',
-          href: '/',
+          label: 'Regional Trade (EAC/COMESA)',
+          href: '/#practice-areas',
         },
         {
-          label: 'Team',
-          href: '/',
+          label: 'Corporate Law',
+          href: '/#practice-areas',
         },
         {
-          label: 'Enterprise',
-          href: '/',
+          label: 'Investment Advisory',
+          href: '/#practice-areas',
         },
         {
-          label: 'Customer stories',
-          href: '/',
-        },
-        {
-          label: 'Pricing',
-          href: '/pricing',
-        },
-        {
-          label: 'Resources',
-          href: '/',
+          label: 'Global Consulting',
+          href: '/#global-consulting',
         },
       ],
     },
     {
-      title: 'Platform',
+      title: 'Firm',
       links: [
         {
-          label: 'Developer API',
-          href: '/',
+          label: 'About Us',
+          href: '/#about-handel',
         },
         {
-          label: 'Partners',
-          href: '/',
+          label: 'Our Team',
+          href: '/#team-on-about',
+        },
+        {
+          label: 'Projects & Case Studies',
+          href: '/projects',
+        },
+        {
+          label: 'Contact Us',
+          href: '/#contact',
         },
       ],
     },
     {
-      title: 'Support',
+      title: 'Legal',
       links: [
         {
-          label: 'Docs',
-          href: '/',
+          label: 'Privacy Policy',
+          href: '/privacy',
         },
         {
-          label: 'Community Forum',
-          href: '/',
-        },
-        {
-          label: 'Professional Services',
-          href: '/',
-        },
-        {
-          label: 'Skills',
-          href: '/',
-        },
-        {
-          label: 'Status',
-          href: '/',
-        },
-      ],
-    },
-    {
-      title: 'Company',
-      links: [
-        {
-          label: 'About',
-          href: '/',
-        },
-        {
-          label: 'Publications',
-          href: '/publications',
-        },
-          {
-            label: 'Projects',
-            href: '/projects',
-          },
-        {
-          label: 'Careers',
-          href: '/',
-        },
-        {
-          label: 'Press',
-          href: '/',
-        },
-        {
-          label: 'Inclusion',
-          href: '/',
-        },
-        {
-          label: 'Social Impact',
-          href: '/',
-        },
-        {
-          label: 'Shop',
-          href: '/',
+          label: 'Terms & Conditions',
+          href: '/terms',
         },
       ],
     },
