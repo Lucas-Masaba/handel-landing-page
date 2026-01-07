@@ -10,7 +10,7 @@ export const projects = [
       '/images/projects/national-trade-policy/WhatsApp%20Image%202026-01-03%20at%2007.15.38.jpeg',
       '/images/projects/national-trade-policy/WhatsApp%20Image%202026-01-03%20at%2007.15.38%20(1).jpeg',
     ],
-    summary: 'Our experts provided expert advisory support to the Government of Uganda in the comprehensive review and update of Uganda\'s National Trade Policy, the Trade Policy Implementation and Development Plan, and the National Export Development Strategy (NEDS).',
+    summary: 'Our key experts engaged in the comprehensive review and update of Uganda\'s National Trade Policy, developed the Trade Policy Implementation and Development Plan, and the National Export Development Strategy (NEDS).',
     scopeOfWork: [
       'Legal and policy analysis of Uganda\'s trade legislation and institutional framework',
       'Alignment of national trade instruments with EAC, COMESA, AfCFTA, and WTO obligations',

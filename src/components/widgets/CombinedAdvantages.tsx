@@ -38,7 +38,7 @@ const AdvantageCard = ({ icon, title, index, isVisible }: AdvantageCardProps) =>
       </div>
     </div>
     {/* Content */}
-    <h3 className="relative text-base font-medium leading-6 text-white mb-2 transition-colors text-justify">
+    <h3 className="relative mb-2 text-base font-medium leading-6 text-justify text-white transition-colors">
       {title}
     </h3>
 
@@ -127,7 +127,7 @@ const CombinedAdvantages = ({
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col md:flex-row md:items-center md:gap-10 lg:gap-16">
             {/* Left rail: title and description */}
-            <div className="flex flex-col h-full justify-center gap-6 md:w-5/12 lg:w-5/12">
+            <div className="flex flex-col justify-center h-full gap-6 md:w-5/12 lg:w-5/12">
               <div className="mb-6 md:mb-0">
                 <div
                   ref={containerRef}
@@ -142,7 +142,7 @@ const CombinedAdvantages = ({
                       {content}
                     </p>
                   )}
-                  <div className="mt-3 h-1 w-16 bg-gradient-to-r from-[var(--brand-accent-500)] to-[var(--brand-accent-400)] rounded-full" />
+                  {/* <div className="mt-3 h-1 w-16 bg-gradient-to-r from-[var(--brand-accent-500)] to-[var(--brand-accent-400)] rounded-full" /> */}
                 </div>
               </div>
 

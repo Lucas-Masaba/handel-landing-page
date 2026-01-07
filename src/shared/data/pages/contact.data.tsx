@@ -30,7 +30,7 @@ export const contact2Contact: ContactProps = {
   items: [
     {
       title: 'Our Address',
-      description: ['Handel House', 'Plot 576', 'Benadina Close', 'Behind the American Embassy', 'Nsambya'],
+      description: ['Handel House', 'Plot 576', 'Benadina Close', 'Behind the American Embassy', 'Nsambya', 'P.O.Box 4225, Kampala'],
       icon: IconMapPin,
     },
     {

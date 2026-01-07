@@ -515,7 +515,7 @@ export const teamAbout: TeamProps = {
       name: 'Tumwebaze Charity',
       occupation: 'Office Administrator',
       image: {
-        src: '/images/team/charity.png',
+        src: '/images/team/cropped/tumwebaze-charity.jpeg',
         alt: 'Tumwebaze Charity',
       },
       bio: [
@@ -698,7 +698,7 @@ export const contactAbout: ContactProps = {
   items: [
     {
       title: 'Our Address',
-      description: ['Handel House', 'Plot 576', 'Benadina Close', 'Behind the American Embassy', 'Nsambya'],
+      description: ['Handel House', 'Plot 576', 'Benadina Close', 'Behind the American Embassy', 'Nsambya', 'P.O.Box 4225, Kampala'],
       icon: IconMapPin,
     },
     {

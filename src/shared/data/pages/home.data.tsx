@@ -73,7 +73,7 @@ export const aboutHandel: ContentProps = {
   // },
   content: `In today's fast-evolving global and regional marketplace, businesses operating in Uganda and across Africa face a multifaceted legal landscape shaped by domestic legislation, regional economic communities, and global trade rules. As cross-border value chains deepen and regulatory frameworks become more intricate, companies, governments, and development institutions require strategic legal counsel that understands the unique interplay between international, regional, and national trade regimes.
 
-Handel Advocates is a premier Ugandan law firm offering elite legal services across international trade, corporate and commercial law, investment, regulatory compliance, and cross-border advisory. We are uniquely positioned to support clients operating in Uganda, the East African Community (EAC), the Common Market for Eastern and Southern Africa (COMESA), and the broader African and global market.
+Handel Advocates is a premier Ugandan law firm offering elite legal services across regional and international trade, corporate and commercial law, investment, regulatory compliance, and ECG advisory. We are uniquely positioned to support clients operating in Uganda, the East African Community (EAC), the Common Market for Eastern and Southern Africa (COMESA), and the broader African and global market.
 
 Our work combines deep legal insight, policy fluency, and a commercial mindset that enables clients to thrive in dynamic, interconnected business environments.`,
   image: {
@@ -162,7 +162,7 @@ export const whyClientsChoose: ContentProps = {
   header: {
     title: 'Why Clients Choose Handel',
   },
-  content: `Our multidisciplinary expertise and strategic positioning within the region enable us to offer:`,
+  content: `Our multidisciplinary expertise and strategic positioning within the region enable us to offer`,
   items: [
     {
       title: "Deep Understanding of Uganda's Trade & Investment Regulatory Framework",
@@ -1114,7 +1114,7 @@ export const contactHome: ContactProps = {
   items: [
     {
       title: 'Our Address',
-      description: ['Handel House', 'Plot 576', 'Benadina Close', 'Behind the American Embassy', 'Nsambya'],
+      description: ['Handel House', 'Plot 576', 'Benadina Close', 'Behind the American Embassy', 'Nsambya', 'P.O.Box 4225, Kampala'],
       icon: IconMapPin,
     },
     {

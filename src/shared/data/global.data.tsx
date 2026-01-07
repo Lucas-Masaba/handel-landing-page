@@ -201,7 +201,7 @@ export const footerData: FooterProps = {
     },
   ],
   socials: [
-    { label: 'Twitter', icon: IconBrandTwitter, href: '#' },
+    { label: 'Twitter', icon: IconBrandTwitter, href: 'https://x.com/handeladvocates' },
     { label: 'Instagram', icon: IconBrandInstagram, href: '#' },
     { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
     { label: 'RSS', icon: IconRss, href: '#' },
@@ -232,7 +232,7 @@ export const footerData2: FooterProps = {
   columns: [
     {
       title: 'Address',
-      texts: ['Handel House', 'Plot 576', 'Benadina Close', 'Behind the American Embassy', 'Nsambya'],
+      texts: ['Handel House', 'Plot 576', 'Benadina Close', 'Behind the American Embassy', 'Nsambya', 'P.O.Box 4225, Kampala'],
     },
     {
       title: 'Phone',
@@ -244,8 +244,8 @@ export const footerData2: FooterProps = {
     },
   ],
   socials: [
-    { label: 'Twitter', icon: IconBrandTwitter, href: '#' },
-    { label: 'LinkedIn', icon: IconBrandLinkedin, href: '#' },
+    { label: 'Twitter', icon: IconBrandTwitter, href: 'https://x.com/handeladvocates' },
+    { label: 'LinkedIn', icon: IconBrandLinkedin, href: 'https://www.linkedin.com/company/handel-advocates-global-consulting' },
     // { label: 'Facebook', icon: IconBrandFacebook, href: '#' },
     // { label: 'RSS', icon: IconRss, href: '#' },
     // { label: 'Github', icon: IconBrandGithub, href: 'https://github.com/onwidget/Handel' },
