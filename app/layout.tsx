@@ -85,6 +85,14 @@ export const metadata: Metadata = {
     site: '@handeladvocates',
     images: ['/opengraph-image'],
   },
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/handel-logo.svg', type: 'image/svg+xml' },
+    ],
+    apple: [{ url: '/handel-logo.svg' }],
+    shortcut: ['/favicon.ico'],
+  },
   robots: {
     index: true,
     follow: true,
@@ -109,8 +117,6 @@ export default function RootLayout({ children }: LayoutProps) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link rel="icon" href="/handel-logo.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/handel-logo.svg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
