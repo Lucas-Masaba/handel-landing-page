@@ -10,6 +10,15 @@ export const size = {
 export const contentType = 'image/png';
 
 export default async function Image() {
+  // Fetch the SVG logo to embed in the OG image
+  let logoSvgContent = '';
+  try {
+    const logoResponse = await fetch(new URL('/handel-logo.svg', 'https://handeladvocates.com'));
+    logoSvgContent = await logoResponse.text();
+  } catch (error) {
+    console.error('Failed to fetch logo:', error);
+  }
+
   return new ImageResponse(
     (
       <div
@@ -34,6 +43,30 @@ export default async function Image() {
             textAlign: 'center',
           }}
         >
+          {/* Logo */}
+          <div
+            style={{
+              width: 150,
+              height: 150,
+              marginBottom: 40,
+              background: 'white',
+              borderRadius: '12px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '10px',
+            }}
+          >
+            {logoSvgContent ? (
+              <svg
+                viewBox="0 0 200 200"
+                style={{ width: 130, height: 130 }}
+                dangerouslySetInnerHTML={{ __html: logoSvgContent }}
+              />
+            ) : (
+              <div style={{ fontSize: 48, fontWeight: 'bold' }}>HA</div>
+            )}
+          </div>
           <h1
             style={{
               fontSize: 72,

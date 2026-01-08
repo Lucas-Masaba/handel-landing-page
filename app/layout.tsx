@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     siteName: SITE.name,
     images: [
       {
-        url: '/images/og-image.jpg',
+        url: '/opengraph-image',
         width: 1200,
         height: 630,
         alt: 'Handel Advocates - International Trade & Legal Services',
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     description: SITE.description,
     creator: '@handeladvocates',
     site: '@handeladvocates',
-    images: ['/images/og-image.jpg'],
+    images: ['/opengraph-image'],
   },
   robots: {
     index: true,
@@ -109,8 +109,8 @@ export default function RootLayout({ children }: LayoutProps) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/handel-logo.svg" type="image/svg+xml" media="(prefers-color-scheme: light)" />
-        <link rel="icon" href="/handel-logo.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)" />
+          <link rel="icon" href="/handel-logo.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/handel-logo.svg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -118,7 +118,6 @@ export default function RootLayout({ children }: LayoutProps) {
         {/* Preconnect to external domains for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* <link rel="alternate icon" href="/favicon.ico" /> */}
       </head>
       <body className="antialiased tracking-tight bg-[var(--brand-primary-50)] text-gray-900 dark:bg-[var(--brand-primary-600)] dark:text-[var(--brand-accent-500)]">
         <GoogleAnalytics />
