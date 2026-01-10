@@ -70,9 +70,10 @@ export const metadata: Metadata = {
     siteName: SITE.name,
     images: [
       {
-        url: '/opengraph-image',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
+        type: 'image/png',
         alt: 'Handel Advocates - International Trade & Legal Services',
       },
     ],
@@ -83,14 +84,14 @@ export const metadata: Metadata = {
     description: SITE.description,
     creator: '@handeladvocates',
     site: '@handeladvocates',
-    images: ['/opengraph-image'],
+    images: ['/og-image.png'],
   },
   icons: {
     icon: [
       { url: '/favicon.ico' },
       { url: '/handel-logo.svg', type: 'image/svg+xml' },
     ],
-    apple: [{ url: '/handel-logo.svg' }],
+    apple: [{ url: '/apple-touch-icon.png' }],
     shortcut: ['/favicon.ico'],
   },
   robots: {
